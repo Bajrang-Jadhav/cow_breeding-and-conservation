@@ -1,4 +1,8 @@
-<!DOCTYPE html>
+<?php
+session_start();
+ include('config.php');
+ ?>
+ <!DOCTYPE html>
 <html lang="en">
 
 <head>
@@ -91,7 +95,7 @@
             </div>
             <div class="border-start ps-4 d-none d-lg-block">
                 <?php
-                if (!isset($_SESSION["username"])) {
+                if (isset($_SESSION["username"])) {
 
                 ?>                  
                      <a href="" class="nav-item nav-link active" ><?php echo ($_SESSION["username"]); ?></a>
@@ -101,7 +105,7 @@
 					} else{
 						?>
 							
-							<a href="login.html" class="nav-item nav-link active" >LOGIN/SIGNUP</a>
+							<a href="login.php" class="nav-item nav-link active" >LOGIN/SIGNUP</a>
 
 					<?php
 					 }
