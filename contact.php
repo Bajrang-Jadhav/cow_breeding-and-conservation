@@ -98,14 +98,14 @@ session_start();
                 if (isset($_SESSION["username"])) {
 
                 ?>                  
-                     <a href="" class="nav-item nav-link active" ><?php echo ($_SESSION["username"]); ?></a>
+                     <a href="" class="nav-item nav-link " ><?php echo ($_SESSION["username"]); ?></a>
                  
                     
                 <?php 
 					} else{
 						?>
 							
-							<a href="login.php" class="nav-item nav-link active" >LOGIN/SIGNUP</a>
+							<a href="login.php" class="nav-item nav-link " >LOGIN/SIGNUP</a>
 
 					<?php
 					 }
