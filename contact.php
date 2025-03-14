@@ -98,14 +98,13 @@
                  
                     
                 <?php 
-					 else{
+					} else{
 						?>
 							
 							<a href="login.html" class="nav-item nav-link active" >LOGIN/SIGNUP</a>
 
 					<?php
 					 }
-                }
                 ?>
             </div>
         </div>
