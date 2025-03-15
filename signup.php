@@ -5,10 +5,7 @@
 
         $uname = mysqli_real_escape_string($conn,$_POST['uname']);
         $uemail =mysqli_real_escape_string($conn, $_POST['uemail']);
-        $uphone =mysqli_real_escape_string($conn, $_POST['uphone']);
-        $upincode =mysqli_real_escape_string($conn, $_POST['upincode']);
         $upassword =mysqli_real_escape_string($conn, $_POST['upassword']);
-        $role =mysqli_real_escape_string($conn, $_POST['role']);
 
         $sql = "SELECT username FROM user WHERE username = '{$uname}'";
         $result = mysqli_query($conn, $sql) or die("QUERY FAILED");
@@ -17,8 +14,8 @@
         if(mysqli_num_rows($result) > 0){
           echo "<p style='color:red;text-align:center;margin:10px 0;'>username aldready exist</p>";
         }else{
-         $sql1 = "INSERT INTO user (username, useremail, userpincode, userpassword, userphone, userrole) 
-         VALUES ('{$uname}', '{$uemail}', '{$upincode}', '{$upassword}', '{$uphone}', '{$role}')";
+         $sql1 = "INSERT INTO user (username, useremail, userpassword) 
+         VALUES ('{$uname}', '{$uemail}', '{$upassword}')";
           if (mysqli_query($conn,$sql1)) {
            echo '<script type="text/javascript">';
                     echo 'alert("SIGNUP SUCCESSFUL NOW LOG IN WITH YOUR DETAILS");';
@@ -130,31 +127,19 @@
             <span class="details">username</span>
             <input name="uname" type="text" placeholder="Enter your username" required>
           </div>
-          <div class="input-box">
-            <span class="details">pincode</span>
-            <input name="upincode" type="Number" placeholder="Enter your pincode" required>
-          </div>
+         
           <div class="input-box">
             <span class="details">Email</span>
             <input name="uemail" type="text" placeholder="Enter your email" required>
           </div>
-          <div class="input-box">
-            <span class="details">Phone Number</span>
-            <input name="uphone" type="text" placeholder="Enter your number" required>
-          </div>
+          
           <div class="input-box">
             <span class="details">Password</span>
             <input name="upassword" type="text" placeholder="Enter your password" required>
           </div>
           
         </div>
-        <div class="roledetails">
-                      <span class="details">Your Role</span>
-         <select name="role" class="form-control">
-           <option value="0">USER</option>
-           <option value="1">ADMIN</option>
-         </select>
-        </div>
+       
         <div class="button">
           <input type="submit" name="save" value="Register">
         </div>
