@@ -69,8 +69,8 @@ session_start();
 
     <!-- Navbar Start -->
     <nav class="navbar navbar-expand-lg bg-white navbar-light sticky-top px-4 px-lg-5">
-        <a href="index.html" class="navbar-brand d-flex align-items-center">
-            <h1 class="m-0">Milky</h1>
+    <a href="index.html" class="navbar-brand d-flex align-items-center">
+            <img src="img/GO-RAKSHAK.png" alt="Bootstrap" width="290" height="50">
         </a>
         <button type="button" class="navbar-toggler me-0" data-bs-toggle="collapse" data-bs-target="#navbarCollapse">
             <span class="navbar-toggler-icon"></span>
