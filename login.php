@@ -6,15 +6,13 @@ if (isset($_POST['login'])) {
     $username = mysqli_real_escape_string($conn, $_POST['username']);
     $password = $_POST['password'];
 
-    $sql = "SELECT username,userpassword,userrole,userpincode FROM user WHERE username = '{$username}' AND userpassword = '{$password}' ";
+    $sql = "SELECT username,userpassword FROM user WHERE username = '{$username}' AND userpassword = '{$password}' ";
     $result = mysqli_query($conn, $sql) or die("query failed 1st ");
 
     if (mysqli_num_rows($result) > 0) {
         while ($row = mysqli_fetch_assoc($result)) {
             $_SESSION["username"] = $row['username'];
-            $_SESSION["user-role"] = $row['userrole'];
-            $_SESSION["user-pincode"] = $row['userpincode'];
-             echo "<script>window.open('home.php', '_self');</script>";
+             echo "<script>window.open('index.php', '_self');</script>";
         }
     } else {
         echo "<div class='alert alert-danger'> username and password are not match </div> ";

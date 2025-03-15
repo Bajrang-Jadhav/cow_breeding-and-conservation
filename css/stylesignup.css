@@ -5,8 +5,8 @@
   box-sizing: border-box;
   font-family: 'Poppins',sans-serif;
 }
-nnav{
-  height: 100vh;
+.nnav{
+  height: 88vh;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -17,7 +17,7 @@ nnav{
 .container{
   max-width: 700px;
   width: 100%;
-  margin-top: 90px;
+  /* margin-top: 90px; */
 
   background-color: #fff;
   padding: 25px 30px;
