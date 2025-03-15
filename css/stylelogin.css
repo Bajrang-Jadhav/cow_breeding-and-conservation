@@ -12,7 +12,8 @@
   padding: 124px;
   place-items: center;
   background: #f2f2f2;
-   background: linear-gradient(-135deg, #c850c0, #4158d0); 
+  background: url(../img/log.jpg) center center no-repeat;
+    background-size: cover;
 }
 ::selection{
   background: #4158d0;
