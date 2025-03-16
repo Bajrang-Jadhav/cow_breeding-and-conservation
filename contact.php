@@ -105,8 +105,12 @@ session_start();
 					} else{
 						?>
 							
-							<a href="login.php" class="nav-item nav-link " >LOGIN/SIGNUP</a>
-
+                            <a href="login.php" >
+                    <button type="button" class="btn btn-outline-dark">Sign-in </button> 
+                </a>
+                <a href="signup.php" >
+                    <button type="button"  class="btn btn-outline-dark">Sign-up </button>  
+                </a>
 					<?php
 					 }
                 ?>
