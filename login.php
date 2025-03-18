@@ -84,10 +84,8 @@ if (isset($_POST['login'])) {
                     <a href="#" class="nav-link dropdown-toggle" data-bs-toggle="dropdown">Pages</a>
                     <div class="dropdown-menu bg-light m-0">
                         <a href="gallery.html" class="dropdown-item">Gallery</a>
-                        <a href="feature.html" class="dropdown-item">Features</a>
                         <a href="team.html" class="dropdown-item">Our Team</a>
                         <a href="testimonial.html" class="dropdown-item">Testimonial</a>
-                        <a href="404.html" class="dropdown-item">404 Page</a>
                     </div>
                 </div>
                 <a href="contact.php" class="nav-item nav-link">Contact</a>
@@ -103,8 +101,12 @@ if (isset($_POST['login'])) {
                 <?php 
 					} else{
 						?>
-							
-							<a href="login.php" class="nav-item nav-link active" >LOGIN/SIGNUP</a>
+							<a href="login.php" >
+                    <button type="button" class="btn btn-outline-dark active">Sign-in </button> 
+                </a>
+                <a href="signup.php" >
+                    <button type="button"  class="btn btn-outline-dark">Sign-up </button>  
+                </a>
 
 					<?php
 					 }

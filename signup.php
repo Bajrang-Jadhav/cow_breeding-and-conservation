@@ -88,10 +88,8 @@
                     <a href="#" class="nav-link dropdown-toggle" data-bs-toggle="dropdown">Pages</a>
                     <div class="dropdown-menu bg-light m-0">
                         <a href="gallery.html" class="dropdown-item">Gallery</a>
-                        <a href="feature.html" class="dropdown-item">Features</a>
                         <a href="team.html" class="dropdown-item">Our Team</a>
                         <a href="testimonial.html" class="dropdown-item">Testimonial</a>
-                        <a href="404.html" class="dropdown-item">404 Page</a>
                     </div>
                 </div>
                 <a href="contact.php" class="nav-item nav-link">Contact</a>
@@ -112,7 +110,7 @@
                     <button type="button" class="btn btn-outline-dark">Sign-in </button> 
                 </a>
                 <a href="signup.php" >
-                    <button type="button"  class="btn btn-outline-dark">Sign-up </button>  
+                    <button type="button"  class="btn btn-outline-dark active">Sign-up </button>  
                 </a>
 
 					<?php
@@ -122,33 +120,33 @@
         </div>
     </nav>
  <!-- Navbar End -->
-   <div class="nnav">
+   <div class="nnav ">
    <div class="container">
-    <div class="title">Registration</div>
+    <div class="title animated slideInDown">Registration</div>
     <div class="content">
       <form action="<?php $_SERVER['PHP_SELF'];?>" method="POST" autocomplete="off">
         <div class="user-details">
-          <div class="input-box">
-            <span class="details">username</span>
+          <div class="input-box ">
+            <span class="details animated slideInDown">username</span>
             <input name="uname" type="text" placeholder="Enter your username" required>
           </div>
          
           <div class="input-box">
-            <span class="details">Email</span>
+            <span class="details animated slideInDown">Email</span>
             <input name="uemail" type="text" placeholder="Enter your email" required>
           </div>
           
           <div class="input-box">
-            <span class="details">Password</span>
+            <span class="details animated slideInDown">Password</span>
             <input name="upassword" type="text" placeholder="Enter your password" required>
           </div>
           
         </div>
        
-        <div class="button">
+        <div class="button animated slideInDown">
           <input type="submit" name="save" value="Register">
         </div>
-        <div class="signup-link">
+        <div class="signup-link animated slideInDown">
                ARE YOU MEMBER? <a href="login.php">LOGIN NOW</a>
             </div>
       </form>
