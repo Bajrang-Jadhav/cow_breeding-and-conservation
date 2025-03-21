@@ -1,4 +1,8 @@
-<!DOCTYPE html>
+<?php
+session_start();
+ include('config.php');
+ ?>
+ <!DOCTYPE html>
 <html lang="en">
 
 <head>
@@ -34,9 +38,9 @@
 
 <body>
     <!-- Spinner Start -->
-    <div id="spinner" class="show bg-white position-fixed translate-middle w-100 vh-100 top-50 start-50 d-flex align-items-center justify-content-center">
+    <!-- <div id="spinner" class="show bg-white position-fixed translate-middle w-100 vh-100 top-50 start-50 d-flex align-items-center justify-content-center">
         <div class="spinner-border text-primary" role="status" style="width: 3rem; height: 3rem;"></div>
-    </div>
+    </div> -->
     <!-- Spinner End -->
 
 
@@ -65,8 +69,8 @@
 
     <!-- Navbar Start -->
     <nav class="navbar navbar-expand-lg bg-white navbar-light sticky-top px-4 px-lg-5">
-        <a href="index.html" class="navbar-brand d-flex align-items-center">
-            <h1 class="m-0">Milky</h1>
+    <a href="index.html" class="navbar-brand d-flex align-items-center">
+            <img src="img/GO-RAKSHAK.png" alt="Bootstrap" width="290" height="50">
         </a>
         <button type="button" class="navbar-toggler me-0" data-bs-toggle="collapse" data-bs-target="#navbarCollapse">
             <span class="navbar-toggler-icon"></span>
@@ -81,31 +85,32 @@
                     <a href="#" class="nav-link dropdown-toggle" data-bs-toggle="dropdown">Pages</a>
                     <div class="dropdown-menu bg-light m-0">
                         <a href="gallery.html" class="dropdown-item">Gallery</a>
-                        <a href="feature.html" class="dropdown-item">Features</a>
                         <a href="team.html" class="dropdown-item">Our Team</a>
                         <a href="testimonial.html" class="dropdown-item">Testimonial</a>
-                        <a href="404.html" class="dropdown-item">404 Page</a>
                     </div>
                 </div>
                 <a href="contact.html" class="nav-item nav-link active">Contact</a>
             </div>
             <div class="border-start ps-4 d-none d-lg-block">
                 <?php
-                if (!isset($_SESSION["username"])) {
+                if (isset($_SESSION["username"])) {
 
                 ?>                  
-                     <a href="" class="nav-item nav-link active" ><?php echo ($_SESSION["username"]); ?></a>
+                     <a href="" class="nav-item nav-link " ><?php echo ($_SESSION["username"]); ?></a>
                  
                     
                 <?php 
-					 else{
+					} else{
 						?>
 							
-							<a href="login.html" class="nav-item nav-link active" >LOGIN/SIGNUP</a>
-
+                            <a href="login.php" >
+                    <button type="button" class="btn btn-outline-dark">Sign-in </button> 
+                </a>
+                <a href="signup.php" >
+                    <button type="button"  class="btn btn-outline-dark">Sign-up </button>  
+                </a>
 					<?php
 					 }
-                }
                 ?>
             </div>
         </div>
