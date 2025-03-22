@@ -75,12 +75,12 @@
             <div class="navbar-nav ms-auto p-4 p-lg-0">
                 <a href="index.html" class="nav-item nav-link">Home</a>
                 <a href="about.html" class="nav-item nav-link">About</a>
-                <a href="service.html" class="nav-item nav-link">Services</a>
+                <a href="service.html" class="nav-item nav-link active">Services</a>
                 <a href="product.html" class="nav-item nav-link">Products</a>
                 <div class="nav-item dropdown">
-                    <a href="#" class="nav-link dropdown-toggle active" data-bs-toggle="dropdown">Pages</a>
+                    <a href="#" class="nav-link dropdown-toggle " data-bs-toggle="dropdown">Pages</a>
                     <div class="dropdown-menu bg-light m-0">
-                        <a href="gallery.html" class="dropdown-item active">Gallery</a>
+                        <a href="gallery.html" class="dropdown-item ">Gallery</a>
                         <a href="team.html" class="dropdown-item">Our Team</a>
                         <a href="testimonial.html" class="dropdown-item">Testimonial</a>
                     </div>
@@ -103,12 +103,12 @@
     <!-- Page Header Start -->
     <div class="container-fluid page-header py-5 mb-5 wow fadeIn" data-wow-delay="0.1s">
         <div class="container text-center py-5">
-            <h1 class="display-3 text-white mb-4 animated slideInDown">CARE AND MILKING</h1>
+            <h1 class="display-3 text-white mb-4 animated slideInDown">types of cow breeding</h1>
             <nav aria-label="breadcrumb animated slideInDown">
                 <ol class="breadcrumb justify-content-center mb-0">
                     <li class="breadcrumb-item"><a href="#">Home</a></li>
                     <li class="breadcrumb-item"><a href="#">Services</a></li>
-                    <li class="breadcrumb-item active" aria-current="page">CARE AND MILKING</li>
+                    <li class="breadcrumb-item active" aria-current="page">types of cow breeding</li>
                 </ol>
             </nav>
         </div>
@@ -116,9 +116,9 @@
     <!-- Page Header End -->
 
 
-    <!-- CARE AND MILKING Start -->
+    <!-- types of cow breeding Start -->
     
-    <!-- CARE AND MILKING End -->
+    <!-- types of cow breeding End -->
 
 
     <!-- Footer Start -->
