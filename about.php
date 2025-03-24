@@ -65,7 +65,7 @@
 
     <!-- Navbar Start -->
     <nav class="navbar navbar-expand-lg bg-white navbar-light sticky-top px-4 px-lg-5">
-        <a href="index.html" class="navbar-brand d-flex align-items-center">
+        <a href="index.php" class="navbar-brand d-flex align-items-center">
             <img src="img/GO-RAKSHAK.png" alt="Bootstrap" width="290" height="50">
         </a>
         <button type="button" class="navbar-toggler me-0" data-bs-toggle="collapse" data-bs-target="#navbarCollapse">
@@ -73,16 +73,16 @@
         </button>
         <div class="collapse navbar-collapse" id="navbarCollapse">
             <div class="navbar-nav ms-auto p-4 p-lg-0">
-                <a href="index.html" class="nav-item nav-link">Home</a>
-                <a href="about.html" class="nav-item nav-link active">About</a>
-                <a href="service.html" class="nav-item nav-link">Services</a>
-                <a href="product.html" class="nav-item nav-link">Products</a>
+                <a href="index.php" class="nav-item nav-link">Home</a>
+                <a href="about.php" class="nav-item nav-link active">About</a>
+                <a href="service.php" class="nav-item nav-link">Services</a>
+                <a href="product.php" class="nav-item nav-link">Products</a>
                 <div class="nav-item dropdown">
                     <a href="#" class="nav-link dropdown-toggle" data-bs-toggle="dropdown">Pages</a>
                     <div class="dropdown-menu bg-light m-0">
-                        <a href="gallery.html" class="dropdown-item">Gallery</a>
-                        <a href="team.html" class="dropdown-item">Our Team</a>
-                        <a href="testimonial.html" class="dropdown-item">Testimonial</a>
+                        <a href="gallery.php" class="dropdown-item">Gallery</a>
+                        <a href="team.php" class="dropdown-item">Our Team</a>
+                        <a href="testimonial.php" class="dropdown-item">Testimonial</a>
                     </div>
                 </div>
                 <a href="contact.php" class="nav-item nav-link">Contact</a>
@@ -172,7 +172,7 @@
                             <span>A2 Milk and Milk Products , Cow-Based Products Beyond Dairy</span>
                         </div>
                     </div>
-                    <a class="btn btn-secondary rounded-pill py-3 px-5" href="service.html">Explore More</a>
+                    <a class="btn btn-secondary rounded-pill py-3 px-5" href="service.php">Explore More</a>
                 </div>
             </div>
         </div>

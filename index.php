@@ -68,7 +68,7 @@
 
     <!-- Navbar Start -->
     <nav class="navbar navbar-expand-lg bg-white navbar-light sticky-top px-4 px-lg-5">
-        <a href="index.html" class="navbar-brand d-flex align-items-center">
+        <a href="index.php" class="navbar-brand d-flex align-items-center">
             <img src="img/GO-RAKSHAK.png" alt="Bootstrap" width="290" height="50">
         </a>
         <button type="button" class="navbar-toggler me-0" data-bs-toggle="collapse" data-bs-target="#navbarCollapse">
@@ -76,16 +76,16 @@
         </button>
         <div class="collapse navbar-collapse" id="navbarCollapse">
             <div class="navbar-nav ms-auto p-4 p-lg-0">
-                <a href="index.html" class="nav-item nav-link active">Home</a>
-                <a href="about.html" class="nav-item nav-link">About</a>
-                <a href="service.html" class="nav-item nav-link">Services</a>
-                <a href="product.html" class="nav-item nav-link">Products</a>
+                <a href="index.php" class="nav-item nav-link active">Home</a>
+                <a href="about.php" class="nav-item nav-link">About</a>
+                <a href="service.php" class="nav-item nav-link">Services</a>
+                <a href="product.php" class="nav-item nav-link">Products</a>
                 <div class="nav-item dropdown">
                     <a href="#" class="nav-link dropdown-toggle" data-bs-toggle="dropdown">Pages</a>
                     <div class="dropdown-menu bg-light m-0">
-                        <a href="gallery.html" class="dropdown-item">Gallery</a>
-                        <a href="team.html" class="dropdown-item">Our Team</a>
-                        <a href="testimonial.html" class="dropdown-item">Testimonial</a>
+                        <a href="gallery.php" class="dropdown-item">Gallery</a>
+                        <a href="team.php" class="dropdown-item">Our Team</a>
+                        <a href="testimonial.php" class="dropdown-item">Testimonial</a>
                     </div>
                 </div>
                 <a href="contact.php" class="nav-item nav-link">Contact</a>
@@ -129,7 +129,7 @@
                                 <div class="col-lg-8 text-start">
                                     <p class="fs-4 text-white">Welcome to cow conservation</p>
                                     <h1 class="display-1 text-white mb-5 animated slideInRight">Organic Farming Begins with Indigenous Cows!</h1>
-                                    <a href="service.html" class="btn btn-secondary rounded-pill py-3 px-5 animated slideInRight">Explore More</a>
+                                    <a href="service.php" class="btn btn-secondary rounded-pill py-3 px-5 animated slideInRight">Explore More</a>
                                 </div>
                             </div>
                         </div>
@@ -143,7 +143,7 @@
                                 <div class="col-lg-8 text-end">
                                     <p class="fs-4 text-white">Welcome to cow conservation</p>
                                     <h1 class="display-1 text-white mb-5 animated slideInRight">Strengthen Agriculture, Strengthen Cow Breeding!</h1>
-                                    <a href="service.html" class="btn btn-secondary rounded-pill py-3 px-5 animated slideInLeft">Explore More</a>
+                                    <a href="service.php" class="btn btn-secondary rounded-pill py-3 px-5 animated slideInLeft">Explore More</a>
                                 </div>
                             </div>
                         </div>
@@ -207,7 +207,7 @@
                             <h6 class="mb-3 text-white">Clita erat ipsum et lorem et sit, sed stet lorem sit clita</h6>
                         </div>
                     </div>
-                    <a class="btn btn-secondary rounded-pill py-3 px-5" href="service.html">Explore More</a>
+                    <a class="btn btn-secondary rounded-pill py-3 px-5" href="service.php">Explore More</a>
                 </div>
             </div>
         </div>
@@ -226,7 +226,7 @@
                     <p class="mb-4 text-white"><i class="fa fa-check text-primary me-3 text-white"></i>We provide practical guidance that farmers, breeders, and conservationists can implement in their daily operations.</p>
                     <p class="mb-4 text-white"><i class="fa fa-check text-primary me-3 text-white"></i>We offer detailed information on a wide range of cow breeds, including their characteristics, management, and conservation status.</p>
                     <p class="mb-4 text-white"><i class="fa fa-check text-primary me-3 text-white"></i>Users can stay informed about the latest developments in cow breeding and conservation.</p>
-                    <a class="btn btn-secondary rounded-pill py-3 px-5 mt-3" href="about.html">Explore More</a>
+                    <a class="btn btn-secondary rounded-pill py-3 px-5 mt-3" href="about.php">Explore More</a>
                 </div>
                 <div class="col-lg-6">
                     <div class="rounded overflow-hidden">
