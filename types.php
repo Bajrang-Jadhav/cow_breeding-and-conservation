@@ -88,12 +88,26 @@
                 <a href="contact.php" class="nav-item nav-link">Contact</a>
             </div>
             <div class="border-start ps-4 d-none d-lg-block">
-                <a href="login.php" >
+            <?php
+                if (isset($_SESSION["username"])) {
+
+                ?>                  
+                     <a href="" class="nav-item nav-link " ><?php echo ($_SESSION["username"]); ?></a>
+                 
+                    
+                <?php 
+					} else{
+						?>
+							
+                            <a href="login.php" >
                     <button type="button" class="btn btn-outline-dark">Sign-in </button> 
                 </a>
                 <a href="signup.php" >
                     <button type="button"  class="btn btn-outline-dark">Sign-up </button>  
                 </a>
+					<?php
+					 }
+                ?>
             </div>
         </div>
     </nav>
