@@ -34,6 +34,71 @@ session_start();
 
     <!-- Template Stylesheet -->
     <link href="css/style.css" rel="stylesheet">
+
+    <style>
+        body {
+            font-family: 'Arial', sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f4f4f4;
+        }
+
+        header {
+            background-color: #333;
+            color: white;
+            text-align: center;
+            padding: 1em 0;
+        }
+
+        .container {
+            width: 80%;
+            margin: 20px auto;
+        }
+
+        .breed-card {
+            background-color: white;
+            border-radius: 8px;
+            box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+            margin-bottom: 20px;
+            padding: 20px;
+            display: flex;
+            align-items: center;
+        }
+
+        .breed-card img {
+            max-width: 250px;
+            height: auto;
+            border-radius: 4px;
+            margin-right: 20px;
+        }
+
+        .breed-details {
+            flex-grow: 1;
+        }
+
+        .breed-details h2 {
+            margin-top: 0;
+            color: #333;
+        }
+
+        .breed-details p {
+            line-height: 1.6;
+            color: #666;
+        }
+        .breed-details ul {
+            list-style-type: disc;
+            margin-left: 20px;
+        }
+        .video-container {
+            margin-top: 20px;
+            text-align: center;
+        }
+        .video-container video{
+            max-width: 80%;
+            height: auto;
+        }
+
+    </style>
 </head>
 
 <body>
@@ -135,7 +200,81 @@ session_start();
 
 
     <!-- ANIMALSELECTION Start -->
-    
+    <div class="container-xxl py-5">
+        <div class="container">
+            <div class="text-center mx-auto pb-4 wow fadeInUp" data-wow-delay="0.1s" style="max-width: 500px;">
+                <p class="section-title bg-white text-center text-primary px-3">Indian Cows</p>
+                <h1 class="mb-5 text-BLACK">India has a rich and diverse heritage of indigenous cattle breeds</h1>
+            </div>
+    <div class="container">
+
+        <div class="breed-card">
+            <img src="img/co1 (1).jpg" alt="Holstein Friesian Cow">
+            <div class="breed-details">
+                <h2>Holstein Friesian</h2>
+                <p><strong>Origin:</strong> Netherlands</p>
+                <p><strong>Characteristics:</strong> Known for high milk production, distinctive black and white markings.</p>
+                <p><strong>Strengths:</strong> Excellent dairy production, adaptable to various climates.</p>
+                <p><strong>Weaknesses:</strong> Lower beef quality compared to beef-specific breeds.</p>
+                <p><strong>Suitability:</strong> Primarily dairy.</p>
+                <div class="video-container">
+                    
+                </div>
+            </div>
+        </div>
+
+
+
+
+        <div class="breed-card">
+            <img src="img/co2.jpg" alt="Angus Cow">
+            <div class="breed-details">
+                <h2>Angus</h2>
+                <p><strong>Origin:</strong> Scotland</p>
+                <p><strong>Characteristics:</strong> Black or red coat, known for high-quality beef.</p>
+                <p><strong>Strengths:</strong> Excellent marbling, good temperament, efficient feed conversion.</p>
+                <p><strong>Weaknesses:</strong> Lower milk production compared to dairy breeds.</p>
+                <p><strong>Suitability:</strong> Primarily beef.</p>
+                <div class="video-container">
+                   
+                </div>
+            </div>
+        </div>
+
+
+        <div class="breed-card">
+            <img src="img/co3.jpg" alt="Angus Cow">
+            <div class="breed-details">
+                <h2>Sahiwal cows</h2>
+                <p><strong>Origin:</strong> Sahiwal cows originated in the Punjab region of Pakistan and India </p>
+                <p><strong>Adaptability:</strong> Sahiwal cows are well-adapted to hot climates </p>
+                <p><strong> Fertility:</strong> Sahiwal cows are good mothers and have a high degree of fertility .</p>
+                <p><strong>Health:</strong> Sahiwal cows are tick-resistant, heat-tolerant, and resistant to internal and external parasites </p>
+                <p><strong>Milk:</strong> Sahiwal cows produce high-quality milk with a high butterfat content </p>
+                <div class="video-container">
+                   
+                </div>
+            </div>
+        </div>  
+
+
+        <div class="breed-card">
+            <img src="img/co4.jpg" alt="Gir Cow">
+            <div class="breed-details">
+                <h2>Gir</h2>
+                <p><strong>Origin:</strong> India</p>
+                <p><strong>Characteristics:</strong> Distinctive domed forehead, known for high milk quality and heat tolerance.</p>
+                <p><strong>Strengths:</strong> High milk fat content, good disease resistance, adaptable to hot climates.</p>
+                <p><strong>Weaknesses:</strong> Moderate milk yield compared to some exotic dairy breeds.</p>
+                <p><strong>Suitability:</strong> Dual-purpose (dairy and draught).</p>
+                <div class="video-container">
+                   
+                </div>
+            </div>
+        </div>
+        </div>
+    </div>
+</div>
     <!-- ANIMALSELECTION End -->
 
 
