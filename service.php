@@ -137,7 +137,7 @@ session_start();
     <div class="container-xxl py-5">
         <div class="container">
             <div class="text-center mx-auto pb-4 wow fadeInUp" data-wow-delay="0.1s" style="max-width: 500px;">
-                <body style="background: url('img/background.jpg') no-repeat center center fixed; background-size: cover;"></body>
+                <!-- <body style="background: url('img/background.jpg') no-repeat center center fixed; background-size: cover;"></body> -->
                 <p class="section-title bg-white text-center text-primary px-3">Our Services</p>
                 <h1 class="mb-5 text-white">Healthcare and Monitoring </h1>
             </div>
@@ -265,7 +265,7 @@ session_start();
      <!--Features End -->
      <body>
         <div class="container mt-5">
-            <h2 class="text-center mb-4 text-white">🐾 Animal Doctor Appointment 🐾</h2>
+            <h2 class="text-center mb-4 text-black">🐾 Animal Doctor Appointment 🐾</h2>
             <form>
                 <!-- Owner Details -->
                 <div class="mb-3 text-white">
@@ -391,7 +391,7 @@ session_start();
 
 
     <!-- Back to Top -->
-    <a href="#" class="btn btn-lg btn-primary btn-lg-square rounded-circle back-to-top"><i class="bi bi-arrow-up"></i></a>
+    <!-- <a href="#" class="btn btn-lg btn-primary btn-lg-square rounded-circle back-to-top"><i class="bi bi-arrow-up"></i></a> -->
 
 
     <!-- JavaScript Libraries -->

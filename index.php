@@ -172,7 +172,7 @@ session_start();
     <!-- About Start -->
     <div class="container-xxl py-5">
         <div class="container">
-            <body style="background: url('img/background.jpg') no-repeat center center fixed; background-size: cover;"></body>
+            <!-- <body style="background: url('img/background.jpg') no-repeat center center fixed; background-size: cover;"></body> -->
             <div class="row g-5 align-items-end">
                 <div class="col-lg-6">
                     <div class="row g-2">
@@ -194,21 +194,21 @@ session_start();
                     </div>
                 </div>
                 <div class="col-lg-6 wow fadeIn" data-wow-delay="0.5s">
-                    <p class="section-title bg-white text-start text-primary pe-3">About Us</p>
-                    <h1 class="mb-4 text-white">Know About Our Hack-a-Farm</h1>
-                    <p class="mb-4 text-white"> Conservation efforts must involve local communities and farmers, as they are the primary custodians of these breeds.
+                    <p class="section-title bg-black text-start text-primary pe-3">About Us</p>
+                    <h1 class="mb-4 text-black">Know About Our Hack-a-Farm</h1>
+                    <p class="mb-4 text-black"> Conservation efforts must involve local communities and farmers, as they are the primary custodians of these breeds.
                         Balancing productivity with conservation is essential. Genetic improvement programs should aim to enhance desirable traits without compromising breed integrity.
                         The cultural and religious importance of cows, especially in India, adds a unique dimension to conservation efforts.</p>
                     <div class="row g-5 pt-2 mb-5">
                         <div class="col-sm-6">
                             <img class="img-fluid mb-4" src="img/service.png" alt="">
-                            <h5 class="mb-3 text-white">Dedicated Services</h5>
-                            <h6 class="mb-3 text-white">Cow Care and Goshalas , Veterinary Services , Farm to consumer services</h6>
+                            <h5 class="mb-3 text-black">Dedicated Services</h5>
+                            <h6 class="mb-3 text-black">Cow Care and Goshalas , Veterinary Services , Farm to consumer services</h6>
                         </div>
                         <div class="col-sm-6">
                             <img class="img-fluid mb-4" src="img/product.png" alt="">
-                            <h5 class="mb-3 text-white">Organic Products</h5>
-                            <h6 class="mb-3 text-white">Clita erat ipsum et lorem et sit, sed stet lorem sit clita</h6>
+                            <h5 class="mb-3 text-black">Organic Products</h5>
+                            <h6 class="mb-3 text-black">Clita erat ipsum et lorem et sit, sed stet lorem sit clita</h6>
                         </div>
                     </div>
                     <a class="btn btn-secondary rounded-pill py-3 px-5" href="service.php">Explore More</a>
@@ -225,11 +225,11 @@ session_start();
             <div class="row g-5 align-items-center">
                 <div class="col-lg-6 wow fadeInUp" data-wow-delay="0.1s">
                     <p class="section-title bg-white text-start text-primary pe-3">Why Us!</p>
-                    <h1 class="mb-4 text-white">Few Reasons Why People Choosing Us!</h1>
-                    <p class="mb-4 text-white"> Cow breeding focuses on improving genetic traits for higher milk yield, disease resistance, and adaptability. It includes selective breeding, artificial insemination, and embryo transfer techniques.</p>
-                    <p class="mb-4 text-white"><i class="fa fa-check text-primary me-3 text-white"></i>We provide practical guidance that farmers, breeders, and conservationists can implement in their daily operations.</p>
-                    <p class="mb-4 text-white"><i class="fa fa-check text-primary me-3 text-white"></i>We offer detailed information on a wide range of cow breeds, including their characteristics, management, and conservation status.</p>
-                    <p class="mb-4 text-white"><i class="fa fa-check text-primary me-3 text-white"></i>Users can stay informed about the latest developments in cow breeding and conservation.</p>
+                    <h1 class="mb-4 text-black">Few Reasons Why People Choosing Us!</h1>
+                    <p class="mb-4 text-black"> Cow breeding focuses on improving genetic traits for higher milk yield, disease resistance, and adaptability. It includes selective breeding, artificial insemination, and embryo transfer techniques.</p>
+                    <p class="mb-4 text-black"><i class="fa fa-check text-primary me-3 text-black"></i>We provide practical guidance that farmers, breeders, and conservationists can implement in their daily operations.</p>
+                    <p class="mb-4 text-black"><i class="fa fa-check text-primary me-3 text-black"></i>We offer detailed information on a wide range of cow breeds, including their characteristics, management, and conservation status.</p>
+                    <p class="mb-4 text-black"><i class="fa fa-check text-primary me-3 text-black"></i>Users can stay informed about the latest developments in cow breeding and conservation.</p>
                     <a class="btn btn-secondary rounded-pill py-3 px-5 mt-3" href="about.php">Explore More</a>
                 </div>
                 <div class="col-lg-6">
