@@ -382,7 +382,7 @@ session_start();
             </div>
         </div>
     </div>
-    <!-- Copyright End -->
+    <-- Copyright End -->
 
     <!-- chatbot -->
     <script>
