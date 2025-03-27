@@ -1,22 +1,27 @@
 <?php
 session_start();
  include('config.php');
+ if(isset($_POST['book'])){
 
-if (isset($_POST['login'])) {
-    $username = mysqli_real_escape_string($conn, $_POST['username']);
-    $password = $_POST['password'];
+    $sql = 'INSERT INTO doctor(name,phone,email,petname,breed,datee,timee,problem) VALUES(:name,:phone,:email,:petname,:breed,:datee,:timee,:problem)';
+    $statement = $dbh->prepare($sql);
+    $statement->execute([
+        ':name' => $name,
+        ':phone' => $phone,
+        ':email' => $_POST['txtstart_date'],
+        ':petname' => $_POST['petname'],
+        ':breed' => $_POST['breed'],
+        ':datee' => $_POST['datee'],
+        ':timee' => $_POST['timee'],        
+        ':problem' => $_POST['problem']
+    ]);
 
-    $sql = "SELECT username,userpassword FROM user WHERE username = '{$username}' AND userpassword = '{$password}' ";
-    $result = mysqli_query($conn, $sql) or die("query failed 1st ");
-
-    if (mysqli_num_rows($result) > 0) {
-        while ($row = mysqli_fetch_assoc($result)) {
-            $_SESSION["username"] = $row['username'];
-             echo "<script>window.open('index.php', '_self');</script>";
-        }
-    } else {
-        echo "<div class='alert alert-danger'> username and password are not match </div> ";
-    }
+    if (mysqli_query($conn,$statement)) {
+        echo '<script type="text/javascript">';
+                 echo 'alert("APPOINTMENT BOOKED SUCCESSFULLY");';
+                 echo '</script>';
+                 echo "<script>window.location.href = 'service.php';</script>";                    
+               }
 }
 
  ?>
@@ -288,28 +293,28 @@ if (isset($_POST['login'])) {
                 <!-- Owner Details -->
                 <div class="mb-3 text-blsck">
                     <label for="ownerName" class="form-label">Owner's Name</label>
-                    <input type="text" class="form-control" id="ownerName" placeholder="Enter your name" required>
+                    <input type="text" class="form-control" name="name" id="ownerName" placeholder="Enter your name" required>
                 </div>
     
                 <div class="mb-3 text-blsck">
                     <label for="ownerPhone" class="form-label">Phone Number</label>
-                    <input type="tel" class="form-control" id="ownerPhone" placeholder="Enter your phone number" required>
+                    <input type="tel" class="form-control" name="phone" id="ownerPhone" placeholder="Enter your phone number" required>
                 </div>
     
                 <div class="mb-3 text-blsck">
                     <label for="ownerEmail" class="form-label">Email Address</label>
-                    <input type="email" class="form-control" id="ownerEmail" placeholder="Enter your email">
+                    <input type="email" class="form-control" name="email" id="ownerEmail" placeholder="Enter your email">
                 </div>
     
                 <!-- Pet Details -->
                 <div class="mb-3 text-blsck">
                     <label for="COW NAME" class="form-label">COW Name</label>
-                    <input type="text" class="form-control" id="petName" placeholder="Enter COW name" required>
+                    <input type="text" class="form-control" name="petname" id="petName" placeholder="Enter COW name" required>
                 </div>
     
                 <div class="mb-3 text-blsck">
                     <label for="COW BREED" class="form-label">COW BREED</label>
-                    <select class="form-select" id="petType" required>
+                    <select class="form-select" name="breed" id="petType" required>
                         <option value="" selected disabled>Select BREED</option>
                         <option value="Holstein Friesian">Holstein Friesian</option>
                         <option value="Angus">Angus</option>
@@ -321,22 +326,22 @@ if (isset($_POST['login'])) {
     
                 <div class="mb-3 text-blsck">
                     <label for="appointmentDate" class="form-label">Preferred Appointment Date</label>
-                    <input type="date" class="form-control" id="appointmentDate" required>
+                    <input type="date" class="form-control" name="datee" id="appointmentDate" required>
                 </div>
     
                 <div class="mb-3 text-blsck">
                     <label for="appointmentTime" class="form-label">Preferred Time</label>
-                    <input type="time" class="form-control" id="appointmentTime" required>
+                    <input type="time" class="form-control" name="timee" id="appointmentTime" required>
                 </div>
     
                 <div class="mb-3 text-blsck">
                     <label for="reason" class="form-label">Reason for Visit</label>
-                    <textarea class="form-control" id="reason" rows="3" placeholder="Describe the problem or service required" required></textarea>
+                    <textarea class="form-control" name="problem" id="reason" rows="3" placeholder="Describe the problem or service required" required></textarea>
                 </div>
     
                 <!-- Submit Button -->
                 <div class="text-center">
-                    <button type="submit" class="btn btn-primary">Book Appointment</button>
+                    <button type="submit" name="book" class="btn btn-primary">Book Appointment</button>
                 </div>
             </form>
         </div>

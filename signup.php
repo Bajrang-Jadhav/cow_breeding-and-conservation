@@ -20,7 +20,8 @@
            echo '<script type="text/javascript">';
                     echo 'alert("SIGNUP SUCCESSFUL NOW LOG IN WITH YOUR DETAILS");';
                     echo '</script>';
-                    echo "<script>window.location.href = 'index.php';</script>";                    }
+                    echo "<script>window.location.href = 'index.php';</script>";                    
+                  }
         }
     }
 ?>

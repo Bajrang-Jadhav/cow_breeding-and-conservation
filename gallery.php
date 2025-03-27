@@ -142,9 +142,9 @@ session_start();
     <div class="container-xxl py-5">
         <div class="container">
             <div class="text-center mx-auto pb-4 wow fadeInUp" data-wow-delay="0.1s" style="max-width: 500px;">
-                <body style="background: url('img/background.jpg') no-repeat center center fixed; background-size: cover;"></body>
+                <!-- <body style="background: url('img/background.jpg') no-repeat center center fixed; background-size: cover;"></body> -->
                 <p class="section-title bg-white text-center text-primary px-3">Gallery</p>
-                <h1 class="mb-5 text-white">Explore Our Hack-a-Farm Gallery</h1>
+                <h1 class="mb-5 text-black">Explore Our Hack-a-Farm Gallery</h1>
             </div>
             <div class="row g-0">
                 <div class="col-lg-3 col-md-6 wow fadeInUp" data-wow-delay="0.1s">
