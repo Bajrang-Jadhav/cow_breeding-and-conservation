@@ -207,10 +207,12 @@ session_start();
                         </div>
                     </div>
 
-                    <iframe class="w-100 rounded"
-                    src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3001156.4288297426!2d-78.01371936852176!3d42.72876761954724!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4ccc4bf0f123a5a9%3A0xddcfc6c1de189567!2sNew%20York%2C%20USA!5e0!3m2!1sen!2sbd!4v1603794290143!5m2!1sen!2sbd"
+                    <!-- <iframe class="w-100 rounded"
+                    src="https://earth.google.com/web/search/Kolhapur,+Maharashtra/@16.70846853,74.23886783,416.70864437a,17847.46331436d,35y,0h,0t,0r/data=CoQBGlYSUAolMHgzYmMxMDAwY2RlYzA3YTI5OjB4ZWNlOGVhNjQyOTUyZTQyZhlomDUMerQwQCF6ysVzkY9SQCoVS29saGFwdXIsIE1haGFyYXNodHJhGAIgASImCiQJ7e516llZM0ARUPYGalnxMsAZBbh4ACLMSkAhrgaM5vRMR8BCAggBMikKJwolCiExa0t2V1QxM294QU9lbmdtZENLTkZSNmFNZEtXQm1jSU8gAToDCgEwQgIIAEoICOPG7qICEAE"
                     frameborder="0" style="min-height: 300px; border:0;" allowfullscreen="" aria-hidden="false"
-                    tabindex="0"></iframe>
+                    tabindex="0"></iframe> -->
+                    <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d58921.61716707749!2d74.142507975217!3d16.680816767510464!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3bc05552f4000001%3A0x81166eb04377a838!2z4KSh4KWAIOCkteCkvuCkryDgpKrgpL7gpJ_gpL_gpLIg4KSV4KWJ4KSy4KWH4KScIOCkkeCkq-CkvCDgpIfgpILgpJzgpYDgpKjgpL_gpK_gpLDgpL_gpILgpJcg4KS44KSy4KWL4KSW4KWH4KSo4KSX4KSw!5e0!3m2!1shi!2sin!4v1743072010426!5m2!1shi!2sin" 
+                        width="600" height="350" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
                 </div>
             </div>
         </div>
