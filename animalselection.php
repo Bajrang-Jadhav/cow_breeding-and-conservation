@@ -210,14 +210,37 @@
     <div class="container">
 
         <div class="breed-card">
-            <img src="img/co1 (1).jpg" alt="Holstein Friesian Cow">
+            <img src="img/rathi.jpg" alt="Holstein Friesian Cow">
             <div class="breed-details">
-                <h2>Holstein Friesian</h2>
-                <p><strong>Origin:</strong> Netherlands</p>
-                <p><strong>Characteristics:</strong> Known for high milk production, distinctive black and white markings.</p>
-                <p><strong>Strengths:</strong> Excellent dairy production, adaptable to various climates.</p>
-                <p><strong>Weaknesses:</strong> Lower beef quality compared to beef-specific breeds.</p>
-                <p><strong>Suitability:</strong> Primarily dairy.</p>
+                <h2>Rathi Cow</h2>
+                <p><strong>Origin:</strong>
+The Rathi breed originates from Rajasthan, India, particularly in Bikaner, Ganganagar, and Hanumangarh districts.
+It is believed to have evolved from the indigenous cattle of Rajasthan, traditionally used by nomadic Rajasthani tribes for both milk and draught purposes.</p>
+                <p><strong>Appearance:</strong> 
+Color: Rathi cows are typically brown with white patches, but some may be solid brown.
+
+Size: Medium-sized with a compact body.
+
+Head: Broad forehead with a slightly convex shape.
+
+Ears: Medium-sized and slightly drooping.
+
+Horns: Small to medium, curved upward and inward.
+
+Tail: Long with a black or brown tuft at the end..</p>
+               
+                <p><strong>Milk Production:</strong>Milk Production:
+Rathi cows are excellent milk producers, yielding 6 to 10 liters per day, with some high-yielding cows producing up to 15 liters.
+
+The milk is rich in A2 protein, making it highly nutritious.
+
+The average lactation yield is 1,500 to 3,000 liters per lactation.</p>
+                <p><strong>Uses & Importance:</strong> 
+Popular in Rajasthan, Punjab, Haryana, and Madhya Pradesh for dairy farming.
+
+Used in crossbreeding programs to improve milk production in other breeds.
+
+Plays a vital role in rural livelihoods and organic farming..</p>
                 <div class="video-container">
                     
                 </div>
@@ -228,14 +251,42 @@
 
 
         <div class="breed-card">
-            <img src="img/co2.jpg" alt="Angus Cow">
+            <img src="img/hariana_cow.jpg" alt="Angus Cow">
             <div class="breed-details">
-                <h2>Angus</h2>
-                <p><strong>Origin:</strong> Scotland</p>
-                <p><strong>Characteristics:</strong> Black or red coat, known for high-quality beef.</p>
-                <p><strong>Strengths:</strong> Excellent marbling, good temperament, efficient feed conversion.</p>
-                <p><strong>Weaknesses:</strong> Lower milk production compared to dairy breeds.</p>
-                <p><strong>Suitability:</strong> Primarily beef.</p>
+                <h2>Hariana </h2>
+                <p><strong>Origin:</strong> 
+The Hariana breed originates from Haryana, India, mainly found in Rohtak, Hisar, Jind, and Gurgaon districts.
+It is one of the best dual-purpose Indian cattle breeds, used for both milk production and draught work.</p>
+                <p><strong>apearance:</strong> AAppearance:
+Color: Mostly white or light gray, with males having a darker shade around the neck and shoulders.
+
+Size: Medium to large-sized, with a well-built body.
+
+Head: Long and narrow with a slightly convex forehead.
+
+Ears: Medium-sized and slightly pointed.
+
+Horns: Small to medium, curved upwards and inward.
+
+Hump: Well-developed, especially in males.
+
+Dewlap: Prominent loose skin on the neck.
+
+Tail: Long with a black or brown tuft at the end.</p>
+                <p><strong>Milk Production:</strong> 
+Hariana cows are moderate milk producers, yielding 5 to 10 liters per day.
+
+The average lactation yield is around 1,500 to 2,500 liters per lactation.
+
+Milk contains A2 protein, making it highly nutritious.
+
+</p>
+                <p><strong>Uses & Importance:</strong>
+Widely used in Punjab, Uttar Pradesh, Rajasthan, and Madhya Pradesh.
+
+Ideal for mixed farming systems due to its milk and draught qualities.
+
+Used in crossbreeding programs to improve milk yield in other breeds.</p>
                 <div class="video-container">
                    
                 </div>
@@ -248,10 +299,30 @@
             <div class="breed-details">
                 <h2>Sahiwal cows</h2>
                 <p><strong>Origin:</strong> Sahiwal cows originated in the Punjab region of Pakistan and India </p>
-                <p><strong>Adaptability:</strong> Sahiwal cows are well-adapted to hot climates </p>
+                <p><strong>Appearance:
+                </strong> 
+Medium to large-sized cattle with a reddish-brown or light brown coat.
+
+Some have white patches on the body, but purebred Sahiwal cows are mostly uniform in color.
+
+Loose skin and a prominent hump, which helps them tolerate heat.
+
+Average weight:
+
+Bulls: 600-800 kg
+
+Cows: 400-600 kg
+
+ </p>
                 <p><strong> Fertility:</strong> Sahiwal cows are good mothers and have a high degree of fertility .</p>
                 <p><strong>Health:</strong> Sahiwal cows are tick-resistant, heat-tolerant, and resistant to internal and external parasites </p>
-                <p><strong>Milk:</strong> Sahiwal cows produce high-quality milk with a high butterfat content </p>
+                <p><strong>Milk Production:</strong> 
+
+Highly productive dairy breed, producing 10-15 liters/day in good conditions, but some elite cows can give 20-25 liters/day.
+
+Lactation yield: Around 2500-3000 liters per lactation.
+
+Milk has high butterfat content (4.5-5%), making it suitable for dairy products like ghee and butter. </p>
                 <div class="video-container">
                    
                 </div>
@@ -259,15 +330,84 @@
         </div>  
 
 
+
         <div class="breed-card">
-            <img src="img/co4.jpg" alt="Gir Cow">
+            <img src="img/red_shindi.jpg" alt="Angus Cow">
+            <div class="breed-details">
+                <h2>Red Sindhi</h2>
+                <p><strong>Origin:</strong>  Commonly found in India Karnataka, Tamil Nadu, Kerala, Punjab, Haryana, Maharashtra, Gujarat </p>
+                <p><strong>Appearance:
+                </strong>Red Sindhi cows are high-yielding dairy cattle and produce 1,500–2,500 liters of milk per lactation.
+                 They are well adapted to hot and humid climates, making them ideal for tropical regions.
+
+ </p>
+                <p><strong>Why Choose Red Sindhi Cattle? </strong> 
+ High milk yield & rich fat content
+ Heat & disease-resistant (suitable for tropical climates)
+ Low maintenance & easy adaptability
+Good fertility & breeding efficiency</p>
+                <p><strong>Heal Adaptability & Disease Resistanceth:</strong>
+ Highly adaptable to hot and humid climates
+Resistant to common cattle diseases, making them easy to maintain
+Performs well in both intensive and open grazing systems
+
+</p>
+                <p><strong>Milk Production:</strong> 
+ Milk Yield: 1500-2500 liters per lactation
+Milk Fat Content: 4-5% fat, making it rich and nutritious
+Lactation Period: 300-330 days. </p>
+                <div class="video-container">
+                   
+                </div>
+            </div>
+        </div>  
+
+
+
+
+
+
+
+
+
+        <div class="breed-card">
+            <img src="img/gir.jpg" alt="Gir Cow">
             <div class="breed-details">
                 <h2>Gir</h2>
                 <p><strong>Origin:</strong> India</p>
-                <p><strong>Characteristics:</strong> Distinctive domed forehead, known for high milk quality and heat tolerance.</p>
+                <p><strong>Appearance:</strong> 
+Medium to large-sized cattle with a distinctive convex forehead (dome-shaped head).
+
+Long, pendulous ears that are curled at the tip.
+
+Coat color varies from red, yellowish-red, to spotted white and red.
+
+Hump is well-developed, helping in heat resistance.
+
+Average weight:
+
+Bulls: 700-1000 kg
+
+Cows: 400-600 kg</p>
                 <p><strong>Strengths:</strong> High milk fat content, good disease resistance, adaptable to hot climates.</p>
-                <p><strong>Weaknesses:</strong> Moderate milk yield compared to some exotic dairy breeds.</p>
-                <p><strong>Suitability:</strong> Dual-purpose (dairy and draught).</p>
+                <p><strong>Milk Production:</strong> 
+
+One of the highest milk-producing indigenous breeds.
+
+Produces 10-15 liters per day under good management, but elite cows can yield 20-25 liters per day.
+
+Lactation yield: 2500-3500 liters per lactation.
+
+Milk has high butterfat content (4.5-5%), making it ideal for dairy products like ghee, butter, and paneer.
+
+Produces A2 milk, which is considered healthier and more digestible than A1 milk</p>
+                <p><strong>Reproduction & Lifespan:</strong>
+
+High fertility rate with easy calving.
+
+First calving age: 36-42 months.
+
+Long lifespan, with some cows staying productive for 15-20 years.</p>
                 <div class="video-container">
                    
                 </div>
