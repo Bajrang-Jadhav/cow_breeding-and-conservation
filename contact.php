@@ -138,37 +138,36 @@ session_start();
     <div class="container-xxl py-5">
         <div class="container">
             <div class="text-center mx-auto wow fadeInUp" data-wow-delay="0.1s" style="max-width: 500px;">
+                <body style="background: url('img/farm1.jpg') no-repeat center center fixed; background-size: cover;">
                 <p class="section-title bg-white text-center text-primary px-3">Contact Us</p>
-                <h1 class="mb-5">If You Have Any Query, Please Contact Us</h1>
+                <h1 class="mb-5 text-BLACK">If You Have Any Query, Please Contact Us</h1>
             </div>
             <div class="row g-5">
-                <div class="col-lg-6 wow fadeInUp" data-wow-delay="0.1s">
-                    <h3 class="mb-4">Need a functional contact form?</h3>
-                    <p class="mb-4">The contact form is currently inactive. Get a functional and working contact form with Ajax & PHP in a few minutes. Just copy and paste the files, add a little code and you're done. <a href="https://htmlcodex.com/contact-form">Download Now</a>.</p>
+                <div class="col-lg-6 wow fadeInUp text-BLACK" data-wow-delay="0.1s">
                     <form>
                         <div class="row g-3">
                             <div class="col-md-6">
                                 <div class="form-floating">
                                     <input type="text" class="form-control" id="name" placeholder="Your Name">
-                                    <label for="name">Your Name</label>
+                                    <label for="name" class="text-dark">Your Name</label>
                                 </div>
                             </div>
                             <div class="col-md-6">
                                 <div class="form-floating">
                                     <input type="email" class="form-control" id="email" placeholder="Your Email">
-                                    <label for="email">Your Email</label>
+                                    <label for="email" class="text-dark">Your Email</label>
                                 </div>
                             </div>
                             <div class="col-12">
                                 <div class="form-floating">
                                     <input type="text" class="form-control" id="subject" placeholder="Subject">
-                                    <label for="subject">Subject</label>
+                                    <label for="subject" class="text-dark">Subject</label>
                                 </div>
                             </div>
                             <div class="col-12">
                                 <div class="form-floating">
                                     <textarea class="form-control" placeholder="Leave a message here" id="message" style="height: 250px"></textarea>
-                                    <label for="message">Message</label>
+                                    <label for="message" class="text-dark">Message</label>
                                 </div>
                             </div>
                             <div class="col-12">
@@ -177,44 +176,43 @@ session_start();
                         </div>
                     </form>
                 </div>
-                <div class="col-lg-6 wow fadeInUp" data-wow-delay="0.5s">
-                    <h3 class="mb-4">Contact Details</h3>
+                <div class="col-lg-6 wow fadeInUp text-BLACK" data-wow-delay="0.5s">
+                    <h3 class="mb-4 text-BLACK">Contact Details</h3>
                     <div class="d-flex border-bottom pb-3 mb-3">
                         <div class="flex-shrink-0 btn-square bg-secondary rounded-circle">
-                            <i class="fa fa-map-marker-alt text-body"></i>
+                            <i class="fa fa-map-marker-alt text-BLACK"></i>
                         </div>
                         <div class="ms-3">
-                            <h6>Our Office</h6>
-                            <span>123 Street, New York, USA</span>
+                            <h6 class="text-BLACK">Our Office</h6>
+                            <span class="text-BLACK">DYP SALOKHENAGAR KOLHAPUR</span>
                         </div>
                     </div>
                     <div class="d-flex border-bottom pb-3 mb-3">
                         <div class="flex-shrink-0 btn-square bg-secondary rounded-circle">
-                            <i class="fa fa-phone-alt text-body"></i>
+                            <i class="fa fa-phone-alt text-BLACK"></i>
                         </div>
                         <div class="ms-3">
-                            <h6>Call Us</h6>
-                            <span>+012 345 67890</span>
+                            <h6 class="text-BLACK">Call Us</h6>
+                            <span class="text-BLACK">1234567890</span>
                         </div>
                     </div>
                     <div class="d-flex border-bottom-0 pb-3 mb-3">
                         <div class="flex-shrink-0 btn-square bg-secondary rounded-circle">
-                            <i class="fa fa-envelope text-body"></i>
+                            <i class="fa fa-envelope text-BLACK"></i>
                         </div>
                         <div class="ms-3">
-                            <h6>Mail Us</h6>
-                            <span>info@example.com</span>
+                            <h6 class="text-BLACK">Mail Us</h6>
+                            <span class="text-BLACK">gorakshak@example.com</span>
                         </div>
                     </div>
-
                     <iframe class="w-100 rounded"
-                    src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3001156.4288297426!2d-78.01371936852176!3d42.72876761954724!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4ccc4bf0f123a5a9%3A0xddcfc6c1de189567!2sNew%20York%2C%20USA!5e0!3m2!1sen!2sbd!4v1603794290143!5m2!1sen!2sbd"
-                    frameborder="0" style="min-height: 300px; border:0;" allowfullscreen="" aria-hidden="false"
-                    tabindex="0"></iframe>
+                        src="https://www.google.com/maps/place/D.+Y.+Patil+College+Of+Engineering/@16.6676078,74.2034698,17z/data=!3m1!4b1!4m6!3m5!1s0x3bc05552f4000001:0x81166eb04377a838!8m2!3d16.6676078!4d74.2060447!16s%2Fg%2F11b7xtcynt?authuser=0&entry=ttu&g_ep=EgoyMDI1MDMxMC4wIKXMDSoASAFQAw%3D%3D"
+                        frameborder="0" style="min-height: 300px; border:0;" allowfullscreen="" aria-hidden="false"
+                        tabindex="0"></iframe>
                 </div>
             </div>
         </div>
-    </div>
+    </div>  
     <!-- Contact End -->
 
 
