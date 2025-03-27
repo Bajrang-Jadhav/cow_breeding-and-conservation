@@ -286,7 +286,7 @@ if (isset($_POST['login'])) {
             <h2 class="text-center mb-4 text-black">🐾 COW Doctor Appointment 🐾</h2>
             <form>
                 <!-- Owner Details -->
-                <div class="mb-3 text-blsck">
+                <div class="mb-3 text-black">
                     <label for="ownerName" class="form-label">Owner's Name</label>
                     <input type="text" class="form-control" id="ownerName" placeholder="Enter your name" required>
                 </div>

@@ -35,6 +35,77 @@ session_start();
 
     <!-- Template Stylesheet -->
     <link href="css/style.css" rel="stylesheet">
+
+
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: Arial, sans-serif;
+        }
+        
+        
+        .card-container {
+            display: flex;
+            gap: 20px;
+            margin-left:230px;
+        }
+        .card {
+            width: 250px;
+            height: 375px;
+            background: white;
+            border-radius: 10px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+            overflow: hidden;
+            transition: transform 0.3s ease-in-out;
+        }
+        .card:hover {
+            transform: translateY(-10px);
+        }
+        .card img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+        }
+
+
+        
+        .info {
+            background-color: #f4f4f4;
+            padding: 20px;
+        }
+        .contain {
+            max-width: 2000px;
+            margin: auto;
+            background: 0 4px 8px rgba(0, 0, 0, 0.2);
+            padding: 20px;
+            border-radius: 10px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+        }
+        h1 {
+            text-align: center;
+            color: #333;
+            margin-bottom: 20px;
+        }
+        p {
+            font-size: 18px;
+            line-height: 1.6;
+            color: #555;
+            margin-bottom: 15px;
+        }
+        img {
+            width: 100%;
+            border-radius: 5px;
+            margin-bottom: 20px;
+        }
+    </style>
+
+
+
+
+
+
 </head>
 
 <body>
@@ -136,8 +207,104 @@ session_start();
 
 
     <!-- BREEDING AND VETERANARY Start -->
+
+
+    <div class="card-container">
+        <div class="card">
+        <img src="img/breeding.jpg" alt="Card Image">
+        </div>
+        <div class="card">
+            <img src="img/breeding2.jpg" alt="Image 2">
+        </div>
+        <div class="card">
+            <img src="img/breeding3.jpg" alt="Image 3" >
+        </div>
+        <div class="card">
+            <img src="img/brreding4.jpg" alt="Image 4">
+        </div>
+    </div>
+<br>
+
+
+<br>
+
+    <div class="contain">
+        <center><h2>
+         Breeding in Livestock</h2></center>
+        <center><p>
+<h6>Breeding is the process of selecting and mating animals to improve milk production, disease resistance, and adaptability.</h6>
+<h6>The two main types of breeding are:</h6>
+<br>
+<h4> Natural Breeding</h4>
+
+      <h6>Involves direct mating between a cow and a bull.</h6>
+
+<h6>Maintains traditional traits but is difficult to control genetically.</h6>
+<br>
+
+<h4>Artificial Breeding Methods</h4>
+
+<h6>Artificial Insemination (AI) – Semen from superior bulls is collected and inserted into cows to improve milk yield and disease resistance.</h6>
+
+<h6>Embryo Transfer Technology (ETT) – High-quality embryos are transplanted into surrogate cows for faster genetic improvement.</h6>
+
+<h6>Crossbreeding – Combining native and foreign breeds (e.g., Gir × Holstein Friesian) to improve milk production and adaptability.</h6>
+
+<br>
+<h4>Importance of Breeding:</h4>
+
+<h6>✅ Increases milk yield and meat quality</h6>
+
+<h6>✅ Enhances disease resistance</h6>
+
+<h6>✅ Improves adaptability to local conditions</h6>
+
+        </p>
+    </center>
+    </div>
+
+<br>
+<br>
+<br>
+
+    <div class="contain">
+        <center><h2>
+        Veterinary Care in Livestock</h2></center>
+        <center><p>
+        <h6>Veterinary services ensure disease prevention, treatment, and overall animal welfare.</h6>
+<br>
+<h4> Preventive Veterinary Care</h4>
+<h6>Vaccination – Protects against foot-and-mouth disease (FMD), brucellosis, anthrax, etc.</h6>
+
+<h6>Deworming – Prevents internal parasites affecting digestion and growth.</h6>
+<h6>Regular health check-ups – Helps detect diseases early.</h6>
+
+<br>
+<h4>Treatment & Disease Control</h4>
+<h6>Diagnosis and treatment of common cattle diseases like mastitis, pneumonia, and tick-borne infections.</h6>
+
+<h6>Use of antibiotics, supplements, and natural remedies to maintain animal health.</h6>
+<br>
+<h4>Mobile Veterinary Services</h4>
+<h6>Many state governments and NGOs in India provide mobile veterinary clinics for rural farmers.</h6>
+
+<h6>The 1962 Animal Ambulance Service helps treat sick and injured animals efficiently.</h6>
+
+<br>
+<h4>Importance of Veterinary Care:</h4>
+
+<h6>✅ Ensures better milk/meat production</h6>
+
+<h6>✅ Prevents disease outbreaks</h6>
+
+<h6>✅ Reduces animal mortality rates</h6>
+                    </p></center>
+    </div>
     
     <!-- BREEDING AND VETERANARY End -->
+
+
+
 
 
     <!-- Footer Start -->
