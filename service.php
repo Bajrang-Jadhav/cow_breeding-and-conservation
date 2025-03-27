@@ -159,6 +159,9 @@ if (isset($_POST['login'])) {
                 <p class="section-title bg-white text-center text-primary px-3">Our Services</p>
                 <h1 class="mb-5 text-white">Healthcare and Monitoring </h1>
             </div>
+
+
+            
             <div class="row gy-5 gx-4">
                 <div class="col-lg-4 col-md-6 pt-5 wow fadeInUp" data-wow-delay="0.1s">
                     <div class="service-item d-flex h-100">
@@ -179,6 +182,9 @@ if (isset($_POST['login'])) {
                         </div>
                     </div>
                 </div>
+
+
+
                 <div class="col-lg-4 col-md-6 pt-5 wow fadeInUp" data-wow-delay="0.3s">
                     <div class="service-item d-flex h-100">
                         <div class="service-img">
@@ -200,6 +206,8 @@ if (isset($_POST['login'])) {
                         </div>
                     </div>
                 </div>
+
+
                 <div class="col-lg-4 col-md-6 pt-5 wow fadeInUp" data-wow-delay="0.5s">
                     <div class="service-item d-flex h-100">
                         <div class="service-img">
@@ -216,6 +224,8 @@ if (isset($_POST['login'])) {
                         </div>
                     </div>
                 </div>
+
+
                 <div class="col-lg-4 col-md-6 pt-5 wow fadeInUp" data-wow-delay="0.3s">
                     <div class="service-item d-flex h-100">
                         <div class="service-img">
@@ -237,6 +247,8 @@ if (isset($_POST['login'])) {
                         </div>
                     </div>
                 </div>
+
+
                 <div class="col-lg-4 col-md-6 pt-5 wow fadeInUp" data-wow-delay="0.3s">
                     <div class="service-item d-flex h-100">
                         <div class="service-img">
@@ -254,6 +266,8 @@ if (isset($_POST['login'])) {
                         </div>
                     </div>
                 </div>
+
+
                 <div class="col-lg-4 col-md-6 pt-5 wow fadeInUp" data-wow-delay="0.3s">
                     <div class="service-item d-flex h-100">
                         <div class="service-img">
@@ -269,7 +283,7 @@ if (isset($_POST['login'])) {
                                 Disease Control,
                                 Genetic Selection
                             </p>
-                            <a class="btn btn-square rounded-circle" href=""><i class="bi bi-chevron-double-right"></i></a>
+                            <a class="btn btn-square rounded-circle" href="factors.php"><i class="bi bi-chevron-double-right"></i></a>
                         </div>
                     </div>
                 </div>
