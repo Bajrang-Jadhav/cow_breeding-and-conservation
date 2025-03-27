@@ -95,8 +95,8 @@ if (isset($_POST['login'])) {
         <div class="collapse navbar-collapse" id="navbarCollapse">
             <div class="navbar-nav ms-auto p-4 p-lg-0">
                 <a href="index.php" class="nav-item nav-link">Home</a>
-                <a href="about.php" class="nav-item nav-link">About</a>
                 <a href="service.php" class="nav-item nav-link active">Services</a>
+                <a href="about.php" class="nav-item nav-link">About</a>
                 <a href="product.php" class="nav-item nav-link">Products</a>
                 <div class="nav-item dropdown">
                     <a href="#" class="nav-link dropdown-toggle" data-bs-toggle="dropdown">Pages</a>
@@ -286,28 +286,28 @@ if (isset($_POST['login'])) {
             <h2 class="text-center mb-4 text-black">🐾 COW Doctor Appointment 🐾</h2>
             <form>
                 <!-- Owner Details -->
-                <div class="mb-3 text-white">
+                <div class="mb-3 text-blsck">
                     <label for="ownerName" class="form-label">Owner's Name</label>
                     <input type="text" class="form-control" id="ownerName" placeholder="Enter your name" required>
                 </div>
     
-                <div class="mb-3 text-white">
+                <div class="mb-3 text-blsck">
                     <label for="ownerPhone" class="form-label">Phone Number</label>
                     <input type="tel" class="form-control" id="ownerPhone" placeholder="Enter your phone number" required>
                 </div>
     
-                <div class="mb-3 text-white">
+                <div class="mb-3 text-blsck">
                     <label for="ownerEmail" class="form-label">Email Address</label>
                     <input type="email" class="form-control" id="ownerEmail" placeholder="Enter your email">
                 </div>
     
                 <!-- Pet Details -->
-                <div class="mb-3 text-white">
+                <div class="mb-3 text-blsck">
                     <label for="COW NAME" class="form-label">COW Name</label>
                     <input type="text" class="form-control" id="petName" placeholder="Enter COW name" required>
                 </div>
     
-                <div class="mb-3 text-white">
+                <div class="mb-3 text-blsck">
                     <label for="COW BREED" class="form-label">COW BREED</label>
                     <select class="form-select" id="petType" required>
                         <option value="" selected disabled>Select BREED</option>
@@ -319,17 +319,17 @@ if (isset($_POST['login'])) {
                     </select>
                 </div>
     
-                <div class="mb-3 text-white">
+                <div class="mb-3 text-blsck">
                     <label for="appointmentDate" class="form-label">Preferred Appointment Date</label>
                     <input type="date" class="form-control" id="appointmentDate" required>
                 </div>
     
-                <div class="mb-3 text-white">
+                <div class="mb-3 text-blsck">
                     <label for="appointmentTime" class="form-label">Preferred Time</label>
                     <input type="time" class="form-control" id="appointmentTime" required>
                 </div>
     
-                <div class="mb-3 text-white">
+                <div class="mb-3 text-blsck">
                     <label for="reason" class="form-label">Reason for Visit</label>
                     <textarea class="form-control" id="reason" rows="3" placeholder="Describe the problem or service required" required></textarea>
                 </div>
