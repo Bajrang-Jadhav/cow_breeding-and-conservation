@@ -1,6 +1,24 @@
 <?php
 session_start();
  include('config.php');
+
+if (isset($_POST['login'])) {
+    $username = mysqli_real_escape_string($conn, $_POST['username']);
+    $password = $_POST['password'];
+
+    $sql = "SELECT username,userpassword FROM user WHERE username = '{$username}' AND userpassword = '{$password}' ";
+    $result = mysqli_query($conn, $sql) or die("query failed 1st ");
+
+    if (mysqli_num_rows($result) > 0) {
+        while ($row = mysqli_fetch_assoc($result)) {
+            $_SESSION["username"] = $row['username'];
+             echo "<script>window.open('index.php', '_self');</script>";
+        }
+    } else {
+        echo "<div class='alert alert-danger'> username and password are not match </div> ";
+    }
+}
+
  ?>
 <!DOCTYPE html>
 <html lang="en">
@@ -265,7 +283,7 @@ session_start();
      <!--Features End -->
      <body>
         <div class="container mt-5">
-            <h2 class="text-center mb-4 text-black">🐾 Animal Doctor Appointment 🐾</h2>
+            <h2 class="text-center mb-4 text-black">🐾 COW Doctor Appointment 🐾</h2>
             <form>
                 <!-- Owner Details -->
                 <div class="mb-3 text-white">
@@ -285,18 +303,18 @@ session_start();
     
                 <!-- Pet Details -->
                 <div class="mb-3 text-white">
-                    <label for="petName" class="form-label">Pet's Name</label>
-                    <input type="text" class="form-control" id="petName" placeholder="Enter pet's name" required>
+                    <label for="COW NAME" class="form-label">COW Name</label>
+                    <input type="text" class="form-control" id="petName" placeholder="Enter COW name" required>
                 </div>
     
                 <div class="mb-3 text-white">
-                    <label for="petType" class="form-label">Type of Animal</label>
+                    <label for="COW BREED" class="form-label">COW BREED</label>
                     <select class="form-select" id="petType" required>
-                        <option value="" selected disabled>Select animal type</option>
-                        <option value="Dog">Dog</option>
-                        <option value="Cat">Cat</option>
-                        <option value="Cow">Cow</option>
-                        <option value="Horse">Horse</option>
+                        <option value="" selected disabled>Select BREED</option>
+                        <option value="Holstein Friesian">Holstein Friesian</option>
+                        <option value="Angus">Angus</option>
+                        <option value="Sahiwal">Sahiwal</option>
+                        <option value="Gir">Gir</option>
                         <option value="Other">Other</option>
                     </select>
                 </div>
@@ -382,7 +400,7 @@ session_start();
             </div>
         </div>
     </div>
-    <!-- Copyright End -->
+    <-- Copyright End -->
 
     <!-- chatbot -->
     <script>
