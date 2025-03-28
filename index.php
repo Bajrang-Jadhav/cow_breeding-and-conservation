@@ -100,7 +100,7 @@ session_start();
                 if (isset($_SESSION["username"])) {
 
                 ?>                  
-                     <a href="" class="nav-item nav-link " ><?php echo ($_SESSION["username"]); ?></a>
+                     <a href="profile.php" class="nav-item nav-link " ><?php echo ($_SESSION["username"]); ?></a>
                  
                     
                 <?php 
