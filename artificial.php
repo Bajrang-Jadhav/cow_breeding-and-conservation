@@ -35,6 +35,41 @@ session_start();
 
     <!-- Template Stylesheet -->
     <link href="css/style.css" rel="stylesheet">
+
+    <style>
+
+    .info {
+            background-color: #f4f4f4;
+            padding: 20px;
+        }
+        .contain {
+            max-width: 2000px;
+            margin: auto;
+            background: 0 4px 8px rgba(0, 0, 0, 0.2);
+            padding: 20px;
+            border-radius: 10px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+        }
+        h1 {
+            text-align: center;
+            color: #333;
+            margin-bottom: 20px;
+        }
+        p {
+            font-size: 18px;
+            line-height: 1.6;
+            color: #555;
+            margin-bottom: 15px;
+        }
+        img {
+            width: 100%;
+            border-radius: 5px;
+            margin-bottom: 20px;
+        }
+
+</style>
+
+
 </head>
 
 <body>
@@ -137,6 +172,59 @@ session_start();
 
     <!-- artificial insemination Start -->
     
+
+
+    <div class="contain">
+    <center><h4>Process of Artificial Insemination:</h4>
+<br>
+<h4>1.Semen Collection</h4>
+<h6>Semen is collected from genetically superior bulls.</h6>
+<h6>The semen is evaluated, diluted, and frozen in liquid nitrogen for storage.</h6>
+
+<h4>2.Estrus Detection</h4>
+<h6>The cow must be in heat (estrus cycle) for successful insemination.</h6>
+<h6>Signs of heat include restlessness, mucus discharge, and mounting behavior.</h6>
+
+<h4>3.Semen Insertion</h4>
+<h6>A trained technician inserts the semen into the cow’s uterus using a catheter.</h6>
+<h6>The process must be done at the right time (ovulation phase).</h6>
+
+<h4>4.Pregnancy Confirmation</h4>
+<h6>After 45–60 days, pregnancy is confirmed via rectal examination or ultrasound.</h6></center>
+</div>
+
+<br>
+<br>
+<div class="contain">
+   <center> <h4>Advantages of Artificial Insemination</h4>
+   <br>
+    <h6>✅ Improves Genetic Quality – Helps breed high-yielding dairy cattle </h6>
+    <h6>✅ Prevents Disease Transmission – Reduces the risk of sexually transmitted diseases.</h6>
+    <h6>✅ Increases Efficiency – One bull’s semen can be used for multiple cows, reducing the need for keeping bulls.</h6>
+    <h6>✅ Enables Crossbreeding – Farmers can improve traits like milk yield, disease resistance, and adaptability.</h6>
+    <h6>✅ Cost-Effective – Saves money on maintaining multiple bulls.</h6><center>
+</div>
+
+<br>
+<br>
+
+<div class="contain">
+    <center><h4>Use of  Artificial Insemination in India</h4>
+    <br>
+    <h6>✅AI is widely used in dairy farming to improve breeds like Sahiwal, Gir, and Murrah (buffalo).</h6>
+    <h6>✅Government Schemes like the National Artificial Insemination Programme (NAIP) support AI adoption.</h6>
+    <h6>✅Crossbreeding programs with AI help develop high-yielding hybrid cows.</h6><center>
+ </div>
+
+
+    
+    
+
+
+
+
+
+
     <!-- artificial insemination End -->
 
 

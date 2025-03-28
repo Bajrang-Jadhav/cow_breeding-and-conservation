@@ -136,6 +136,54 @@ session_start();
 
 
     <!-- types of cow breeding Start -->
+
+    <div class="card" style="width: 18rem;">
+  <img class="card-img-top" src="img/breed3.jpg" alt="Card image cap">
+  <div class="card-body">
+    
+  </div>
+</div>
+
+    <h8>Natural Breeding
+Description: Natural breeding involves the direct mating of cows and bulls without human intervention. This traditional method relies on the bull's presence to detect and service cows in estrus (heat).​
+
+Advantages:
+
+Minimal technological input required.​
+
+Bulls can detect subtle signs of estrus, potentially increasing conception rates.​
+
+Disadvantages:
+
+Risk of disease transmission between animals.​
+
+Challenges in controlling genetic outcomes.​
+Engormix
++5
+SESRIC
++5
+NSW Department of Primary Industries
++5
+
+Higher maintenance costs associated with keeping bulls.</h8>
+
+
+<h8>Embryo Transfer (ET)
+Description: ET involves harvesting embryos from a genetically superior donor cow and implanting them into recipient cows. This advanced method accelerates genetic improvement by allowing multiple offspring from top-performing females.​
+
+Advantages:
+
+Rapid dissemination of desirable traits across the herd.​
+
+Maximizes the reproductive potential of elite cows.​
+
+Disadvantages:
+
+High costs and technical expertise required.​
+
+Demanding management and care for both donors and recipients.
+
+</h8>
     
     <!-- types of cow breeding End -->
 

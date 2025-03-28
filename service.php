@@ -198,6 +198,9 @@ if (isset($_POST['book1'])) {
                 <p class="section-title bg-white text-center text-primary px-3">Our Services</p>
                 <h1 class="mb-5 text-white">Healthcare and Monitoring </h1>
             </div>
+
+
+            
             <div class="row gy-5 gx-4">
                 <div class="col-lg-4 col-md-6 pt-5 wow fadeInUp" data-wow-delay="0.1s">
                     <div class="service-item d-flex h-100">
@@ -220,6 +223,9 @@ if (isset($_POST['book1'])) {
                         </div>
                     </div>
                 </div>
+
+
+
                 <div class="col-lg-4 col-md-6 pt-5 wow fadeInUp" data-wow-delay="0.3s">
                     <div class="service-item d-flex h-100">
                         <div class="service-img">
@@ -243,6 +249,8 @@ if (isset($_POST['book1'])) {
                         </div>
                     </div>
                 </div>
+
+
                 <div class="col-lg-4 col-md-6 pt-5 wow fadeInUp" data-wow-delay="0.5s">
                     <div class="service-item d-flex h-100">
                         <div class="service-img">
@@ -262,6 +270,8 @@ if (isset($_POST['book1'])) {
                         </div>
                     </div>
                 </div>
+
+
                 <div class="col-lg-4 col-md-6 pt-5 wow fadeInUp" data-wow-delay="0.3s">
                     <div class="service-item d-flex h-100">
                         <div class="service-img">
@@ -284,6 +294,8 @@ if (isset($_POST['book1'])) {
                         </div>
                     </div>
                 </div>
+
+
                 <div class="col-lg-4 col-md-6 pt-5 wow fadeInUp" data-wow-delay="0.3s">
                     <div class="service-item d-flex h-100">
                         <div class="service-img">
@@ -303,6 +315,8 @@ if (isset($_POST['book1'])) {
                         </div>
                     </div>
                 </div>
+
+
                 <div class="col-lg-4 col-md-6 pt-5 wow fadeInUp" data-wow-delay="0.3s">
                     <div class="service-item d-flex h-100">
                         <div class="service-img">
@@ -318,8 +332,7 @@ if (isset($_POST['book1'])) {
                                 Disease Control,
                                 Genetic Selection
                             </p>
-                            <a class="btn btn-square rounded-circle" href=""><i
-                                    class="bi bi-chevron-double-right"></i></a>
+                            <a class="btn btn-square rounded-circle" href=""><i class="bi bi-chevron-double-right"></i></a>
                         </div>
                     </div>
                 </div>
@@ -329,87 +342,69 @@ if (isset($_POST['book1'])) {
     <!-- Service End -->
 
 
+    
+     <!--Features End -->
+     <body>
+        <div class="container mt-5">
+            <h2 class="text-center mb-4 text-black">🐾 COW Doctor Appointment 🐾</h2>
+            <form>
+                <!-- Owner Details -->
+                <div class="mb-3 text-blsck">
+                    <label for="ownerName" class="form-label">Owner's Name</label>
+                    <input type="text" class="form-control" id="ownerName" placeholder="Enter your name" required>
+                </div>
+    
+                <div class="mb-3 text-blsck">
+                    <label for="ownerPhone" class="form-label">Phone Number</label>
+                    <input type="tel" class="form-control" id="ownerPhone" placeholder="Enter your phone number" required>
+                </div>
+    
+                <div class="mb-3 text-blsck">
+                    <label for="ownerEmail" class="form-label">Email Address</label>
+                    <input type="email" class="form-control" id="ownerEmail" placeholder="Enter your email">
+                </div>
+    
+                <!-- Pet Details -->
+                <div class="mb-3 text-blsck">
+                    <label for="COW NAME" class="form-label">COW Name</label>
+                    <input type="text" class="form-control" id="petName" placeholder="Enter COW name" required>
+                </div>
+    
+                <div class="mb-3 text-blsck">
+                    <label for="COW BREED" class="form-label">COW BREED</label>
+                    <select class="form-select" id="petType" required>
+                        <option value="" selected disabled>Select BREED</option>
+                        <option value="Holstein Friesian">Holstein Friesian</option>
+                        <option value="Angus">Angus</option>
+                        <option value="Sahiwal">Sahiwal</option>
+                        <option value="Gir">Gir</option>
+                        <option value="Other">Other</option>
+                    </select>
+                </div>
+    
+                <div class="mb-3 text-blsck">
+                    <label for="appointmentDate" class="form-label">Preferred Appointment Date</label>
+                    <input type="date" class="form-control" id="appointmentDate" required>
+                </div>
+    
+                <div class="mb-3 text-blsck">
+                    <label for="appointmentTime" class="form-label">Preferred Time</label>
+                    <input type="time" class="form-control" id="appointmentTime" required>
+                </div>
+    
+                <div class="mb-3 text-blsck">
+                    <label for="reason" class="form-label">Reason for Visit</label>
+                    <textarea class="form-control" id="reason" rows="3" placeholder="Describe the problem or service required" required></textarea>
+                </div>
+    
+                <!-- Submit Button -->
+                <div class="text-center">
+                    <button type="submit" class="btn btn-primary">Book Appointment</button>
+                </div>
+            </form>
+        </div>
+     
 
-    <!--Features End -->
-
-    <body>
-        <?php
-        
-        if ($status == 0) {
-
-
-            ?>
-            <div class="container mt-5">
-                <h2 class="text-center mb-4 text-black">🐾 COW Doctor Appointment 🐾</h2>
-                <form action="service.php" method="POST">
-                    <!-- Owner Details -->
-                    <!-- <div class="mb-3 text-blsck">
-                                    <label for="ownerName" class="form-label">Owner's Name</label>
-                                    <input type="text" class="form-control" name="name" id="ownerName" placeholder="Enter your name" required>
-                                </div> -->
-
-                    <div class="mb-3 text-blsck">
-                        <label for="ownerPhone" class="form-label">Phone Number</label>
-                        <input type="tel" class="form-control" name="phone" id="ownerPhone"
-                            placeholder="Enter your phone number" required>
-                    </div>
-
-                    <div class="mb-3 text-blsck">
-                        <label for="ownerEmail" class="form-label">Email Address</label>
-                        <input type="email" class="form-control" name="email" id="ownerEmail"
-                            placeholder="Enter your email">
-                    </div>
-
-                    <!-- Pet Details -->
-                    <div class="mb-3 text-blsck">
-                        <label for="COW NAME" class="form-label">COW Name</label>
-                        <input type="text" class="form-control" name="petname" id="petName" placeholder="Enter COW name"
-                            required>
-                    </div>
-
-                    <div class="mb-3 text-blsck">
-                        <label for="COW BREED" class="form-label">COW BREED</label>
-                        <select class="form-select" name="breed" id="petType" required>
-                            <option value="" selected disabled>Select BREED</option>
-                            <option value="Holstein Friesian">Holstein Friesian</option>
-                            <option value="Angus">Angus</option>
-                            <option value="Sahiwal">Sahiwal</option>
-                            <option value="Gir">Gir</option>
-                            <option value="Other">Other</option>
-                        </select>
-                    </div>
-
-                    <div class="mb-3 text-blsck">
-                        <label for="appointmentDate" class="form-label">Preferred Appointment Date</label>
-                        <input type="date" class="form-control" name="datee" id="appointmentDate" required>
-                    </div>
-
-                    <div class="mb-3 text-blsck">
-                        <label for="appointmentTime" class="form-label">Preferred Time</label>
-                        <input type="time" class="form-control" name="timee" id="appointmentTime" required>
-                    </div>
-
-                    <div class="mb-3 text-blsck">
-                        <label for="reason" class="form-label">Reason for Visit</label>
-                        <textarea class="form-control" name="problem" id="reason" rows="3"
-                            placeholder="Describe the problem or service required" required></textarea>
-                    </div>
-
-                    <!-- Submit Button -->
-                    <div class="text-center">
-                        <button name="book1" type="submit" class="btn btn-primary">Book Appointment</button>
-                    </div>
-                </form>
-            </div>
-            <?php
-        } else {
-            ?>
-            <div class="alert alert-primary" role="alert">
-                YOUV'E ALDREADY BOOKED AN APPOINTMENT!!
-            </div>
-            <?php
-        }
-        ?>
 
         <!-- Footer Start -->
         <div class="container-fluid bg-dark footer mt-5 py-5 wow fadeIn" data-wow-delay="0.1s">

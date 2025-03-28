@@ -366,10 +366,6 @@ Lactation Period: 300-330 days. </p>
 
 
 
-
-
-
-
         <div class="breed-card">
             <img src="img/gir.jpg" alt="Gir Cow">
             <div class="breed-details">
