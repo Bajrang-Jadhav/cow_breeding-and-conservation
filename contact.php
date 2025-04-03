@@ -1,6 +1,63 @@
 <?php
 session_start();
 include('config.php');
+
+ //Import PHPMailer classes into the global namespace
+//These must be at the top of your script, not inside a function
+use PHPMailer\PHPMailer\PHPMailer;
+use PHPMailer\PHPMailer\SMTP;
+use PHPMailer\PHPMailer\Exception;
+
+
+if(isset($_POST['send'])){
+    $yourname = $_POST['yourname'];
+    $email = $_POST['email'];
+    $subject = $_POST['subject']
+    $msg = $_POST['msg']
+
+   
+//Load Composer's autoloader (created by composer, not included with PHPMailer)
+require 'PHPmailer/Exception.php';
+require 'PHPmailer/PHPMailer.php';
+require 'PHPmailer/SMTP.php';
+
+//Create an instance; passing `true` enables exceptions
+$mail = new PHPMailer(true);
+
+try {
+    //Server settings
+    // $mail->SMTPDebug = SMTP::DEBUG_SERVER;                      //Enable verbose debug output
+    $mail->isSMTP();                                            //Send using SMTP
+    $mail->Host       = 'smtp.gmail.com';                     //Set the SMTP server to send through
+    $mail->SMTPAuth   = true;                                   //Enable SMTP authentication
+    $mail->Username   = 'bajujadhav17@gmail.com';                     //SMTP username
+    $mail->Password   = 'Baju26@#';                               //SMTP password
+    $mail->SMTPSecure = PHPMailer::ENCRYPTION_SMTPS;            //Enable implicit TLS encryption
+    $mail->Port       = 465;                                    //TCP port to connect to; use 587 if you have set `SMTPSecure = PHPMailer::ENCRYPTION_STARTTLS`
+
+    //Recipients
+    $mail->setFrom('bajujadhav17@gmail.com', 'Go-Rakshak');
+    $mail->addAddress('bajujadhav18@gmail.com', 'website');     //Add a recipient
+    // $mail->addAddress('ellen@example.com');               //Name is optional
+    // $mail->addReplyTo('info@example.com', 'Information');
+    // $mail->addCC('cc@example.com');
+    // $mail->addBCC('bcc@example.com');
+
+    //Attachments
+    $mail->addAttachment('/var/tmp/file.tar.gz');         //Add attachments
+    $mail->addAttachment('/tmp/image.jpg', 'new.jpg');    //Optional name
+
+    //Content
+    $mail->isHTML(true);                                  //Set email format to HTML
+    $mail->Subject = 'From Go-Rakshak';
+    $mail->Body    = "  <br> sender name - $yourname <br> sender email - $email <br> sender message - $msg";
+    // $mail->AltBody = 'This is the body in plain text for non-HTML mail clients';
+
+    $mail->send();
+    echo 'Message has been sent';
+} catch (Exception $e) {
+    echo "Message could not be sent. Mailer Error: {$mail->ErrorInfo}";
+}
 ?>
 <!DOCTYPE html>
 <html lang="en">
@@ -149,6 +206,7 @@ include('config.php');
 
 
     <!-- Contact Start -->
+     <form action="" method="post">
     <div class="container-xxl py-5">
         <div class="container">
             <div class="text-center mx-auto wow fadeInUp" data-wow-delay="0.1s" style="max-width: 500px;">
@@ -163,36 +221,38 @@ include('config.php');
                         <div class="row g-3">
                             <div class="col-md-6">
                                 <div class="form-floating">
-                                    <input type="text" class="form-control" id="name" placeholder="Your Name">
+                                    <input type="text" class="form-control" id="name" name="yourname" placeholder="Your Name">
                                     <label for="name" class="text-dark">Your Name</label>
                                 </div>
                             </div>
                             <div class="col-md-6">
                                 <div class="form-floating">
-                                    <input type="email" class="form-control" id="email" placeholder="Your Email">
+                                    <input type="email" class="form-control" id="email" name="email" placeholder="Your Email">
                                     <label for="email" class="text-dark">Your Email</label>
                                 </div>
                             </div>
                             <div class="col-12">
                                 <div class="form-floating">
-                                    <input type="text" class="form-control" id="subject" placeholder="Subject">
+                                    <input type="text" class="form-control" id="subject" name="subject" placeholder="Subject">
                                     <label for="subject" class="text-dark">Subject</label>
                                 </div>
                             </div>
                             <div class="col-12">
                                 <div class="form-floating">
-                                    <textarea class="form-control" placeholder="Leave a message here" id="message"
+                                    <textarea class="form-control" name="msg" placeholder="Leave a message here" id="message"
                                         style="height: 250px"></textarea>
                                     <label for="message" class="text-dark">Message</label>
                                 </div>
                             </div>
                             <div class="col-12">
-                                <button class="btn btn-secondary rounded-pill py-3 px-5" type="submit">Send
+                                <button class="btn btn-secondary rounded-pill py-3 px-5" name="send" type="submit">Send
                                     Message</button>
                             </div>
                         </div>
                     </form>
                 </div>
+
+                </form>
                 <div class="col-lg-6 wow fadeInUp text-BLACK" data-wow-delay="0.5s">
                     <h3 class="mb-4 text-BLACK">Contact Details</h3>
                     <div class="d-flex border-bottom pb-3 mb-3">
@@ -322,12 +382,6 @@ include('config.php');
     <script src="lib/lightbox/js/lightbox.min.js"></script>
 
     <!-- Template Javascript -->
-    <script src="js/main.js"></script>
-
-    <script src="js/main.js"></script>
-
-    <script src="js/main.js"></script>
-    <script src="js/main.js"></script>
     <script src="js/main.js"></script>
 
 </body>
