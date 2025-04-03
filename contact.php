@@ -54,9 +54,9 @@ try {
     // $mail->AltBody = 'This is the body in plain text for non-HTML mail clients';
 
     $mail->send();
-    echo "<div class='success' >Message has been sent!</div> ";
+    echo "<div class="success">Message has been sent!</div> ";
 } catch (Exception $e) {
-    echo "<div class='alert' >Message could not be sent. Mailer Error: {$mail->ErrorInfo}</div>";
+    echo "<div class="alert">Message could not be sent. Mailer Error: {$mail->ErrorInfo}</div>";
 }
 }
 
