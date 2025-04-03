@@ -1,1269 +1,279 @@
+<?php
+include('config.php');
+include('header.php');
+?>
 <!DOCTYPE html>
-<html>
-	<head>
-		<!-- Basic Page Info -->
-		<meta charset="utf-8" />
-		<title>DeskApp - Bootstrap Admin Dashboard HTML Template</title>
+<html lang="en">
 
-		<!-- Site favicon -->
-		<link
-			rel="apple-touch-icon"
-			sizes="180x180"
-			href="vendors/images/apple-touch-icon.png"
-		/>
-		<link
-			rel="icon"
-			type="image/png"
-			sizes="32x32"
-			href="vendors/images/favicon-32x32.png"
-		/>
-		<link
-			rel="icon"
-			type="image/png"
-			sizes="16x16"
-			href="vendors/images/favicon-16x16.png"
-		/>
+<head>
+   <meta charset="utf-8">
+   <title>GO-RAKSHAK</title>
+   <meta content="width=device-width, initial-scale=1.0" name="viewport">
+   <meta content="" name="keywords">
+   <meta content="" name="description">
 
-		<!-- Mobile Specific Metas -->
-		<meta
-			name="viewport"
-			content="width=device-width, initial-scale=1, maximum-scale=1"
-		/>
+   <!-- Favicon -->
+   <link href="img/favicon.ico" rel="icon">
 
-		<!-- Google Font -->
-		<link
-			href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&display=swap"
-			rel="stylesheet"
-		/>
-		<!-- CSS -->
-		<link rel="stylesheet" type="text/css" href="vendors/styles/core.css" />
-		<link
-			rel="stylesheet"
-			type="text/css"
-			href="vendors/styles/icon-font.min.css"
-		/>
-		<link
-			rel="stylesheet"
-			type="text/css"
-			href="src/plugins/datatables/css/dataTables.bootstrap4.min.css"
-		/>
-		<link
-			rel="stylesheet"
-			type="text/css"
-			href="src/plugins/datatables/css/responsive.bootstrap4.min.css"
-		/>
-		<link rel="stylesheet" type="text/css" href="vendors/styles/style.css" />
+   <!-- Google Web Fonts -->
+   <link rel="preconnect" href="https://fonts.googleapis.com">
+   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+   <link
+      href="https://fonts.googleapis.com/css2?family=Libre+Baskerville:wght@700&family=Open+Sans:wght@400;500;600&display=swap"
+      rel="stylesheet">
 
-		<!-- Global site tag (gtag.js) - Google Analytics -->
-		<script
-			async
-			src="https://www.googletagmanager.com/gtag/js?id=G-GBZ3SGGX85"
-		></script>
-		<script
-			async
-			src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-2973766580778258"
-			crossorigin="anonymous"
-		></script>
-		<script>
-			window.dataLayer = window.dataLayer || [];
-			function gtag() {
-				dataLayer.push(arguments);
-			}
-			gtag("js", new Date());
+   <!-- Icon Font Stylesheet -->
+   <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.10.0/css/all.min.css" rel="stylesheet">
+   <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.4.1/font/bootstrap-icons.css" rel="stylesheet">
 
-			gtag("config", "G-GBZ3SGGX85");
-		</script>
-		<!-- Google Tag Manager -->
-		<script>
-			(function (w, d, s, l, i) {
-				w[l] = w[l] || [];
-				w[l].push({ "gtm.start": new Date().getTime(), event: "gtm.js" });
-				var f = d.getElementsByTagName(s)[0],
-					j = d.createElement(s),
-					dl = l != "dataLayer" ? "&l=" + l : "";
-				j.async = true;
-				j.src = "https://www.googletagmanager.com/gtm.js?id=" + i + dl;
-				f.parentNode.insertBefore(j, f);
-			})(window, document, "script", "dataLayer", "GTM-NXZMQSS");
-		</script>
-		<!-- End Google Tag Manager -->
-	</head>
-	<body>
-		<!-- <div class="pre-loader">
-			<div class="pre-loader-box">
-				<div class="loader-logo">
-					<img src="vendors/images/deskapp-logo.svg" alt="" />
-				</div>
-				<div class="loader-progress" id="progress_div">
-					<div class="bar" id="bar1"></div>
-				</div>
-				<div class="percent" id="percent1">0%</div>
-				<div class="loading-text">Loading...</div>
-			</div>
-		</div> -->
+   <!-- Libraries Stylesheet -->
+   <link href="lib/animate/animate.min.css" rel="stylesheet">
+   <link href="lib/owlcarousel/assets/owl.carousel.min.css" rel="stylesheet">
+   <link href="lib/lightbox/css/lightbox.min.css" rel="stylesheet">
 
-		<div class="header">
-			<div class="header-left">
-				<div class="menu-icon bi bi-list"></div>
-				<div
-					class="search-toggle-icon bi bi-search"
-					data-toggle="header_search"
-				></div>
-				<div class="header-search">
-					<form>
-						<div class="form-group mb-0">
-							<i class="dw dw-search2 search-icon"></i>
-							<input
-								type="text"
-								class="form-control search-input"
-								placeholder="Search Here"
-							/>
-							<div class="dropdown">
-								<a
-									class="dropdown-toggle no-arrow"
-									href="#"
-									role="button"
-									data-toggle="dropdown"
-								>
-									<i class="ion-arrow-down-c"></i>
-								</a>
-								<div class="dropdown-menu dropdown-menu-right">
-									<div class="form-group row">
-										<label class="col-sm-12 col-md-2 col-form-label"
-											>From</label
-										>
-										<div class="col-sm-12 col-md-10">
-											<input
-												class="form-control form-control-sm form-control-line"
-												type="text"
-											/>
-										</div>
-									</div>
-									<div class="form-group row">
-										<label class="col-sm-12 col-md-2 col-form-label">To</label>
-										<div class="col-sm-12 col-md-10">
-											<input
-												class="form-control form-control-sm form-control-line"
-												type="text"
-											/>
-										</div>
-									</div>
-									<div class="form-group row">
-										<label class="col-sm-12 col-md-2 col-form-label"
-											>Subject</label
-										>
-										<div class="col-sm-12 col-md-10">
-											<input
-												class="form-control form-control-sm form-control-line"
-												type="text"
-											/>
-										</div>
-									</div>
-									<div class="text-right">
-										<button class="btn btn-primary">Search</button>
-									</div>
-								</div>
-							</div>
-						</div>
-					</form>
-				</div>
-			</div>
-			<div class="header-right">
-				
-				<div class="user-info-dropdown">
-					<div class="dropdown">
-						<a
-							class="dropdown-toggle"
-							href="#"
-							role="button"
-							data-toggle="dropdown"
-						>
-							
-							<span class="user-name">Ross C. Lopez</span>
-						</a>
-						<div
-							class="dropdown-menu dropdown-menu-right dropdown-menu-icon-list"
-						>
-							
-							<a class="dropdown-item" href="login.html"
-								><i class="dw dw-logout"></i> Log Out</a
-							>
-						</div>
-					</div>
-				</div>
-				<div class="github-link">
-					<a href="https://github.com/dropways/deskapp" target="_blank"
-						><img src="vendors/images/github.svg" alt=""
-					/></a>
-				</div>
-			</div>
-		</div>
+   <!-- Customized Bootstrap Stylesheet -->
+   <link href="css/bootstrap.min.css" rel="stylesheet">
 
-		<div class="right-sidebar">
-			<div class="sidebar-title">
-				<h3 class="weight-600 font-16 text-blue">
-					Layout Settings
-					<span class="btn-block font-weight-400 font-12"
-						>User Interface Settings</span
-					>
-				</h3>
-				<div class="close-sidebar" data-toggle="right-sidebar-close">
-					<i class="icon-copy ion-close-round"></i>
-				</div>
-			</div>
-			<div class="right-sidebar-body customscroll">
-				<div class="right-sidebar-body-content">
-					<h4 class="weight-600 font-18 pb-10">Header Background</h4>
-					<div class="sidebar-btn-group pb-30 mb-10">
-						<a
-							href="javascript:void(0);"
-							class="btn btn-outline-primary header-white active"
-							>White</a
-						>
-						<a
-							href="javascript:void(0);"
-							class="btn btn-outline-primary header-dark"
-							>Dark</a
-						>
-					</div>
+   <!-- Template Stylesheet -->
+   <link href="css/style.css" rel="stylesheet">
 
-					<h4 class="weight-600 font-18 pb-10">Sidebar Background</h4>
-					<div class="sidebar-btn-group pb-30 mb-10">
-						<a
-							href="javascript:void(0);"
-							class="btn btn-outline-primary sidebar-light"
-							>White</a
-						>
-						<a
-							href="javascript:void(0);"
-							class="btn btn-outline-primary sidebar-dark active"
-							>Dark</a
-						>
-					</div>
+   <style>
+      .info {
+         background-color: #f4f4f4;
+         padding: 20px;
+      }
 
-					<h4 class="weight-600 font-18 pb-10">Menu Dropdown Icon</h4>
-					<div class="sidebar-radio-group pb-10 mb-10">
-						<div class="custom-control custom-radio custom-control-inline">
-							<input
-								type="radio"
-								id="sidebaricon-1"
-								name="menu-dropdown-icon"
-								class="custom-control-input"
-								value="icon-style-1"
-								checked=""
-							/>
-							<label class="custom-control-label" for="sidebaricon-1"
-								><i class="fa fa-angle-down"></i
-							></label>
-						</div>
-						<div class="custom-control custom-radio custom-control-inline">
-							<input
-								type="radio"
-								id="sidebaricon-2"
-								name="menu-dropdown-icon"
-								class="custom-control-input"
-								value="icon-style-2"
-							/>
-							<label class="custom-control-label" for="sidebaricon-2"
-								><i class="ion-plus-round"></i
-							></label>
-						</div>
-						<div class="custom-control custom-radio custom-control-inline">
-							<input
-								type="radio"
-								id="sidebaricon-3"
-								name="menu-dropdown-icon"
-								class="custom-control-input"
-								value="icon-style-3"
-							/>
-							<label class="custom-control-label" for="sidebaricon-3"
-								><i class="fa fa-angle-double-right"></i
-							></label>
-						</div>
-					</div>
+      .contain {
+         max-width: 2000px;
+         margin: auto;
+         background: 0 4px 8px rgba(0, 0, 0, 0.2);
+         padding: 20px;
+         border-radius: 10px;
+         box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+      }
 
-					<h4 class="weight-600 font-18 pb-10">Menu List Icon</h4>
-					<div class="sidebar-radio-group pb-30 mb-10">
-						<div class="custom-control custom-radio custom-control-inline">
-							<input
-								type="radio"
-								id="sidebariconlist-1"
-								name="menu-list-icon"
-								class="custom-control-input"
-								value="icon-list-style-1"
-								checked=""
-							/>
-							<label class="custom-control-label" for="sidebariconlist-1"
-								><i class="ion-minus-round"></i
-							></label>
-						</div>
-						<div class="custom-control custom-radio custom-control-inline">
-							<input
-								type="radio"
-								id="sidebariconlist-2"
-								name="menu-list-icon"
-								class="custom-control-input"
-								value="icon-list-style-2"
-							/>
-							<label class="custom-control-label" for="sidebariconlist-2"
-								><i class="fa fa-circle-o" aria-hidden="true"></i
-							></label>
-						</div>
-						<div class="custom-control custom-radio custom-control-inline">
-							<input
-								type="radio"
-								id="sidebariconlist-3"
-								name="menu-list-icon"
-								class="custom-control-input"
-								value="icon-list-style-3"
-							/>
-							<label class="custom-control-label" for="sidebariconlist-3"
-								><i class="dw dw-check"></i
-							></label>
-						</div>
-						<div class="custom-control custom-radio custom-control-inline">
-							<input
-								type="radio"
-								id="sidebariconlist-4"
-								name="menu-list-icon"
-								class="custom-control-input"
-								value="icon-list-style-4"
-								checked=""
-							/>
-							<label class="custom-control-label" for="sidebariconlist-4"
-								><i class="icon-copy dw dw-next-2"></i
-							></label>
-						</div>
-						<div class="custom-control custom-radio custom-control-inline">
-							<input
-								type="radio"
-								id="sidebariconlist-5"
-								name="menu-list-icon"
-								class="custom-control-input"
-								value="icon-list-style-5"
-							/>
-							<label class="custom-control-label" for="sidebariconlist-5"
-								><i class="dw dw-fast-forward-1"></i
-							></label>
-						</div>
-						<div class="custom-control custom-radio custom-control-inline">
-							<input
-								type="radio"
-								id="sidebariconlist-6"
-								name="menu-list-icon"
-								class="custom-control-input"
-								value="icon-list-style-6"
-							/>
-							<label class="custom-control-label" for="sidebariconlist-6"
-								><i class="dw dw-next"></i
-							></label>
-						</div>
-					</div>
+      h1 {
+         text-align: center;
+         color: #333;
+         margin-bottom: 20px;
+      }
 
-					<div class="reset-options pt-30 text-center">
-						<button class="btn btn-danger" id="reset-settings">
-							Reset Settings
-						</button>
-					</div>
-				</div>
-			</div>
-		</div>
+      p {
+         font-size: 18px;
+         line-height: 1.6;
+         color: #555;
+         margin-bottom: 15px;
+      }
 
-		<div class="left-side-bar">
-			<div class="brand-logo">
-				<a href="index.html">
-					<img src="vendors/images/deskapp-logo.svg" alt="" class="dark-logo" />
-					<img
-						src="vendors/images/deskapp-logo-white.svg"
-						alt=""
-						class="light-logo"
-					/>
-				</a>
-				<div class="close-sidebar" data-toggle="left-sidebar-close">
-					<i class="ion-close-round"></i>
-				</div>
-			</div>
-			<div class="menu-block customscroll">
-				<div class="sidebar-menu">
-					<ul id="accordion-menu">
-						<li class="dropdown">
-							<a href="javascript:;" class="dropdown-toggle">
-								<span class="micon bi bi-house"></span
-								><span class="mtext">Home</span>
-							</a>
-							<ul class="submenu">
-								<li><a href="index.html">Dashboard style 1</a></li>
-							</ul>
-						</li>
-						
-						<li>
-							<a href="sitemap.html" class="dropdown-toggle no-arrow">
-								<span class="micon bi bi-diagram-3"></span
-								><span class="mtext">Sitemap</span>
-							</a>
-						</li>
-						<li>
-							<a href="chat.html" class="dropdown-toggle no-arrow">
-								<span class="micon bi bi-chat-right-dots"></span
-								><span class="mtext">Chat</span>
-							</a>
-						</li>
-						<li>
-							<a href="invoice.html" class="dropdown-toggle no-arrow">
-								<span class="micon bi bi-receipt-cutoff"></span
-								><span class="mtext">Invoice</span>
-							</a>
-						</li>
-						<li>
-							<div class="dropdown-divider"></div>
-						</li>
-						
-					</ul>
-				</div>
-			</div>
-		</div>
-		<div class="mobile-menu-overlay"></div>
+      img {
+         width: 100%;
+         border-radius: 5px;
+         margin-bottom: 20px;
+      }
+   </style>
 
-		<div class="main-container">
-			<div class="xs-pd-20-10 pd-ltr-20">
-				<div class="title pb-20">
-					<h2 class="h3 mb-0">Hospital Overview</h2>
-				</div>
 
-				<div class="row pb-10">
-					<div class="col-xl-3 col-lg-3 col-md-6 mb-20">
-						<div class="card-box height-100-p widget-style3">
-							<div class="d-flex flex-wrap">
-								<div class="widget-data">
-									<div class="weight-700 font-24 text-dark">75</div>
-									<div class="font-14 text-secondary weight-500">
-										Appointment
-									</div>
-								</div>
-								<div class="widget-icon">
-									<div class="icon" data-color="#00eccf">
-										<i class="icon-copy dw dw-calendar1"></i>
-									</div>
-								</div>
-							</div>
-						</div>
-					</div>
-					<div class="col-xl-3 col-lg-3 col-md-6 mb-20">
-						<div class="card-box height-100-p widget-style3">
-							<div class="d-flex flex-wrap">
-								<div class="widget-data">
-									<div class="weight-700 font-24 text-dark">124,551</div>
-									<div class="font-14 text-secondary weight-500">
-										Total Patient
-									</div>
-								</div>
-								<div class="widget-icon">
-									<div class="icon" data-color="#ff5b5b">
-										<span class="icon-copy ti-heart"></span>
-									</div>
-								</div>
-							</div>
-						</div>
-					</div>
-					<div class="col-xl-3 col-lg-3 col-md-6 mb-20">
-						<div class="card-box height-100-p widget-style3">
-							<div class="d-flex flex-wrap">
-								<div class="widget-data">
-									<div class="weight-700 font-24 text-dark">400+</div>
-									<div class="font-14 text-secondary weight-500">
-										Total Doctor
-									</div>
-								</div>
-								<div class="widget-icon">
-									<div class="icon">
-										<i
-											class="icon-copy fa fa-stethoscope"
-											aria-hidden="true"
-										></i>
-									</div>
-								</div>
-							</div>
-						</div>
-					</div>
-					<div class="col-xl-3 col-lg-3 col-md-6 mb-20">
-						<div class="card-box height-100-p widget-style3">
-							<div class="d-flex flex-wrap">
-								<div class="widget-data">
-									<div class="weight-700 font-24 text-dark">$50,000</div>
-									<div class="font-14 text-secondary weight-500">Earning</div>
-								</div>
-								<div class="widget-icon">
-									<div class="icon" data-color="#09cc06">
-										<i class="icon-copy fa fa-money" aria-hidden="true"></i>
-									</div>
-								</div>
-							</div>
-						</div>
-					</div>
-				</div>
+</head>
 
-				<div class="row pb-10">
-					<div class="col-md-8 mb-20">
-						<div class="card-box height-100-p pd-20">
-							<div
-								class="d-flex flex-wrap justify-content-between align-items-center pb-0 pb-md-3"
-							>
-								<div class="h5 mb-md-0">Hospital Activities</div>
-								<div class="form-group mb-md-0">
-									<select class="form-control form-control-sm selectpicker">
-										<option value="">Last Week</option>
-										<option value="">Last Month</option>
-										<option value="">Last 6 Month</option>
-										<option value="">Last 1 year</option>
-									</select>
-								</div>
-							</div>
-							<div id="activities-chart"></div>
-						</div>
-					</div>
-					<div class="col-md-4 mb-20">
-						<div
-							class="card-box min-height-200px pd-20 mb-20"
-							data-bgcolor="#455a64"
-						>
-							<div class="d-flex justify-content-between pb-20 text-white">
-								<div class="icon h1 text-white">
-									<i class="fa fa-calendar" aria-hidden="true"></i>
-									<!-- <i class="icon-copy fa fa-stethoscope" aria-hidden="true"></i> -->
-								</div>
-								<div class="font-14 text-right">
-									<div><i class="icon-copy ion-arrow-up-c"></i> 2.69%</div>
-									<div class="font-12">Since last month</div>
-								</div>
-							</div>
-							<div class="d-flex justify-content-between align-items-end">
-								<div class="text-white">
-									<div class="font-14">Appointment</div>
-									<div class="font-24 weight-500">1865</div>
-								</div>
-								<div class="max-width-150">
-									<div id="appointment-chart"></div>
-								</div>
-							</div>
-						</div>
-						<div class="card-box min-height-200px pd-20" data-bgcolor="#265ed7">
-							<div class="d-flex justify-content-between pb-20 text-white">
-								<div class="icon h1 text-white">
-									<i class="fa fa-stethoscope" aria-hidden="true"></i>
-								</div>
-								<div class="font-14 text-right">
-									<div><i class="icon-copy ion-arrow-down-c"></i> 3.69%</div>
-									<div class="font-12">Since last month</div>
-								</div>
-							</div>
-							<div class="d-flex justify-content-between align-items-end">
-								<div class="text-white">
-									<div class="font-14">Surgery</div>
-									<div class="font-24 weight-500">250</div>
-								</div>
-								<div class="max-width-150">
-									<div id="surgery-chart"></div>
-								</div>
-							</div>
-						</div>
-					</div>
-				</div>
+<body>
+   <!-- Spinner Start -->
+   <div id="spinner"
+      class="show bg-white position-fixed translate-middle w-100 vh-100 top-50 start-50 d-flex align-items-center justify-content-center">
+      <div class="spinner-border text-primary" role="status" style="width: 3rem; height: 3rem;"></div>
+   </div>
+   <!-- Spinner End -->
 
-				<div class="row">
-					<div class="col-lg-4 col-md-6 mb-20">
-						<div class="card-box height-100-p pd-20 min-height-200px">
-							<div class="d-flex justify-content-between pb-10">
-								<div class="h5 mb-0">Top Doctors</div>
-								<div class="dropdown">
-									<a
-										class="btn btn-link font-24 p-0 line-height-1 no-arrow dropdown-toggle"
-										data-color="#1b3133"
-										href="#"
-										role="button"
-										data-toggle="dropdown"
-									>
-										<i class="dw dw-more"></i>
-									</a>
-									<div
-										class="dropdown-menu dropdown-menu-right dropdown-menu-icon-list"
-									>
-										<a class="dropdown-item" href="#"
-											><i class="dw dw-eye"></i> View</a
-										>
-										<a class="dropdown-item" href="#"
-											><i class="dw dw-edit2"></i> Edit</a
-										>
-										<a class="dropdown-item" href="#"
-											><i class="dw dw-delete-3"></i> Delete</a
-										>
-									</div>
-								</div>
-							</div>
-							<div class="user-list">
-								<ul>
-									<li class="d-flex align-items-center justify-content-between">
-										<div class="name-avatar d-flex align-items-center pr-2">
-											<div class="avatar mr-2 flex-shrink-0">
-												<img
-													src="vendors/images/photo1.jpg"
-													class="border-radius-100 box-shadow"
-													width="50"
-													height="50"
-													alt=""
-												/>
-											</div>
-											<div class="txt">
-												<span
-													class="badge badge-pill badge-sm"
-													data-bgcolor="#e7ebf5"
-													data-color="#265ed7"
-													>4.9</span
-												>
-												<div class="font-14 weight-600">Dr. Neil Wagner</div>
-												<div class="font-12 weight-500" data-color="#b2b1b6">
-													Pediatrician
-												</div>
-											</div>
-										</div>
-										<div class="cta flex-shrink-0">
-											<a href="#" class="btn btn-sm btn-outline-primary"
-												>Schedule</a
-											>
-										</div>
-									</li>
-									<li class="d-flex align-items-center justify-content-between">
-										<div class="name-avatar d-flex align-items-center pr-2">
-											<div class="avatar mr-2 flex-shrink-0">
-												<img
-													src="vendors/images/photo2.jpg"
-													class="border-radius-100 box-shadow"
-													width="50"
-													height="50"
-													alt=""
-												/>
-											</div>
-											<div class="txt">
-												<span
-													class="badge badge-pill badge-sm"
-													data-bgcolor="#e7ebf5"
-													data-color="#265ed7"
-													>4.9</span
-												>
-												<div class="font-14 weight-600">Dr. Ren Delan</div>
-												<div class="font-12 weight-500" data-color="#b2b1b6">
-													Pediatrician
-												</div>
-											</div>
-										</div>
-										<div class="cta flex-shrink-0">
-											<a href="#" class="btn btn-sm btn-outline-primary"
-												>Schedule</a
-											>
-										</div>
-									</li>
-									<li class="d-flex align-items-center justify-content-between">
-										<div class="name-avatar d-flex align-items-center pr-2">
-											<div class="avatar mr-2 flex-shrink-0">
-												<img
-													src="vendors/images/photo3.jpg"
-													class="border-radius-100 box-shadow"
-													width="50"
-													height="50"
-													alt=""
-												/>
-											</div>
-											<div class="txt">
-												<span
-													class="badge badge-pill badge-sm"
-													data-bgcolor="#e7ebf5"
-													data-color="#265ed7"
-													>4.9</span
-												>
-												<div class="font-14 weight-600">Dr. Garrett Kincy</div>
-												<div class="font-12 weight-500" data-color="#b2b1b6">
-													Pediatrician
-												</div>
-											</div>
-										</div>
-										<div class="cta flex-shrink-0">
-											<a href="#" class="btn btn-sm btn-outline-primary"
-												>Schedule</a
-											>
-										</div>
-									</li>
-									<li class="d-flex align-items-center justify-content-between">
-										<div class="name-avatar d-flex align-items-center pr-2">
-											<div class="avatar mr-2 flex-shrink-0">
-												<img
-													src="vendors/images/photo4.jpg"
-													class="border-radius-100 box-shadow"
-													width="50"
-													height="50"
-													alt=""
-												/>
-											</div>
-											<div class="txt">
-												<span
-													class="badge badge-pill badge-sm"
-													data-bgcolor="#e7ebf5"
-													data-color="#265ed7"
-													>4.9</span
-												>
-												<div class="font-14 weight-600">Dr. Callie Reed</div>
-												<div class="font-12 weight-500" data-color="#b2b1b6">
-													Pediatrician
-												</div>
-											</div>
-										</div>
-										<div class="cta flex-shrink-0">
-											<a href="#" class="btn btn-sm btn-outline-primary"
-												>Schedule</a
-											>
-										</div>
-									</li>
-								</ul>
-							</div>
-						</div>
-					</div>
-					<div class="col-lg-4 col-md-6 mb-20">
-						<div class="card-box height-100-p pd-20 min-height-200px">
-							<div class="d-flex justify-content-between">
-								<div class="h5 mb-0">Diseases Report</div>
-								<div class="dropdown">
-									<a
-										class="btn btn-link font-24 p-0 line-height-1 no-arrow dropdown-toggle"
-										data-color="#1b3133"
-										href="#"
-										role="button"
-										data-toggle="dropdown"
-									>
-										<i class="dw dw-more"></i>
-									</a>
-									<div
-										class="dropdown-menu dropdown-menu-right dropdown-menu-icon-list"
-									>
-										<a class="dropdown-item" href="#"
-											><i class="dw dw-eye"></i> View</a
-										>
-										<a class="dropdown-item" href="#"
-											><i class="dw dw-edit2"></i> Edit</a
-										>
-										<a class="dropdown-item" href="#"
-											><i class="dw dw-delete-3"></i> Delete</a
-										>
-									</div>
-								</div>
-							</div>
 
-							<div id="diseases-chart"></div>
-						</div>
-					</div>
-					<div class="col-lg-4 col-md-12 mb-20">
-						<div class="card-box height-100-p pd-20 min-height-200px">
-							<div class="max-width-300 mx-auto">
-								<img src="vendors/images/upgrade.svg" alt="" />
-							</div>
-							<div class="text-center">
-								<div class="h5 mb-1">Upgrade to Pro</div>
-								<div
-									class="font-14 weight-500 max-width-200 mx-auto pb-20"
-									data-color="#a6a6a7"
-								>
-									You can enjoy all our features by upgrading to pro.
-								</div>
-								<a href="#" class="btn btn-primary btn-lg">Upgrade</a>
-							</div>
-						</div>
-					</div>
-				</div>
+   <!-- Topbar Start -->
+   <!-- <div class="container-fluid bg-dark px-0">
+        <div class="row g-0 d-none d-lg-flex">
+            <div class="col-lg-6 ps-5 text-start">
+                <div class="h-100 d-inline-flex align-items-center text-light">
+                    <span>Follow Us:</span>
+                    <a class="btn btn-link text-light" href=""><i class="fab fa-facebook-f"></i></a>
+                    <a class="btn btn-link text-light" href=""><i class="fab fa-twitter"></i></a>
+                    <a class="btn btn-link text-light" href=""><i class="fab fa-linkedin-in"></i></a>
+                    <a class="btn btn-link text-light" href=""><i class="fab fa-instagram"></i></a>
+                </div>
+            </div>
+            <div class="col-lg-6 text-end">
+                <div class="h-100 bg-secondary d-inline-flex align-items-center text-dark py-2 px-4">
+                    <span class="me-2 fw-semi-bold"><i class="fa fa-phone-alt me-2"></i>Call Us:</span>
+                    <span>+012 345 6789</span>
+                </div>
+            </div>
+        </div>
+    </div> -->
+   <!-- Topbar End -->
 
-				<div class="card-box pb-10">
-					<div class="h5 pd-20 mb-0">Recent Patient</div>
-					<table class="data-table table nowrap">
-						<thead>
-							<tr>
-								<th class="table-plus">Name</th>
-								<th>Gender</th>
-								<th>Weight</th>
-								<th>Assigned Doctor</th>
-								<th>Admit Date</th>
-								<th>Disease</th>
-								<th class="datatable-nosort">Actions</th>
-							</tr>
-						</thead>
-						<tbody>
-							<tr>
-								<td class="table-plus">
-									<div class="name-avatar d-flex align-items-center">
-										<div class="avatar mr-2 flex-shrink-0">
-											<img
-												src="vendors/images/photo4.jpg"
-												class="border-radius-100 shadow"
-												width="40"
-												height="40"
-												alt=""
-											/>
-										</div>
-										<div class="txt">
-											<div class="weight-600">Jennifer O. Oster</div>
-										</div>
-									</div>
-								</td>
-								<td>Female</td>
-								<td>45 kg</td>
-								<td>Dr. Callie Reed</td>
-								<td>19 Oct 2020</td>
-								<td>
-									<span
-										class="badge badge-pill"
-										data-bgcolor="#e7ebf5"
-										data-color="#265ed7"
-										>Typhoid</span
-									>
-								</td>
-								<td>
-									<div class="table-actions">
-										<a href="#" data-color="#265ed7"
-											><i class="icon-copy dw dw-edit2"></i
-										></a>
-										<a href="#" data-color="#e95959"
-											><i class="icon-copy dw dw-delete-3"></i
-										></a>
-									</div>
-								</td>
-							</tr>
-							<tr>
-								<td class="table-plus">
-									<div class="name-avatar d-flex align-items-center">
-										<div class="avatar mr-2 flex-shrink-0">
-											<img
-												src="vendors/images/photo5.jpg"
-												class="border-radius-100 shadow"
-												width="40"
-												height="40"
-												alt=""
-											/>
-										</div>
-										<div class="txt">
-											<div class="weight-600">Doris L. Larson</div>
-										</div>
-									</div>
-								</td>
-								<td>Male</td>
-								<td>76 kg</td>
-								<td>Dr. Ren Delan</td>
-								<td>22 Jul 2020</td>
-								<td>
-									<span
-										class="badge badge-pill"
-										data-bgcolor="#e7ebf5"
-										data-color="#265ed7"
-										>Dengue</span
-									>
-								</td>
-								<td>
-									<div class="table-actions">
-										<a href="#" data-color="#265ed7"
-											><i class="icon-copy dw dw-edit2"></i
-										></a>
-										<a href="#" data-color="#e95959"
-											><i class="icon-copy dw dw-delete-3"></i
-										></a>
-									</div>
-								</td>
-							</tr>
-							<tr>
-								<td class="table-plus">
-									<div class="name-avatar d-flex align-items-center">
-										<div class="avatar mr-2 flex-shrink-0">
-											<img
-												src="vendors/images/photo6.jpg"
-												class="border-radius-100 shadow"
-												width="40"
-												height="40"
-												alt=""
-											/>
-										</div>
-										<div class="txt">
-											<div class="weight-600">Joseph Powell</div>
-										</div>
-									</div>
-								</td>
-								<td>Male</td>
-								<td>90 kg</td>
-								<td>Dr. Allen Hannagan</td>
-								<td>15 Nov 2020</td>
-								<td>
-									<span
-										class="badge badge-pill"
-										data-bgcolor="#e7ebf5"
-										data-color="#265ed7"
-										>Infection</span
-									>
-								</td>
-								<td>
-									<div class="table-actions">
-										<a href="#" data-color="#265ed7"
-											><i class="icon-copy dw dw-edit2"></i
-										></a>
-										<a href="#" data-color="#e95959"
-											><i class="icon-copy dw dw-delete-3"></i
-										></a>
-									</div>
-								</td>
-							</tr>
-							<tr>
-								<td class="table-plus">
-									<div class="name-avatar d-flex align-items-center">
-										<div class="avatar mr-2 flex-shrink-0">
-											<img
-												src="vendors/images/photo9.jpg"
-												class="border-radius-100 shadow"
-												width="40"
-												height="40"
-												alt=""
-											/>
-										</div>
-										<div class="txt">
-											<div class="weight-600">Jake Springer</div>
-										</div>
-									</div>
-								</td>
-								<td>Female</td>
-								<td>45 kg</td>
-								<td>Dr. Garrett Kincy</td>
-								<td>08 Oct 2020</td>
-								<td>
-									<span
-										class="badge badge-pill"
-										data-bgcolor="#e7ebf5"
-										data-color="#265ed7"
-										>Covid 19</span
-									>
-								</td>
-								<td>
-									<div class="table-actions">
-										<a href="#" data-color="#265ed7"
-											><i class="icon-copy dw dw-edit2"></i
-										></a>
-										<a href="#" data-color="#e95959"
-											><i class="icon-copy dw dw-delete-3"></i
-										></a>
-									</div>
-								</td>
-							</tr>
-							<tr>
-								<td class="table-plus">
-									<div class="name-avatar d-flex align-items-center">
-										<div class="avatar mr-2 flex-shrink-0">
-											<img
-												src="vendors/images/photo1.jpg"
-												class="border-radius-100 shadow"
-												width="40"
-												height="40"
-												alt=""
-											/>
-										</div>
-										<div class="txt">
-											<div class="weight-600">Paul Buckland</div>
-										</div>
-									</div>
-								</td>
-								<td>Male</td>
-								<td>76 kg</td>
-								<td>Dr. Maxwell Soltes</td>
-								<td>12 Dec 2020</td>
-								<td>
-									<span
-										class="badge badge-pill"
-										data-bgcolor="#e7ebf5"
-										data-color="#265ed7"
-										>Asthma</span
-									>
-								</td>
-								<td>
-									<div class="table-actions">
-										<a href="#" data-color="#265ed7"
-											><i class="icon-copy dw dw-edit2"></i
-										></a>
-										<a href="#" data-color="#e95959"
-											><i class="icon-copy dw dw-delete-3"></i
-										></a>
-									</div>
-								</td>
-							</tr>
-							<tr>
-								<td class="table-plus">
-									<div class="name-avatar d-flex align-items-center">
-										<div class="avatar mr-2 flex-shrink-0">
-											<img
-												src="vendors/images/photo2.jpg"
-												class="border-radius-100 shadow"
-												width="40"
-												height="40"
-												alt=""
-											/>
-										</div>
-										<div class="txt">
-											<div class="weight-600">Neil Arnold</div>
-										</div>
-									</div>
-								</td>
-								<td>Male</td>
-								<td>60 kg</td>
-								<td>Dr. Sebastian Tandon</td>
-								<td>30 Oct 2020</td>
-								<td>
-									<span
-										class="badge badge-pill"
-										data-bgcolor="#e7ebf5"
-										data-color="#265ed7"
-										>Diabetes</span
-									>
-								</td>
-								<td>
-									<div class="table-actions">
-										<a href="#" data-color="#265ed7"
-											><i class="icon-copy dw dw-edit2"></i
-										></a>
-										<a href="#" data-color="#e95959"
-											><i class="icon-copy dw dw-delete-3"></i
-										></a>
-									</div>
-								</td>
-							</tr>
-							<tr>
-								<td class="table-plus">
-									<div class="name-avatar d-flex align-items-center">
-										<div class="avatar mr-2 flex-shrink-0">
-											<img
-												src="vendors/images/photo8.jpg"
-												class="border-radius-100 shadow"
-												width="40"
-												height="40"
-												alt=""
-											/>
-										</div>
-										<div class="txt">
-											<div class="weight-600">Christian Dyer</div>
-										</div>
-									</div>
-								</td>
-								<td>Male</td>
-								<td>80 kg</td>
-								<td>Dr. Sebastian Tandon</td>
-								<td>15 Jun 2020</td>
-								<td>
-									<span
-										class="badge badge-pill"
-										data-bgcolor="#e7ebf5"
-										data-color="#265ed7"
-										>Diabetes</span
-									>
-								</td>
-								<td>
-									<div class="table-actions">
-										<a href="#" data-color="#265ed7"
-											><i class="icon-copy dw dw-edit2"></i
-										></a>
-										<a href="#" data-color="#e95959"
-											><i class="icon-copy dw dw-delete-3"></i
-										></a>
-									</div>
-								</td>
-							</tr>
-							<tr>
-								<td class="table-plus">
-									<div class="name-avatar d-flex align-items-center">
-										<div class="avatar mr-2 flex-shrink-0">
-											<img
-												src="vendors/images/photo1.jpg"
-												class="border-radius-100 shadow"
-												width="40"
-												height="40"
-												alt=""
-											/>
-										</div>
-										<div class="txt">
-											<div class="weight-600">Doris L. Larson</div>
-										</div>
-									</div>
-								</td>
-								<td>Male</td>
-								<td>76 kg</td>
-								<td>Dr. Ren Delan</td>
-								<td>22 Jul 2020</td>
-								<td>
-									<span
-										class="badge badge-pill"
-										data-bgcolor="#e7ebf5"
-										data-color="#265ed7"
-										>Dengue</span
-									>
-								</td>
-								<td>
-									<div class="table-actions">
-										<a href="#" data-color="#265ed7"
-											><i class="icon-copy dw dw-edit2"></i
-										></a>
-										<a href="#" data-color="#e95959"
-											><i class="icon-copy dw dw-delete-3"></i
-										></a>
-									</div>
-								</td>
-							</tr>
-						</tbody>
-					</table>
-				</div>
 
-				<div class="title pb-20 pt-20">
-					<h2 class="h3 mb-0">Quick Start</h2>
-				</div>
+   <!-- Navbar Start -->
+   <nav class="navbar navbar-expand-lg bg-white navbar-light sticky-top px-4 px-lg-5">
+      <a href="index.php" class="navbar-brand d-flex align-items-center">
+         <img src="img/GO-RAKSHAK.png" alt="Bootstrap" width="290" height="50">
+      </a>
+      <button type="button" class="navbar-toggler me-0" data-bs-toggle="collapse" data-bs-target="#navbarCollapse">
+         <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarCollapse">
+         <div class="navbar-nav ms-auto p-4 p-lg-0">
+            <a href="index.php" class="nav-item nav-link">Home</a>
+            <a href="service.php" class="nav-item nav-link ">Services</a>
+            <a href="about.php" class="nav-item nav-link">About</a>
+            <a href="product.php" class="nav-item nav-link">Products</a>
+            <div class="nav-item dropdown">
+               <a href="#" class="nav-link dropdown-toggle " data-bs-toggle="dropdown">Pages</a>
+               <div class="dropdown-menu bg-light m-0">
+                  <a href="gallery.php" class="dropdown-item ">Gallery</a>
+                  <a href="team.php" class="dropdown-item">Our Team</a>
+                  <a href="testimonial.php" class="dropdown-item">Testimonial</a>
+               </div>
+            </div>
+            <a href="contact.php" class="nav-item nav-link">Contact</a>
+         </div>
+         <div class="border-start ps-4 d-none d-lg-block active">
+            <?php
+            if (isset($_SESSION["username"])) {
 
-				<div class="row">
-					<div class="col-md-4 mb-20">
-						<a href="#" class="card-box d-block mx-auto pd-20 text-secondary">
-							<div class="img pb-30">
-								<img src="vendors/images/medicine-bro.svg" alt="" />
-							</div>
-							<div class="content">
-								<h3 class="h4">Services</h3>
-								<p class="max-width-200">
-									We provide superior health care in a compassionate maner
-								</p>
-							</div>
-						</a>
-					</div>
-					<div class="col-md-4 mb-20">
-						<a href="#" class="card-box d-block mx-auto pd-20 text-secondary">
-							<div class="img pb-30">
-								<img src="vendors/images/remedy-amico.svg" alt="" />
-							</div>
-							<div class="content">
-								<h3 class="h4">Medications</h3>
-								<p class="max-width-200">
-									Look for prescription and over-the-counter drug information.
-								</p>
-							</div>
-						</a>
-					</div>
-					<div class="col-md-4 mb-20">
-						<a href="#" class="card-box d-block mx-auto pd-20 text-secondary">
-							<div class="img pb-30">
-								<img src="vendors/images/paper-map-cuate.svg" alt="" />
-							</div>
-							<div class="content">
-								<h3 class="h4">Locations</h3>
-								<p class="max-width-200">
-									Convenient locations when and where you need them.
-								</p>
-							</div>
-						</a>
-					</div>
-				</div>
+               ?>
 
-				<div class="footer-wrap pd-20 mb-20 card-box">
-					DeskApp - Bootstrap 4 Admin Template By
-					<a href="https://github.com/dropways" target="_blank"
-						>Ankit Hingarajiya</a
-					>
-				</div>
-			</div>
-		</div>
-		<!-- welcome modal start -->
-		<div class="welcome-modal">
-			<button class="welcome-modal-close">
-				<i class="bi bi-x-lg"></i>
-			</button>
-			<iframe
-				class="w-100 border-0"
-				src="https://embed.lottiefiles.com/animation/31548"
-			></iframe>
-			<div class="text-center">
-				<h3 class="h5 weight-500 text-center mb-2">
-					Open source
-					<span role="img" aria-label="gratitude">❤️</span>
-				</h3>
-				<div class="pb-2">
-					<a
-						class="github-button"
-						href="https://github.com/dropways/deskapp"
-						data-color-scheme="no-preference: dark; light: light; dark: light;"
-						data-icon="octicon-star"
-						data-size="large"
-						data-show-count="true"
-						aria-label="Star dropways/deskapp dashboard on GitHub"
-						>Star</a
-					>
-					<a
-						class="github-button"
-						href="https://github.com/dropways/deskapp/fork"
-						data-color-scheme="no-preference: dark; light: light; dark: light;"
-						data-icon="octicon-repo-forked"
-						data-size="large"
-						data-show-count="true"
-						aria-label="Fork dropways/deskapp dashboard on GitHub"
-						>Fork</a
-					>
-				</div>
-			</div>
-			<div class="text-center mb-1">
-				<div>
-					<a
-						href="https://github.com/dropways/deskapp"
-						target="_blank"
-						class="btn btn-light btn-block btn-sm"
-					>
-						<span class="text-danger weight-600">STAR US</span>
-						<span class="weight-600">ON GITHUB</span>
-						<i class="fa fa-github"></i>
-					</a>
-				</div>
-				<script
-					async
-					defer="defer"
-					src="https://buttons.github.io/buttons.js"
-				></script>
-			</div>
-			<a
-				href="https://github.com/dropways/deskapp"
-				target="_blank"
-				class="btn btn-success btn-sm mb-0 mb-md-3 w-100"
-			>
-				DOWNLOAD
-				<i class="fa fa-download"></i>
-			</a>
-			<p class="font-14 text-center mb-1 d-none d-md-block">
-				Available in the following technologies:
-			</p>
-			<div class="d-none d-md-flex justify-content-center h1 mb-0 text-danger">
-				<i class="fa fa-html5"></i>
-			</div>
-		</div>
-		<button class="welcome-modal-btn">
-			<i class="fa fa-download"></i> Download
-		</button>
-		<!-- welcome modal end -->
-		<!-- js -->
-		<script src="vendors/scripts/core.js"></script>
-		<script src="vendors/scripts/script.min.js"></script>
-		<script src="vendors/scripts/process.js"></script>
-		<script src="vendors/scripts/layout-settings.js"></script>
-		<script src="src/plugins/apexcharts/apexcharts.min.js"></script>
-		<script src="src/plugins/datatables/js/jquery.dataTables.min.js"></script>
-		<script src="src/plugins/datatables/js/dataTables.bootstrap4.min.js"></script>
-		<script src="src/plugins/datatables/js/dataTables.responsive.min.js"></script>
-		<script src="src/plugins/datatables/js/responsive.bootstrap4.min.js"></script>
-		<script src="vendors/scripts/dashboard3.js"></script>
-		<!-- Google Tag Manager (noscript) -->
-		<noscript
-			><iframe
-				src="https://www.googletagmanager.com/ns.html?id=GTM-NXZMQSS"
-				height="0"
-				width="0"
-				style="display: none; visibility: hidden"
-			></iframe
-		></noscript>
-		<!-- End Google Tag Manager (noscript) -->
-	</body>
+               <div class="collapse navbar-collapse" id="navbarNavDarkDropdown">
+                  <ul class="navbar-nav">
+                     <li class="nav-item dropdown">
+                        <button class="btn btn-dark dropdown-toggle" data-bs-toggle="dropdown" aria-expanded="false">
+                        <?php echo ($_SESSION["username"]); ?>
+                        </button>
+                        <ul class="dropdown-menu dropdown-menu-dark">
+                           <li><a class="dropdown-item" href="LOGOUT.PHP">LOGOUT</a></li>
+                        </ul>
+                     </li>
+                  </ul>
+               </div>
+
+
+               <?php
+            } else {
+               ?>
+
+               <a href="login.php">
+                  <button type="button" class="btn btn-outline-dark">Sign-in </button>
+               </a>
+               <a href="signup.php">
+                  <button type="button" class="btn btn-outline-dark">Sign-up </button>
+               </a>
+               <?php
+            }
+            ?>
+         </div>
+      </div>
+   </nav>
+   <!-- Navbar End -->
+
+
+   <!-- Page Header Start -->
+   <div class="container-fluid page-header py-5 mb-5 wow fadeIn" data-wow-delay="0.1s">
+      <div class="container text-center py-5">
+         <h1 class="display-3 text-white mb-4 animated slideInDown">PROFILE</h1>
+         <nav aria-label="breadcrumb animated slideInDown">
+            <ol class="breadcrumb justify-content-center mb-0">
+               <li class="breadcrumb-item"><a href="#">Home</a></li>
+               <li class="breadcrumb-item"><a href="#">Services</a></li>
+               <li class="breadcrumb-item active" aria-current="page">PROFILE</li>
+            </ol>
+         </nav>
+      </div>
+   </div>
+   <!-- Page Header End -->
+
+
+   <!-- PROFILE Start -->
+
+
+
+   <!-- PROFILE End -->
+
+
+   <!-- Footer Start -->
+   <div class="container-fluid bg-dark footer mt-5 py-5 wow fadeIn" data-wow-delay="0.1s">
+      <div class="container py-5">
+         <div class="row g-5">
+            <div class="col-lg-3 col-md-6">
+               <h5 class="text-white mb-4">Our Office</h5>
+               <p class="mb-2 text-white "><i class="fa fa-map-marker-alt me-3"></i>DYP SALOKHENAGAR</p>
+               <p class="mb-2 text-white"><i class="fa fa-phone-alt me-3"></i>1234567890</p>
+               <p class="mb-2 text-white"><i class="fa fa-envelope me-3"></i>gorakshak302@example.com</p>
+               <!-- <div class="d-flex pt-3">
+                        <a class="btn btn-square btn-secondary rounded-circle me-2" href=""><i class="fab fa-twitter"></i></a>
+                        <a class="btn btn-square btn-secondary rounded-circle me-2" href=""><i class="fab fa-facebook-f"></i></a>
+                        <a class="btn btn-square btn-secondary rounded-circle me-2" href=""><i class="fab fa-youtube"></i></a>
+                        <a class="btn btn-square btn-secondary rounded-circle me-2" href=""><i class="fab fa-linkedin-in"></i></a>
+                    </div> -->
+            </div>
+            <div class="col-lg-3 col-md-6">
+               <h5 class="text-white mb-4">Quick Links</h5>
+               <a class="btn btn-link" href="">About Us</a>
+               <a class="btn btn-link" href="">Contact Us</a>
+               <a class="btn btn-link" href="">Our Services</a>
+               <a class="btn btn-link" href="">Terms & Condition</a>
+               <a class="btn btn-link" href="">Support</a>
+            </div>
+            <div class="col-lg-3 col-md-6">
+               <h5 class="text-white mb-4">Business Hours</h5>
+               <p class="mb-1">Monday - Friday</p>
+               <h6 class="text-light">09:00 am - 07:00 pm</h6>
+               <p class="mb-1">Saturday</p>
+               <h6 class="text-light">09:00 am - 12:00 pm</h6>
+               <p class="mb-1">Sunday</p>
+               <h6 class="text-light">Closed</h6>
+            </div>
+            <!-- <div class="col-lg-3 col-md-6">
+                    <h5 class="text-white mb-4">Newsletter</h5>
+                    <p>Dolor amet sit justo amet elitr clita ipsum elitr est.</p>
+                    <div class="position-relative w-100">
+                        <input class="form-control bg-transparent w-100 py-3 ps-4 pe-5" type="text" placeholder="Your email">
+                        <button type="button" class="btn btn-secondary py-2 position-absolute top-0 end-0 mt-2 me-2">SignUp</button>
+                    </div>
+                </div> -->
+         </div>
+      </div>
+   </div>
+   <!-- Footer End -->
+
+
+   <!-- Copyright Start -->
+   <div class="container-fluid bg-secondary text-body copyright py-4">
+      <div class="container">
+         <div class="row">
+            <div class="col-md-6 text-center text-md-start mb-3 mb-md-0">
+               &copy; <a class="fw-semi-bold" href="#">GO-RAKSHAK</a>, All Right Reserved.
+            </div>
+            <div class="col-md-6 text-center text-md-end">
+               <!--/*** This template is free as long as you keep the footer author’s credit link/attribution link/backlink. If you'd like to use the template without the footer author’s credit link/attribution link/backlink, you can purchase the Credit Removal License from "https://htmlcodex.com/credit-removal". Thank you for your support. ***/-->
+               Designed By <a class="fw-semi-bold" href="https://htmlcodex.com">HACK-A-FARM</a>
+            </div>
+         </div>
+      </div>
+   </div>
+   <!-- Copyright End -->
+
+   <!-- Back to Top -->
+   <a href="#" class="btn btn-lg btn-primary btn-lg-square rounded-circle back-to-top"><i
+         class="bi bi-arrow-up"></i></a>
+
+
+   <!-- JavaScript Libraries -->
+   <script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
+   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0/dist/js/bootstrap.bundle.min.js"></script>
+   <script src="lib/wow/wow.min.js"></script>
+   <script src="lib/easing/easing.min.js"></script>
+   <script src="lib/waypoints/waypoints.min.js"></script>
+   <script src="lib/owlcarousel/owl.carousel.min.js"></script>
+   <script src="lib/counterup/counterup.min.js"></script>
+   <script src="lib/parallax/parallax.min.js"></script>
+   <script src="lib/lightbox/js/lightbox.min.js"></script>
+
+   <!-- Template Javascript -->
+   <script src="js/main.js"></script>
+</body>
+
 </html>

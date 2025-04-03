@@ -1,4 +1,3 @@
-
 <?php
 session_start();
 include('config.php');
@@ -196,13 +195,13 @@ if (isset($_POST['book1'])) {
             <div class="text-center mx-auto pb-4 wow fadeInUp" data-wow-delay="0.1s" style="max-width: 500px;">
                 <!-- <body style="background: url('img/background.jpg') no-repeat center center fixed; background-size: cover;"></body> -->
                 <p class="section-title bg-white text-center text-primary px-3">Our Services</p>
-                <h1 class="mb-5 text-white">Healthcare and Monitoring </h1>
+                <h1 class="mb-5 text-black">Healthcare and Monitoring </h1>
             </div>
 
 
-            
-            <div class="row gy-5 gx-4">
-                <div class="col-lg-4 col-md-6 pt-5 wow fadeInUp" data-wow-delay="0.1s">
+
+            <div class="row row-cols-2">
+                <div class="col pt-5 pb-5  wow fadeInUp" data-wow-delay="0.1s">
                     <div class="service-item d-flex h-100">
                         <div class="service-img">
                             <img class="img-fluid" src="img/service-1.jpg" alt="">
@@ -226,7 +225,7 @@ if (isset($_POST['book1'])) {
 
 
 
-                <div class="col-lg-4 col-md-6 pt-5 wow fadeInUp" data-wow-delay="0.3s">
+                <div class="col pt-5 pb-5 wow fadeInUp" data-wow-delay="0.3s">
                     <div class="service-item d-flex h-100">
                         <div class="service-img">
                             <img class="img-fluid" src="img/service-2.jpg" alt="">
@@ -251,7 +250,7 @@ if (isset($_POST['book1'])) {
                 </div>
 
 
-                <div class="col-lg-4 col-md-6 pt-5 wow fadeInUp" data-wow-delay="0.5s">
+                <div class="col pt-5  wow fadeInUp" data-wow-delay="0.5s">
                     <div class="service-item d-flex h-100">
                         <div class="service-img">
                             <img class="img-fluid" src="img/service-3.jpg" alt="">
@@ -272,7 +271,7 @@ if (isset($_POST['book1'])) {
                 </div>
 
 
-                <div class="col-lg-4 col-md-6 pt-5 wow fadeInUp" data-wow-delay="0.3s">
+                <!-- <div class="col pt-5 wow fadeInUp" data-wow-delay="0.3s">
                     <div class="service-item d-flex h-100">
                         <div class="service-img">
                             <img class="img-fluid" src="img/cows1.jpg" alt="">
@@ -293,10 +292,10 @@ if (isset($_POST['book1'])) {
                                     class="bi bi-chevron-double-right"></i></a>
                         </div>
                     </div>
-                </div>
+                </div> -->
 
 
-                <div class="col-lg-4 col-md-6 pt-5 wow fadeInUp" data-wow-delay="0.3s">
+                <div class="col pt-5 wow fadeInUp" data-wow-delay="0.3s">
                     <div class="service-item d-flex h-100">
                         <div class="service-img">
                             <img class="img-fluid" src="img/cows2.jpg" alt="">
@@ -317,7 +316,7 @@ if (isset($_POST['book1'])) {
                 </div>
 
 
-                <div class="col-lg-4 col-md-6 pt-5 wow fadeInUp" data-wow-delay="0.3s">
+                <!-- <div class="col pt-5 wow fadeInUp" data-wow-delay="0.3s">
                     <div class="service-item d-flex h-100">
                         <div class="service-img">
                             <img class="img-fluid" src="img/cows3.jpg" alt="">
@@ -335,16 +334,18 @@ if (isset($_POST['book1'])) {
                             <a class="btn btn-square rounded-circle" href=""><i class="bi bi-chevron-double-right"></i></a>
                         </div>
                     </div>
-                </div>
+                </div> -->
+
             </div>
         </div>
     </div>
     <!-- Service End -->
 
 
-    
-     <!--Features End -->
-     <body>
+
+    <!--Features End -->
+
+    <body>
         <div class="container mt-5">
             <h2 class="text-center mb-4 text-black">🐾 COW Doctor Appointment 🐾</h2>
             <form>
@@ -353,23 +354,24 @@ if (isset($_POST['book1'])) {
                     <label for="ownerName" class="form-label">Owner's Name</label>
                     <input type="text" class="form-control" id="ownerName" placeholder="Enter your name" required>
                 </div>
-    
+
                 <div class="mb-3 text-blsck">
                     <label for="ownerPhone" class="form-label">Phone Number</label>
-                    <input type="tel" class="form-control" id="ownerPhone" placeholder="Enter your phone number" required>
+                    <input type="tel" class="form-control" id="ownerPhone" placeholder="Enter your phone number"
+                        required>
                 </div>
-    
+
                 <div class="mb-3 text-blsck">
                     <label for="ownerEmail" class="form-label">Email Address</label>
                     <input type="email" class="form-control" id="ownerEmail" placeholder="Enter your email">
                 </div>
-    
+
                 <!-- Pet Details -->
                 <div class="mb-3 text-blsck">
                     <label for="COW NAME" class="form-label">COW Name</label>
                     <input type="text" class="form-control" id="petName" placeholder="Enter COW name" required>
                 </div>
-    
+
                 <div class="mb-3 text-blsck">
                     <label for="COW BREED" class="form-label">COW BREED</label>
                     <select class="form-select" id="petType" required>
@@ -381,29 +383,30 @@ if (isset($_POST['book1'])) {
                         <option value="Other">Other</option>
                     </select>
                 </div>
-    
+
                 <div class="mb-3 text-blsck">
                     <label for="appointmentDate" class="form-label">Preferred Appointment Date</label>
                     <input type="date" class="form-control" id="appointmentDate" required>
                 </div>
-    
+
                 <div class="mb-3 text-blsck">
                     <label for="appointmentTime" class="form-label">Preferred Time</label>
                     <input type="time" class="form-control" id="appointmentTime" required>
                 </div>
-    
+
                 <div class="mb-3 text-blsck">
                     <label for="reason" class="form-label">Reason for Visit</label>
-                    <textarea class="form-control" id="reason" rows="3" placeholder="Describe the problem or service required" required></textarea>
+                    <textarea class="form-control" id="reason" rows="3"
+                        placeholder="Describe the problem or service required" required></textarea>
                 </div>
-    
+
                 <!-- Submit Button -->
                 <div class="text-center">
                     <button type="submit" class="btn btn-primary">Book Appointment</button>
                 </div>
             </form>
         </div>
-     
+
 
 
         <!-- Footer Start -->
