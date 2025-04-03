@@ -14,8 +14,8 @@ if(isset($_POST['send'])){
     $email = $_POST['email'];
     $subject = $_POST['subject'];
     $msg = $_POST['msg'];
-}
-   
+
+       
 //Load Composer's autoloader (created by composer, not included with PHPMailer)
 require 'PHPmailer/Exception.php';
 require 'PHPmailer/PHPMailer.php';
@@ -58,6 +58,7 @@ try {
 } catch (Exception $e) {
     echo "Message could not be sent. Mailer Error: {$mail->ErrorInfo}";
 }
+
 ?>
 <!DOCTYPE html>
 <html lang="en">
