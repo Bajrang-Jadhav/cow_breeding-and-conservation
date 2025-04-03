@@ -14,7 +14,7 @@ if(isset($_POST['send'])){
     $email = $_POST['email'];
     $subject = $_POST['subject'];
     $msg = $_POST['msg'];
-
+}
    
 //Load Composer's autoloader (created by composer, not included with PHPMailer)
 require 'PHPmailer/Exception.php';
