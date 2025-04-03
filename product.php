@@ -174,7 +174,7 @@ include('config.php');
                             <span class="text-primary me-1">Pure and healthy A2 milk from our cows. </span>
                             <br>
                             <br>
-                            <button>Buy Now</button>
+                            
                         </div>
                     </div>
                 </div>
@@ -194,7 +194,7 @@ include('config.php');
                             <span class="text-primary me-1">Develop cheeses using milk from specific breeds. </span>
                             <br>
                             <br>
-                            <button>Buy Now</button>
+                            
                         </div>
                     </div>
                 </div>
@@ -214,7 +214,7 @@ include('config.php');
                             <span class="text-primary me-1">Natural fertilizer made from cow dung.</span>
                             <br>
                             <br>
-                            <button>Buy Now</button>
+                            
                         </div>
                     </div>
                 </div>
@@ -234,7 +234,7 @@ include('config.php');
                             <span class="text-primary me-1">Various products made from cow dung.</span>
                             <br>
                             <br>
-                            <button>Buy Now</button>
+                        
                         </div>
                     </div>
                 </div>
