@@ -12,8 +12,8 @@ use PHPMailer\PHPMailer\Exception;
 if(isset($_POST['send'])){
     $yourname = $_POST['yourname'];
     $email = $_POST['email'];
-    $subject = $_POST['subject']
-    $msg = $_POST['msg']
+    $subject = $_POST['subject'];
+    $msg = $_POST['msg'];
 
    
 //Load Composer's autoloader (created by composer, not included with PHPMailer)
@@ -50,7 +50,7 @@ try {
     //Content
     $mail->isHTML(true);                                  //Set email format to HTML
     $mail->Subject = 'From Go-Rakshak';
-    $mail->Body    = "  <br> sender name - $yourname <br> sender email - $email <br> sender message - $msg";
+    $mail->Body    = "  <br> sender name - $yourname <br> sender email - $email <br> sender message - $msg ";
     // $mail->AltBody = 'This is the body in plain text for non-HTML mail clients';
 
     $mail->send();
