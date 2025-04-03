@@ -1,6 +1,6 @@
 <?php
 session_start();
-include('config.php');
+include('send.php');
 
  //Import PHPMailer classes into the global namespace
 //These must be at the top of your script, not inside a function
