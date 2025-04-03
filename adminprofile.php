@@ -57,8 +57,6 @@ include('header.php');
 
          background-color: #fff;
          border-radius: 10px;
-         margin-left: 200px;
-         margin-right: 200px;
          -webkit-box-shadow: 0 0 28px rgba(0, 0, 0, .08);
          box-shadow: 0 0 28px rgba(0, 0, 0, .08);
       }
@@ -196,54 +194,8 @@ include('header.php');
 
 
    <!-- PROFILE Start -->
-   <!-- ms-5 me-5 -->
-   <div class="text-center mx-auto wow fadeInUp" data-wow-delay="0.1s" style="max-width: 500px;">
-                <p class="section-title bg-white text-center text-primary px-3">WELCOME <?php echo ($_SESSION["username"]); ?></p>
-                <h1 class="mb-5">YOUR APPOINTMENTS</h1>
-            </div>
-   <div class="card-box pb-10 ">
-      <table class="data-table table nowrap">
-         <thead>
-            <tr>
-               <th class="table-plus">Cow Name</th>
-               <th>Cow breed</th>
-               <th>Preffered Appointment Date</th>
-               <th>Preffered Time</th>
-               <th>Disease</th>
-            </tr>
-         </thead>
-         <tbody>
-            <?php
-            $sql = "SELECT * FROM doctor WHERE namee = '{$_SESSION['username']}' ";
 
-
-            $result = mysqli_query($conn, $sql) or die('query failed');
-            if (mysqli_num_rows($result) > 0) {
-               while ($row = mysqli_fetch_assoc($result)) {
-
-                  ?>
-                  <tr>
-                     <td class="table-plus">
-                        <div class="name-avatar d-flex align-items-center">
-
-                           <div class="txt">
-                              <div class="weight-600"><?php echo $row['petname']; ?></div>
-                           </div>
-                        </div>
-                     </td>
-                     <td><?php echo $row['breed']; ?></td>
-                     <td><?php echo $row['datee']; ?></td>
-                     <td><?php echo $row['timee']; ?></td>
-                     <td><?php echo $row['problem']; ?></td>
-                     
-                  </tr>
-                  <?php
-               }
-            }
-            ?>
-         </tbody>
-      </table>
-   </div>
+   
 
    <!-- PROFILE End -->
 
