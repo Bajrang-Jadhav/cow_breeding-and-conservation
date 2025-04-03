@@ -1,7 +1,7 @@
 <?php
 session_start();
- include('config.php');
- ?>
+include('config.php');
+?>
 <!DOCTYPE html>
 <html lang="en">
 
@@ -18,7 +18,9 @@ session_start();
     <!-- Google Web Fonts -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Libre+Baskerville:wght@700&family=Open+Sans:wght@400;500;600&display=swap" rel="stylesheet">   
+    <link
+        href="https://fonts.googleapis.com/css2?family=Libre+Baskerville:wght@700&family=Open+Sans:wght@400;500;600&display=swap"
+        rel="stylesheet">
 
     <!-- Icon Font Stylesheet -->
     <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.10.0/css/all.min.css" rel="stylesheet">
@@ -37,12 +39,13 @@ session_start();
 
 
 
-    
+
 </head>
 
 <body>
     <!-- Spinner Start -->
-    <div id="spinner" class="show bg-white position-fixed translate-middle w-100 vh-100 top-50 start-50 d-flex align-items-center justify-content-center">
+    <div id="spinner"
+        class="show bg-white position-fixed translate-middle w-100 vh-100 top-50 start-50 d-flex align-items-center justify-content-center">
         <div class="spinner-border text-primary" role="status" style="width: 3rem; height: 3rem;"></div>
     </div>
     <!-- Spinner End -->
@@ -96,25 +99,37 @@ session_start();
                 <a href="contact.php" class="nav-item nav-link">Contact</a>
             </div>
             <div class="border-start ps-4 d-none d-lg-block">
-            <?php
+                <?php
                 if (isset($_SESSION["username"])) {
 
-                ?>                  
-                     <a href="" class="nav-item nav-link " ><?php echo ($_SESSION["username"]); ?></a>
-                 
-                    
-                <?php 
-					} else{
-						?>
-							
-                            <a href="login.php" >
-                    <button type="button" class="btn btn-outline-dark">Sign-in </button> 
-                </a>
-                <a href="signup.php" >
-                    <button type="button"  class="btn btn-outline-dark">Sign-up </button>  
-                </a>
-					<?php
-					 }
+                    ?>
+                    <div class="collapse navbar-collapse" id="navbarNavDarkDropdown">
+                        <ul class="navbar-nav">
+                            <li class="nav-item dropdown">
+                                <button class="btn btn-dark dropdown-toggle" data-bs-toggle="dropdown"
+                                    aria-expanded="false">
+                                    <?php echo ($_SESSION["username"]); ?>
+                                </button>
+                                <ul class="dropdown-menu dropdown-menu-dark">
+                                    <li><a class="dropdown-item" href="profile.PHP">profile</a></li>
+                                    <li><a class="dropdown-item" href="LOGOUT.PHP">LOGOUT</a></li>
+                                </ul>
+                            </li>
+                        </ul>
+                    </div>
+
+                <?php
+                } else {
+                    ?>
+
+                    <a href="login.php">
+                        <button type="button" class="btn btn-outline-dark">Sign-in </button>
+                    </a>
+                    <a href="signup.php">
+                        <button type="button" class="btn btn-outline-dark">Sign-up </button>
+                    </a>
+                    <?php
+                }
                 ?>
             </div>
         </div>
@@ -208,7 +223,7 @@ session_start();
     </div>
     <!-- Gallery End -->
 
-    
+
 
 
     <div class="container-xxl py-5">
@@ -344,7 +359,8 @@ session_start();
     <!-- Copyright End -->
 
     <!-- Back to Top -->
-    <a href="#" class="btn btn-lg btn-primary btn-lg-square rounded-circle back-to-top"><i class="bi bi-arrow-up"></i></a>
+    <a href="#" class="btn btn-lg btn-primary btn-lg-square rounded-circle back-to-top"><i
+            class="bi bi-arrow-up"></i></a>
 
 
     <!-- JavaScript Libraries -->

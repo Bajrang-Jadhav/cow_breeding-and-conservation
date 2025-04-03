@@ -1,8 +1,8 @@
 <?php
 session_start();
- include('config.php');
- ?>
- <!DOCTYPE html>
+include('config.php');
+?>
+<!DOCTYPE html>
 <html lang="en">
 
 <head>
@@ -18,7 +18,9 @@ session_start();
     <!-- Google Web Fonts -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Libre+Baskerville:wght@700&family=Open+Sans:wght@400;500;600&display=swap" rel="stylesheet">   
+    <link
+        href="https://fonts.googleapis.com/css2?family=Libre+Baskerville:wght@700&family=Open+Sans:wght@400;500;600&display=swap"
+        rel="stylesheet">
 
     <!-- Icon Font Stylesheet -->
     <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.10.0/css/all.min.css" rel="stylesheet">
@@ -38,7 +40,8 @@ session_start();
 
 <body>
     <!-- Spinner Start -->
-    <div id="spinner" class="show bg-white position-fixed translate-middle w-100 vh-100 top-50 start-50 d-flex align-items-center justify-content-center">
+    <div id="spinner"
+        class="show bg-white position-fixed translate-middle w-100 vh-100 top-50 start-50 d-flex align-items-center justify-content-center">
         <div class="spinner-border text-primary" role="status" style="width: 3rem; height: 3rem;"></div>
     </div>
     <!-- Spinner End -->
@@ -92,25 +95,37 @@ session_start();
                 <a href="contact.php" class="nav-item nav-link">Contact</a>
             </div>
             <div class="border-start ps-4 d-none d-lg-block">
-            <?php
+                <?php
                 if (isset($_SESSION["username"])) {
 
-                ?>                  
-                     <a href="" class="nav-item nav-link " ><?php echo ($_SESSION["username"]); ?></a>
-                 
-                    
-                <?php 
-					} else{
-						?>
-							
-                            <a href="login.php" >
-                    <button type="button" class="btn btn-outline-dark">Sign-in </button> 
-                </a>
-                <a href="signup.php" >
-                    <button type="button"  class="btn btn-outline-dark">Sign-up </button>  
-                </a>
-					<?php
-					 }
+                    ?>
+                    <div class="collapse navbar-collapse" id="navbarNavDarkDropdown">
+                        <ul class="navbar-nav">
+                            <li class="nav-item dropdown">
+                                <button class="btn btn-dark dropdown-toggle" data-bs-toggle="dropdown"
+                                    aria-expanded="false">
+                                    <?php echo ($_SESSION["username"]); ?>
+                                </button>
+                                <ul class="dropdown-menu dropdown-menu-dark">
+                                    <li><a class="dropdown-item" href="profile.PHP">profile</a></li>
+                                    <li><a class="dropdown-item" href="LOGOUT.PHP">LOGOUT</a></li>
+                                </ul>
+                            </li>
+                        </ul>
+                    </div>
+
+                <?php
+                } else {
+                    ?>
+
+                    <a href="login.php">
+                        <button type="button" class="btn btn-outline-dark">Sign-in </button>
+                    </a>
+                    <a href="signup.php">
+                        <button type="button" class="btn btn-outline-dark">Sign-up </button>
+                    </a>
+                    <?php
+                }
                 ?>
             </div>
         </div>
@@ -154,25 +169,33 @@ session_start();
                     <div class="owl-carousel testimonial-carousel">
                         <div class="testimonial-item">
                             <img class="img-fluid mb-3" src="img/testimonial-1.jpg" alt="">
-                            <p class="fs-5">Dolores sed duo clita tempor justo dolor et stet lorem kasd labore dolore lorem ipsum. At lorem lorem magna ut et, nonumy et labore et tempor diam tempor erat.</p>
+                            <p class="fs-5">Dolores sed duo clita tempor justo dolor et stet lorem kasd labore dolore
+                                lorem ipsum. At lorem lorem magna ut et, nonumy et labore et tempor diam tempor erat.
+                            </p>
                             <h5>Client Name</h5>
                             <span class="text-primary">Profession</span>
                         </div>
                         <div class="testimonial-item">
                             <img class="img-fluid mb-3" src="img/testimonial-2.jpg" alt="">
-                            <p class="fs-5">Dolores sed duo clita tempor justo dolor et stet lorem kasd labore dolore lorem ipsum. At lorem lorem magna ut et, nonumy et labore et tempor diam tempor erat.</p>
+                            <p class="fs-5">Dolores sed duo clita tempor justo dolor et stet lorem kasd labore dolore
+                                lorem ipsum. At lorem lorem magna ut et, nonumy et labore et tempor diam tempor erat.
+                            </p>
                             <h5>Client Name</h5>
                             <span class="text-primary">Profession</span>
                         </div>
                         <div class="testimonial-item">
                             <img class="img-fluid mb-3" src="img/testimonial-3.jpg" alt="">
-                            <p class="fs-5">Dolores sed duo clita tempor justo dolor et stet lorem kasd labore dolore lorem ipsum. At lorem lorem magna ut et, nonumy et labore et tempor diam tempor erat.</p>
+                            <p class="fs-5">Dolores sed duo clita tempor justo dolor et stet lorem kasd labore dolore
+                                lorem ipsum. At lorem lorem magna ut et, nonumy et labore et tempor diam tempor erat.
+                            </p>
                             <h5>Client Name</h5>
                             <span class="text-primary">Profession</span>
                         </div>
                         <div class="testimonial-item">
                             <img class="img-fluid mb-3" src="img/testimonial-4.jpg" alt="">
-                            <p class="fs-5">Dolores sed duo clita tempor justo dolor et stet lorem kasd labore dolore lorem ipsum. At lorem lorem magna ut et, nonumy et labore et tempor diam tempor erat.</p>
+                            <p class="fs-5">Dolores sed duo clita tempor justo dolor et stet lorem kasd labore dolore
+                                lorem ipsum. At lorem lorem magna ut et, nonumy et labore et tempor diam tempor erat.
+                            </p>
                             <h5>Client Name</h5>
                             <span class="text-primary">Profession</span>
                         </div>
@@ -183,7 +206,7 @@ session_start();
     </div>
     <!-- Testimonial End -->
 
-    
+
 
 
     <!-- Footer Start -->
@@ -220,11 +243,11 @@ session_start();
                     <h6 class="text-light">Closed</h6>
                 </div>
                 <div class="col-lg-3 col-md-6">
-                   
-                    </div>
+
                 </div>
             </div>
         </div>
+    </div>
     </div>
     <!-- Footer End -->
 
@@ -247,7 +270,8 @@ session_start();
 
 
     <!-- Back to Top -->
-    <a href="#" class="btn btn-lg btn-primary btn-lg-square rounded-circle back-to-top"><i class="bi bi-arrow-up"></i></a>
+    <a href="#" class="btn btn-lg btn-primary btn-lg-square rounded-circle back-to-top"><i
+            class="bi bi-arrow-up"></i></a>
 
 
     <!-- JavaScript Libraries -->

@@ -1,8 +1,8 @@
 <?php
 session_start();
- include('config.php');
- ?>
- <!DOCTYPE html>
+include('config.php');
+?>
+<!DOCTYPE html>
 <html lang="en">
 
 <head>
@@ -18,7 +18,9 @@ session_start();
     <!-- Google Web Fonts -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Libre+Baskerville:wght@700&family=Open+Sans:wght@400;500;600&display=swap" rel="stylesheet">   
+    <link
+        href="https://fonts.googleapis.com/css2?family=Libre+Baskerville:wght@700&family=Open+Sans:wght@400;500;600&display=swap"
+        rel="stylesheet">
 
     <!-- Icon Font Stylesheet -->
     <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.10.0/css/all.min.css" rel="stylesheet">
@@ -36,11 +38,11 @@ session_start();
     <link href="css/style.css" rel="stylesheet">
 
     <style>
-
-    .info {
+        .info {
             background-color: #f4f4f4;
             padding: 20px;
         }
+
         .contain {
             max-width: 2000px;
             margin: auto;
@@ -49,31 +51,34 @@ session_start();
             border-radius: 10px;
             box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
         }
+
         h1 {
             text-align: center;
             color: #333;
             margin-bottom: 20px;
         }
+
         p {
             font-size: 18px;
             line-height: 1.6;
             color: #555;
             margin-bottom: 15px;
         }
+
         img {
             width: 100%;
             border-radius: 5px;
             margin-bottom: 20px;
         }
-
-</style>
+    </style>
 
 
 </head>
 
 <body>
     <!-- Spinner Start -->
-    <div id="spinner" class="show bg-white position-fixed translate-middle w-100 vh-100 top-50 start-50 d-flex align-items-center justify-content-center">
+    <div id="spinner"
+        class="show bg-white position-fixed translate-middle w-100 vh-100 top-50 start-50 d-flex align-items-center justify-content-center">
         <div class="spinner-border text-primary" role="status" style="width: 3rem; height: 3rem;"></div>
     </div>
     <!-- Spinner End -->
@@ -127,25 +132,37 @@ session_start();
                 <a href="contact.php" class="nav-item nav-link">Contact</a>
             </div>
             <div class="border-start ps-4 d-none d-lg-block">
-            <?php
+                <?php
                 if (isset($_SESSION["username"])) {
 
-                ?>                  
-                     <a href="" class="nav-item nav-link " ><?php echo ($_SESSION["username"]); ?></a>
-                 
-                    
-                <?php 
-					} else{
-						?>
-							
-                            <a href="login.php" >
-                    <button type="button" class="btn btn-outline-dark">Sign-in </button> 
-                </a>
-                <a href="signup.php" >
-                    <button type="button"  class="btn btn-outline-dark">Sign-up </button>  
-                </a>
-					<?php
-					 }
+                    ?>
+                    <div class="collapse navbar-collapse" id="navbarNavDarkDropdown">
+                        <ul class="navbar-nav">
+                            <li class="nav-item dropdown">
+                                <button class="btn btn-dark dropdown-toggle" data-bs-toggle="dropdown"
+                                    aria-expanded="false">
+                                    <?php echo ($_SESSION["username"]); ?>
+                                </button>
+                                <ul class="dropdown-menu dropdown-menu-dark">
+                                    <li><a class="dropdown-item" href="profile.PHP">profile</a></li>
+                                    <li><a class="dropdown-item" href="LOGOUT.PHP">LOGOUT</a></li>
+                                </ul>
+                            </li>
+                        </ul>
+                    </div>
+
+                <?php
+                } else {
+                    ?>
+
+                    <a href="login.php">
+                        <button type="button" class="btn btn-outline-dark">Sign-in </button>
+                    </a>
+                    <a href="signup.php">
+                        <button type="button" class="btn btn-outline-dark">Sign-up </button>
+                    </a>
+                    <?php
+                }
                 ?>
             </div>
         </div>
@@ -170,54 +187,62 @@ session_start();
 
 
     <!-- artificial insemination Start -->
-    
+
 
 
     <div class="contain">
-    <center><h4>Process of Artificial Insemination:</h4>
-<br>
-<h4>1.Semen Collection</h4>
-<h6>Semen is collected from genetically superior bulls.</h6>
-<h6>The semen is evaluated, diluted, and frozen in liquid nitrogen for storage.</h6>
+        <center>
+            <h4>Process of Artificial Insemination:</h4>
+            <br>
+            <h4>1.Semen Collection</h4>
+            <h6>Semen is collected from genetically superior bulls.</h6>
+            <h6>The semen is evaluated, diluted, and frozen in liquid nitrogen for storage.</h6>
 
-<h4>2.Estrus Detection</h4>
-<h6>The cow must be in heat (estrus cycle) for successful insemination.</h6>
-<h6>Signs of heat include restlessness, mucus discharge, and mounting behavior.</h6>
+            <h4>2.Estrus Detection</h4>
+            <h6>The cow must be in heat (estrus cycle) for successful insemination.</h6>
+            <h6>Signs of heat include restlessness, mucus discharge, and mounting behavior.</h6>
 
-<h4>3.Semen Insertion</h4>
-<h6>A trained technician inserts the semen into the cow’s uterus using a catheter.</h6>
-<h6>The process must be done at the right time (ovulation phase).</h6>
+            <h4>3.Semen Insertion</h4>
+            <h6>A trained technician inserts the semen into the cow’s uterus using a catheter.</h6>
+            <h6>The process must be done at the right time (ovulation phase).</h6>
 
-<h4>4.Pregnancy Confirmation</h4>
-<h6>After 45–60 days, pregnancy is confirmed via rectal examination or ultrasound.</h6></center>
-</div>
+            <h4>4.Pregnancy Confirmation</h4>
+            <h6>After 45–60 days, pregnancy is confirmed via rectal examination or ultrasound.</h6>
+        </center>
+    </div>
 
-<br>
-<br>
-<div class="contain">
-   <center> <h4>Advantages of Artificial Insemination</h4>
-   <br>
-    <h6>✅ Improves Genetic Quality – Helps breed high-yielding dairy cattle </h6>
-    <h6>✅ Prevents Disease Transmission – Reduces the risk of sexually transmitted diseases.</h6>
-    <h6>✅ Increases Efficiency – One bull’s semen can be used for multiple cows, reducing the need for keeping bulls.</h6>
-    <h6>✅ Enables Crossbreeding – Farmers can improve traits like milk yield, disease resistance, and adaptability.</h6>
-    <h6>✅ Cost-Effective – Saves money on maintaining multiple bulls.</h6><center>
-</div>
-
-<br>
-<br>
-
-<div class="contain">
-    <center><h4>Use of  Artificial Insemination in India</h4>
     <br>
-    <h6>✅AI is widely used in dairy farming to improve breeds like Sahiwal, Gir, and Murrah (buffalo).</h6>
-    <h6>✅Government Schemes like the National Artificial Insemination Programme (NAIP) support AI adoption.</h6>
-    <h6>✅Crossbreeding programs with AI help develop high-yielding hybrid cows.</h6><center>
- </div>
+    <br>
+    <div class="contain">
+        <center>
+            <h4>Advantages of Artificial Insemination</h4>
+            <br>
+            <h6>✅ Improves Genetic Quality – Helps breed high-yielding dairy cattle </h6>
+            <h6>✅ Prevents Disease Transmission – Reduces the risk of sexually transmitted diseases.</h6>
+            <h6>✅ Increases Efficiency – One bull’s semen can be used for multiple cows, reducing the need for keeping
+                bulls.</h6>
+            <h6>✅ Enables Crossbreeding – Farmers can improve traits like milk yield, disease resistance, and
+                adaptability.</h6>
+            <h6>✅ Cost-Effective – Saves money on maintaining multiple bulls.</h6>
+            <center>
+    </div>
+
+    <br>
+    <br>
+
+    <div class="contain">
+        <center>
+            <h4>Use of Artificial Insemination in India</h4>
+            <br>
+            <h6>✅AI is widely used in dairy farming to improve breeds like Sahiwal, Gir, and Murrah (buffalo).</h6>
+            <h6>✅Government Schemes like the National Artificial Insemination Programme (NAIP) support AI adoption.</h6>
+            <h6>✅Crossbreeding programs with AI help develop high-yielding hybrid cows.</h6>
+            <center>
+    </div>
 
 
-    
-    
+
+
 
 
 
@@ -291,7 +316,8 @@ session_start();
     <!-- Copyright End -->
 
     <!-- Back to Top -->
-    <a href="#" class="btn btn-lg btn-primary btn-lg-square rounded-circle back-to-top"><i class="bi bi-arrow-up"></i></a>
+    <a href="#" class="btn btn-lg btn-primary btn-lg-square rounded-circle back-to-top"><i
+            class="bi bi-arrow-up"></i></a>
 
 
     <!-- JavaScript Libraries -->

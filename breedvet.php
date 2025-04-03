@@ -1,8 +1,8 @@
 <?php
 session_start();
- include('config.php');
- ?>
- <!DOCTYPE html>
+include('config.php');
+?>
+<!DOCTYPE html>
 <html lang="en">
 
 <head>
@@ -18,7 +18,9 @@ session_start();
     <!-- Google Web Fonts -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Libre+Baskerville:wght@700&family=Open+Sans:wght@400;500;600&display=swap" rel="stylesheet">   
+    <link
+        href="https://fonts.googleapis.com/css2?family=Libre+Baskerville:wght@700&family=Open+Sans:wght@400;500;600&display=swap"
+        rel="stylesheet">
 
     <!-- Icon Font Stylesheet -->
     <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.10.0/css/all.min.css" rel="stylesheet">
@@ -43,13 +45,14 @@ session_start();
             box-sizing: border-box;
             font-family: Arial, sans-serif;
         }
-        
-        
+
+
         .card-container {
             display: flex;
             gap: 20px;
-            margin-left:230px;
+            margin-left: 230px;
         }
+
         .card {
             width: 250px;
             height: 375px;
@@ -59,9 +62,11 @@ session_start();
             overflow: hidden;
             transition: transform 0.3s ease-in-out;
         }
+
         .card:hover {
             transform: translateY(-10px);
         }
+
         .card img {
             width: 100%;
             height: 100%;
@@ -69,11 +74,12 @@ session_start();
         }
 
 
-        
+
         .info {
             background-color: #f4f4f4;
             padding: 20px;
         }
+
         .contain {
             max-width: 2000px;
             margin: auto;
@@ -82,17 +88,20 @@ session_start();
             border-radius: 10px;
             box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
         }
+
         h1 {
             text-align: center;
             color: #333;
             margin-bottom: 20px;
         }
+
         p {
             font-size: 18px;
             line-height: 1.6;
             color: #555;
             margin-bottom: 15px;
         }
+
         img {
             width: 100%;
             border-radius: 5px;
@@ -109,7 +118,8 @@ session_start();
 
 <body>
     <!-- Spinner Start -->
-    <div id="spinner" class="show bg-white position-fixed translate-middle w-100 vh-100 top-50 start-50 d-flex align-items-center justify-content-center">
+    <div id="spinner"
+        class="show bg-white position-fixed translate-middle w-100 vh-100 top-50 start-50 d-flex align-items-center justify-content-center">
         <div class="spinner-border text-primary" role="status" style="width: 3rem; height: 3rem;"></div>
     </div>
     <!-- Spinner End -->
@@ -163,25 +173,37 @@ session_start();
                 <a href="contact.php" class="nav-item nav-link">Contact</a>
             </div>
             <div class="border-start ps-4 d-none d-lg-block">
-            <?php
+                <?php
                 if (isset($_SESSION["username"])) {
 
-                ?>                  
-                     <a href="" class="nav-item nav-link " ><?php echo ($_SESSION["username"]); ?></a>
-                 
-                    
-                <?php 
-					} else{
-						?>
-							
-                            <a href="login.php" >
-                    <button type="button" class="btn btn-outline-dark">Sign-in </button> 
-                </a>
-                <a href="signup.php" >
-                    <button type="button"  class="btn btn-outline-dark">Sign-up </button>  
-                </a>
-					<?php
-					 }
+                    ?>
+                    <div class="collapse navbar-collapse" id="navbarNavDarkDropdown">
+                        <ul class="navbar-nav">
+                            <li class="nav-item dropdown">
+                                <button class="btn btn-dark dropdown-toggle" data-bs-toggle="dropdown"
+                                    aria-expanded="false">
+                                    <?php echo ($_SESSION["username"]); ?>
+                                </button>
+                                <ul class="dropdown-menu dropdown-menu-dark">
+                                    <li><a class="dropdown-item" href="profile.PHP">profile</a></li>
+                                    <li><a class="dropdown-item" href="LOGOUT.PHP">LOGOUT</a></li>
+                                </ul>
+                            </li>
+                        </ul>
+                    </div>
+
+                <?php
+                } else {
+                    ?>
+
+                    <a href="login.php">
+                        <button type="button" class="btn btn-outline-dark">Sign-in </button>
+                    </a>
+                    <a href="signup.php">
+                        <button type="button" class="btn btn-outline-dark">Sign-up </button>
+                    </a>
+                    <?php
+                }
                 ?>
             </div>
         </div>
@@ -210,96 +232,108 @@ session_start();
 
     <div class="card-container">
         <div class="card">
-        <img src="img/breeding.jpg" alt="Card Image">
+            <img src="img/breeding.jpg" alt="Card Image">
         </div>
         <div class="card">
             <img src="img/breeding2.jpg" alt="Image 2">
         </div>
         <div class="card">
-            <img src="img/breeding3.jpg" alt="Image 3" >
+            <img src="img/breeding3.jpg" alt="Image 3">
         </div>
         <div class="card">
             <img src="img/brreding4.jpg" alt="Image 4">
         </div>
     </div>
-<br>
+    <br>
 
 
-<br>
-
-    <div class="contain">
-        <center><h2>
-         Breeding in Livestock</h2></center>
-        <center><p>
-<h6>Breeding is the process of selecting and mating animals to improve milk production, disease resistance, and adaptability.</h6>
-<h6>The two main types of breeding are:</h6>
-<br>
-<h4> Natural Breeding</h4>
-
-      <h6>Involves direct mating between a cow and a bull.</h6>
-
-<h6>Maintains traditional traits but is difficult to control genetically.</h6>
-<br>
-
-<h4>Artificial Breeding Methods</h4>
-
-<h6>Artificial Insemination (AI) – Semen from superior bulls is collected and inserted into cows to improve milk yield and disease resistance.</h6>
-
-<h6>Embryo Transfer Technology (ETT) – High-quality embryos are transplanted into surrogate cows for faster genetic improvement.</h6>
-
-<h6>Crossbreeding – Combining native and foreign breeds (e.g., Gir × Holstein Friesian) to improve milk production and adaptability.</h6>
-
-<br>
-<h4>Importance of Breeding:</h4>
-
-<h6>✅ Increases milk yield and meat quality</h6>
-
-<h6>✅ Enhances disease resistance</h6>
-
-<h6>✅ Improves adaptability to local conditions</h6>
-
-        </p>
-    </center>
-    </div>
-
-<br>
-<br>
-<br>
+    <br>
 
     <div class="contain">
-        <center><h2>
-        Veterinary Care in Livestock</h2></center>
-        <center><p>
-        <h6>Veterinary services ensure disease prevention, treatment, and overall animal welfare.</h6>
-<br>
-<h4> Preventive Veterinary Care</h4>
-<h6>Vaccination – Protects against foot-and-mouth disease (FMD), brucellosis, anthrax, etc.</h6>
+        <center>
+            <h2>
+                Breeding in Livestock</h2>
+        </center>
+        <center>
+            <p>
+            <h6>Breeding is the process of selecting and mating animals to improve milk production, disease resistance,
+                and adaptability.</h6>
+            <h6>The two main types of breeding are:</h6>
+            <br>
+            <h4> Natural Breeding</h4>
 
-<h6>Deworming – Prevents internal parasites affecting digestion and growth.</h6>
-<h6>Regular health check-ups – Helps detect diseases early.</h6>
+            <h6>Involves direct mating between a cow and a bull.</h6>
 
-<br>
-<h4>Treatment & Disease Control</h4>
-<h6>Diagnosis and treatment of common cattle diseases like mastitis, pneumonia, and tick-borne infections.</h6>
+            <h6>Maintains traditional traits but is difficult to control genetically.</h6>
+            <br>
 
-<h6>Use of antibiotics, supplements, and natural remedies to maintain animal health.</h6>
-<br>
-<h4>Mobile Veterinary Services</h4>
-<h6>Many state governments and NGOs in India provide mobile veterinary clinics for rural farmers.</h6>
+            <h4>Artificial Breeding Methods</h4>
 
-<h6>The 1962 Animal Ambulance Service helps treat sick and injured animals efficiently.</h6>
+            <h6>Artificial Insemination (AI) – Semen from superior bulls is collected and inserted into cows to improve
+                milk yield and disease resistance.</h6>
 
-<br>
-<h4>Importance of Veterinary Care:</h4>
+            <h6>Embryo Transfer Technology (ETT) – High-quality embryos are transplanted into surrogate cows for faster
+                genetic improvement.</h6>
 
-<h6>✅ Ensures better milk/meat production</h6>
+            <h6>Crossbreeding – Combining native and foreign breeds (e.g., Gir × Holstein Friesian) to improve milk
+                production and adaptability.</h6>
 
-<h6>✅ Prevents disease outbreaks</h6>
+            <br>
+            <h4>Importance of Breeding:</h4>
 
-<h6>✅ Reduces animal mortality rates</h6>
-                    </p></center>
+            <h6>✅ Increases milk yield and meat quality</h6>
+
+            <h6>✅ Enhances disease resistance</h6>
+
+            <h6>✅ Improves adaptability to local conditions</h6>
+
+            </p>
+        </center>
     </div>
-    
+
+    <br>
+    <br>
+    <br>
+
+    <div class="contain">
+        <center>
+            <h2>
+                Veterinary Care in Livestock</h2>
+        </center>
+        <center>
+            <p>
+            <h6>Veterinary services ensure disease prevention, treatment, and overall animal welfare.</h6>
+            <br>
+            <h4> Preventive Veterinary Care</h4>
+            <h6>Vaccination – Protects against foot-and-mouth disease (FMD), brucellosis, anthrax, etc.</h6>
+
+            <h6>Deworming – Prevents internal parasites affecting digestion and growth.</h6>
+            <h6>Regular health check-ups – Helps detect diseases early.</h6>
+
+            <br>
+            <h4>Treatment & Disease Control</h4>
+            <h6>Diagnosis and treatment of common cattle diseases like mastitis, pneumonia, and tick-borne infections.
+            </h6>
+
+            <h6>Use of antibiotics, supplements, and natural remedies to maintain animal health.</h6>
+            <br>
+            <h4>Mobile Veterinary Services</h4>
+            <h6>Many state governments and NGOs in India provide mobile veterinary clinics for rural farmers.</h6>
+
+            <h6>The 1962 Animal Ambulance Service helps treat sick and injured animals efficiently.</h6>
+
+            <br>
+            <h4>Importance of Veterinary Care:</h4>
+
+            <h6>✅ Ensures better milk/meat production</h6>
+
+            <h6>✅ Prevents disease outbreaks</h6>
+
+            <h6>✅ Reduces animal mortality rates</h6>
+            </p>
+        </center>
+    </div>
+
     <!-- BREEDING AND VETERANARY End -->
 
 
@@ -370,7 +404,8 @@ session_start();
     <!-- Copyright End -->
 
     <!-- Back to Top -->
-    <a href="#" class="btn btn-lg btn-primary btn-lg-square rounded-circle back-to-top"><i class="bi bi-arrow-up"></i></a>
+    <a href="#" class="btn btn-lg btn-primary btn-lg-square rounded-circle back-to-top"><i
+            class="bi bi-arrow-up"></i></a>
 
 
     <!-- JavaScript Libraries -->

@@ -1,9 +1,9 @@
 <?php
 
- include('config.php');
- include('header.php');
- ?>
- <!DOCTYPE html>
+include('config.php');
+include('header.php');
+?>
+<!DOCTYPE html>
 <html lang="en">
 
 <head>
@@ -19,7 +19,9 @@
     <!-- Google Web Fonts -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Libre+Baskerville:wght@700&family=Open+Sans:wght@400;500;600&display=swap" rel="stylesheet">   
+    <link
+        href="https://fonts.googleapis.com/css2?family=Libre+Baskerville:wght@700&family=Open+Sans:wght@400;500;600&display=swap"
+        rel="stylesheet">
 
     <!-- Icon Font Stylesheet -->
     <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.10.0/css/all.min.css" rel="stylesheet">
@@ -86,25 +88,28 @@
             line-height: 1.6;
             color: #666;
         }
+
         .breed-details ul {
             list-style-type: disc;
             margin-left: 20px;
         }
+
         .video-container {
             margin-top: 20px;
             text-align: center;
         }
-        .video-container video{
+
+        .video-container video {
             max-width: 80%;
             height: auto;
         }
-
     </style>
 </head>
 
 <body>
     <!-- Spinner Start -->
-    <div id="spinner" class="show bg-white position-fixed translate-middle w-100 vh-100 top-50 start-50 d-flex align-items-center justify-content-center">
+    <div id="spinner"
+        class="show bg-white position-fixed translate-middle w-100 vh-100 top-50 start-50 d-flex align-items-center justify-content-center">
         <div class="spinner-border text-primary" role="status" style="width: 3rem; height: 3rem;"></div>
     </div>
     <!-- Spinner End -->
@@ -158,25 +163,37 @@
                 <a href="contact.php" class="nav-item nav-link">Contact</a>
             </div>
             <div class="border-start ps-4 d-none d-lg-block">
-            <?php
+                <?php
                 if (isset($_SESSION["username"])) {
 
-                ?>                  
-                     <a href="" class="nav-item nav-link " ><?php echo ($_SESSION["username"]); ?></a>
-                 
-                    
-                <?php 
-					} else{
-						?>
-							
-                            <a href="login.php" >
-                    <button type="button" class="btn btn-outline-dark">Sign-in </button> 
-                </a>
-                <a href="signup.php" >
-                    <button type="button"  class="btn btn-outline-dark">Sign-up </button>  
-                </a>
-					<?php
-					 }
+                    ?>
+                    <div class="collapse navbar-collapse" id="navbarNavDarkDropdown">
+                        <ul class="navbar-nav">
+                            <li class="nav-item dropdown">
+                                <button class="btn btn-dark dropdown-toggle" data-bs-toggle="dropdown"
+                                    aria-expanded="false">
+                                    <?php echo ($_SESSION["username"]); ?>
+                                </button>
+                                <ul class="dropdown-menu dropdown-menu-dark">
+                                    <li><a class="dropdown-item" href="profile.PHP">profile</a></li>
+                                    <li><a class="dropdown-item" href="LOGOUT.PHP">LOGOUT</a></li>
+                                </ul>
+                            </li>
+                        </ul>
+                    </div>
+
+                <?php
+                } else {
+                    ?>
+
+                    <a href="login.php">
+                        <button type="button" class="btn btn-outline-dark">Sign-in </button>
+                    </a>
+                    <a href="signup.php">
+                        <button type="button" class="btn btn-outline-dark">Sign-up </button>
+                    </a>
+                    <?php
+                }
                 ?>
             </div>
         </div>
@@ -207,211 +224,227 @@
                 <p class="section-title bg-white text-center text-primary px-3">Indian Cows</p>
                 <h1 class="mb-5 text-BLACK">India has a rich and diverse heritage of indigenous cattle breeds</h1>
             </div>
-    <div class="container">
+            <div class="container">
 
-        <div class="breed-card">
-            <img src="img/rathi.jpg" alt="Holstein Friesian Cow">
-            <div class="breed-details">
-                <h2>Rathi Cow</h2>
-                <p><strong>Origin:</strong>
-The Rathi breed originates from Rajasthan, India, particularly in Bikaner, Ganganagar, and Hanumangarh districts.
-It is believed to have evolved from the indigenous cattle of Rajasthan, traditionally used by nomadic Rajasthani tribes for both milk and draught purposes.</p>
-                <p><strong>Appearance:</strong> 
-Color: Rathi cows are typically brown with white patches, but some may be solid brown.
+                <div class="breed-card">
+                    <img src="img/rathi.jpg" alt="Holstein Friesian Cow">
+                    <div class="breed-details">
+                        <h2>Rathi Cow</h2>
+                        <p><strong>Origin:</strong>
+                            The Rathi breed originates from Rajasthan, India, particularly in Bikaner, Ganganagar, and
+                            Hanumangarh districts.
+                            It is believed to have evolved from the indigenous cattle of Rajasthan, traditionally used
+                            by nomadic Rajasthani tribes for both milk and draught purposes.</p>
+                        <p><strong>Appearance:</strong>
+                            Color: Rathi cows are typically brown with white patches, but some may be solid brown.
 
-Size: Medium-sized with a compact body.
+                            Size: Medium-sized with a compact body.
 
-Head: Broad forehead with a slightly convex shape.
+                            Head: Broad forehead with a slightly convex shape.
 
-Ears: Medium-sized and slightly drooping.
+                            Ears: Medium-sized and slightly drooping.
 
-Horns: Small to medium, curved upward and inward.
+                            Horns: Small to medium, curved upward and inward.
 
-Tail: Long with a black or brown tuft at the end..</p>
-               
-                <p><strong>Milk Production:</strong>Milk Production:
-Rathi cows are excellent milk producers, yielding 6 to 10 liters per day, with some high-yielding cows producing up to 15 liters.
+                            Tail: Long with a black or brown tuft at the end..</p>
 
-The milk is rich in A2 protein, making it highly nutritious.
+                        <p><strong>Milk Production:</strong>Milk Production:
+                            Rathi cows are excellent milk producers, yielding 6 to 10 liters per day, with some
+                            high-yielding cows producing up to 15 liters.
 
-The average lactation yield is 1,500 to 3,000 liters per lactation.</p>
-                <p><strong>Uses & Importance:</strong> 
-Popular in Rajasthan, Punjab, Haryana, and Madhya Pradesh for dairy farming.
+                            The milk is rich in A2 protein, making it highly nutritious.
 
-Used in crossbreeding programs to improve milk production in other breeds.
+                            The average lactation yield is 1,500 to 3,000 liters per lactation.</p>
+                        <p><strong>Uses & Importance:</strong>
+                            Popular in Rajasthan, Punjab, Haryana, and Madhya Pradesh for dairy farming.
 
-Plays a vital role in rural livelihoods and organic farming..</p>
-                <div class="video-container">
-                    
+                            Used in crossbreeding programs to improve milk production in other breeds.
+
+                            Plays a vital role in rural livelihoods and organic farming..</p>
+                        <div class="video-container">
+
+                        </div>
+                    </div>
+                </div>
+
+
+
+
+                <div class="breed-card">
+                    <img src="img/hariana_cow.jpg" alt="Angus Cow">
+                    <div class="breed-details">
+                        <h2>Hariana </h2>
+                        <p><strong>Origin:</strong>
+                            The Hariana breed originates from Haryana, India, mainly found in Rohtak, Hisar, Jind, and
+                            Gurgaon districts.
+                            It is one of the best dual-purpose Indian cattle breeds, used for both milk production and
+                            draught work.</p>
+                        <p><strong>apearance:</strong> AAppearance:
+                            Color: Mostly white or light gray, with males having a darker shade around the neck and
+                            shoulders.
+
+                            Size: Medium to large-sized, with a well-built body.
+
+                            Head: Long and narrow with a slightly convex forehead.
+
+                            Ears: Medium-sized and slightly pointed.
+
+                            Horns: Small to medium, curved upwards and inward.
+
+                            Hump: Well-developed, especially in males.
+
+                            Dewlap: Prominent loose skin on the neck.
+
+                            Tail: Long with a black or brown tuft at the end.</p>
+                        <p><strong>Milk Production:</strong>
+                            Hariana cows are moderate milk producers, yielding 5 to 10 liters per day.
+
+                            The average lactation yield is around 1,500 to 2,500 liters per lactation.
+
+                            Milk contains A2 protein, making it highly nutritious.
+
+                        </p>
+                        <p><strong>Uses & Importance:</strong>
+                            Widely used in Punjab, Uttar Pradesh, Rajasthan, and Madhya Pradesh.
+
+                            Ideal for mixed farming systems due to its milk and draught qualities.
+
+                            Used in crossbreeding programs to improve milk yield in other breeds.</p>
+                        <div class="video-container">
+
+                        </div>
+                    </div>
+                </div>
+
+
+                <div class="breed-card">
+                    <img src="img/co3.jpg" alt="Angus Cow">
+                    <div class="breed-details">
+                        <h2>Sahiwal cows</h2>
+                        <p><strong>Origin:</strong> Sahiwal cows originated in the Punjab region of Pakistan and India
+                        </p>
+                        <p><strong>Appearance:
+                            </strong>
+                            Medium to large-sized cattle with a reddish-brown or light brown coat.
+
+                            Some have white patches on the body, but purebred Sahiwal cows are mostly uniform in color.
+
+                            Loose skin and a prominent hump, which helps them tolerate heat.
+
+                            Average weight:
+
+                            Bulls: 600-800 kg
+
+                            Cows: 400-600 kg
+
+                        </p>
+                        <p><strong> Fertility:</strong> Sahiwal cows are good mothers and have a high degree of
+                            fertility .</p>
+                        <p><strong>Health:</strong> Sahiwal cows are tick-resistant, heat-tolerant, and resistant to
+                            internal and external parasites </p>
+                        <p><strong>Milk Production:</strong>
+
+                            Highly productive dairy breed, producing 10-15 liters/day in good conditions, but some elite
+                            cows can give 20-25 liters/day.
+
+                            Lactation yield: Around 2500-3000 liters per lactation.
+
+                            Milk has high butterfat content (4.5-5%), making it suitable for dairy products like ghee
+                            and butter. </p>
+                        <div class="video-container">
+
+                        </div>
+                    </div>
+                </div>
+
+
+
+                <div class="breed-card">
+                    <img src="img/red_shindi.jpg" alt="Angus Cow">
+                    <div class="breed-details">
+                        <h2>Red Sindhi</h2>
+                        <p><strong>Origin:</strong> Commonly found in India Karnataka, Tamil Nadu, Kerala, Punjab,
+                            Haryana, Maharashtra, Gujarat </p>
+                        <p><strong>Appearance:
+                            </strong>Red Sindhi cows are high-yielding dairy cattle and produce 1,500–2,500 liters of
+                            milk per lactation.
+                            They are well adapted to hot and humid climates, making them ideal for tropical regions.
+
+                        </p>
+                        <p><strong>Why Choose Red Sindhi Cattle? </strong>
+                            High milk yield & rich fat content
+                            Heat & disease-resistant (suitable for tropical climates)
+                            Low maintenance & easy adaptability
+                            Good fertility & breeding efficiency</p>
+                        <p><strong>Heal Adaptability & Disease Resistanceth:</strong>
+                            Highly adaptable to hot and humid climates
+                            Resistant to common cattle diseases, making them easy to maintain
+                            Performs well in both intensive and open grazing systems
+
+                        </p>
+                        <p><strong>Milk Production:</strong>
+                            Milk Yield: 1500-2500 liters per lactation
+                            Milk Fat Content: 4-5% fat, making it rich and nutritious
+                            Lactation Period: 300-330 days. </p>
+                        <div class="video-container">
+
+                        </div>
+                    </div>
+                </div>
+
+
+
+
+
+                <div class="breed-card">
+                    <img src="img/gir.jpg" alt="Gir Cow">
+                    <div class="breed-details">
+                        <h2>Gir</h2>
+                        <p><strong>Origin:</strong> India</p>
+                        <p><strong>Appearance:</strong>
+                            Medium to large-sized cattle with a distinctive convex forehead (dome-shaped head).
+
+                            Long, pendulous ears that are curled at the tip.
+
+                            Coat color varies from red, yellowish-red, to spotted white and red.
+
+                            Hump is well-developed, helping in heat resistance.
+
+                            Average weight:
+
+                            Bulls: 700-1000 kg
+
+                            Cows: 400-600 kg</p>
+                        <p><strong>Strengths:</strong> High milk fat content, good disease resistance, adaptable to hot
+                            climates.</p>
+                        <p><strong>Milk Production:</strong>
+
+                            One of the highest milk-producing indigenous breeds.
+
+                            Produces 10-15 liters per day under good management, but elite cows can yield 20-25 liters
+                            per day.
+
+                            Lactation yield: 2500-3500 liters per lactation.
+
+                            Milk has high butterfat content (4.5-5%), making it ideal for dairy products like ghee,
+                            butter, and paneer.
+
+                            Produces A2 milk, which is considered healthier and more digestible than A1 milk</p>
+                        <p><strong>Reproduction & Lifespan:</strong>
+
+                            High fertility rate with easy calving.
+
+                            First calving age: 36-42 months.
+
+                            Long lifespan, with some cows staying productive for 15-20 years.</p>
+                        <div class="video-container">
+
+                        </div>
+                    </div>
                 </div>
             </div>
-        </div>
-
-
-
-
-        <div class="breed-card">
-            <img src="img/hariana_cow.jpg" alt="Angus Cow">
-            <div class="breed-details">
-                <h2>Hariana </h2>
-                <p><strong>Origin:</strong> 
-The Hariana breed originates from Haryana, India, mainly found in Rohtak, Hisar, Jind, and Gurgaon districts.
-It is one of the best dual-purpose Indian cattle breeds, used for both milk production and draught work.</p>
-                <p><strong>apearance:</strong> AAppearance:
-Color: Mostly white or light gray, with males having a darker shade around the neck and shoulders.
-
-Size: Medium to large-sized, with a well-built body.
-
-Head: Long and narrow with a slightly convex forehead.
-
-Ears: Medium-sized and slightly pointed.
-
-Horns: Small to medium, curved upwards and inward.
-
-Hump: Well-developed, especially in males.
-
-Dewlap: Prominent loose skin on the neck.
-
-Tail: Long with a black or brown tuft at the end.</p>
-                <p><strong>Milk Production:</strong> 
-Hariana cows are moderate milk producers, yielding 5 to 10 liters per day.
-
-The average lactation yield is around 1,500 to 2,500 liters per lactation.
-
-Milk contains A2 protein, making it highly nutritious.
-
-</p>
-                <p><strong>Uses & Importance:</strong>
-Widely used in Punjab, Uttar Pradesh, Rajasthan, and Madhya Pradesh.
-
-Ideal for mixed farming systems due to its milk and draught qualities.
-
-Used in crossbreeding programs to improve milk yield in other breeds.</p>
-                <div class="video-container">
-                   
-                </div>
-            </div>
-        </div>
-
-
-        <div class="breed-card">
-            <img src="img/co3.jpg" alt="Angus Cow">
-            <div class="breed-details">
-                <h2>Sahiwal cows</h2>
-                <p><strong>Origin:</strong> Sahiwal cows originated in the Punjab region of Pakistan and India </p>
-                <p><strong>Appearance:
-                </strong> 
-Medium to large-sized cattle with a reddish-brown or light brown coat.
-
-Some have white patches on the body, but purebred Sahiwal cows are mostly uniform in color.
-
-Loose skin and a prominent hump, which helps them tolerate heat.
-
-Average weight:
-
-Bulls: 600-800 kg
-
-Cows: 400-600 kg
-
- </p>
-                <p><strong> Fertility:</strong> Sahiwal cows are good mothers and have a high degree of fertility .</p>
-                <p><strong>Health:</strong> Sahiwal cows are tick-resistant, heat-tolerant, and resistant to internal and external parasites </p>
-                <p><strong>Milk Production:</strong> 
-
-Highly productive dairy breed, producing 10-15 liters/day in good conditions, but some elite cows can give 20-25 liters/day.
-
-Lactation yield: Around 2500-3000 liters per lactation.
-
-Milk has high butterfat content (4.5-5%), making it suitable for dairy products like ghee and butter. </p>
-                <div class="video-container">
-                   
-                </div>
-            </div>
-        </div>  
-
-
-
-        <div class="breed-card">
-            <img src="img/red_shindi.jpg" alt="Angus Cow">
-            <div class="breed-details">
-                <h2>Red Sindhi</h2>
-                <p><strong>Origin:</strong>  Commonly found in India Karnataka, Tamil Nadu, Kerala, Punjab, Haryana, Maharashtra, Gujarat </p>
-                <p><strong>Appearance:
-                </strong>Red Sindhi cows are high-yielding dairy cattle and produce 1,500–2,500 liters of milk per lactation.
-                 They are well adapted to hot and humid climates, making them ideal for tropical regions.
-
- </p>
-                <p><strong>Why Choose Red Sindhi Cattle? </strong> 
- High milk yield & rich fat content
- Heat & disease-resistant (suitable for tropical climates)
- Low maintenance & easy adaptability
-Good fertility & breeding efficiency</p>
-                <p><strong>Heal Adaptability & Disease Resistanceth:</strong>
- Highly adaptable to hot and humid climates
-Resistant to common cattle diseases, making them easy to maintain
-Performs well in both intensive and open grazing systems
-
-</p>
-                <p><strong>Milk Production:</strong> 
- Milk Yield: 1500-2500 liters per lactation
-Milk Fat Content: 4-5% fat, making it rich and nutritious
-Lactation Period: 300-330 days. </p>
-                <div class="video-container">
-                   
-                </div>
-            </div>
-        </div>  
-
-
-
-
-
-        <div class="breed-card">
-            <img src="img/gir.jpg" alt="Gir Cow">
-            <div class="breed-details">
-                <h2>Gir</h2>
-                <p><strong>Origin:</strong> India</p>
-                <p><strong>Appearance:</strong> 
-Medium to large-sized cattle with a distinctive convex forehead (dome-shaped head).
-
-Long, pendulous ears that are curled at the tip.
-
-Coat color varies from red, yellowish-red, to spotted white and red.
-
-Hump is well-developed, helping in heat resistance.
-
-Average weight:
-
-Bulls: 700-1000 kg
-
-Cows: 400-600 kg</p>
-                <p><strong>Strengths:</strong> High milk fat content, good disease resistance, adaptable to hot climates.</p>
-                <p><strong>Milk Production:</strong> 
-
-One of the highest milk-producing indigenous breeds.
-
-Produces 10-15 liters per day under good management, but elite cows can yield 20-25 liters per day.
-
-Lactation yield: 2500-3500 liters per lactation.
-
-Milk has high butterfat content (4.5-5%), making it ideal for dairy products like ghee, butter, and paneer.
-
-Produces A2 milk, which is considered healthier and more digestible than A1 milk</p>
-                <p><strong>Reproduction & Lifespan:</strong>
-
-High fertility rate with easy calving.
-
-First calving age: 36-42 months.
-
-Long lifespan, with some cows staying productive for 15-20 years.</p>
-                <div class="video-container">
-                   
-                </div>
-            </div>
-        </div>
         </div>
     </div>
-</div>
     <!-- ANIMALSELECTION End -->
 
 
@@ -479,7 +512,8 @@ Long lifespan, with some cows staying productive for 15-20 years.</p>
     <!-- Copyright End -->
 
     <!-- Back to Top -->
-    <a href="#" class="btn btn-lg btn-primary btn-lg-square rounded-circle back-to-top"><i class="bi bi-arrow-up"></i></a>
+    <a href="#" class="btn btn-lg btn-primary btn-lg-square rounded-circle back-to-top"><i
+            class="bi bi-arrow-up"></i></a>
 
 
     <!-- JavaScript Libraries -->

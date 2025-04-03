@@ -1,8 +1,8 @@
 <?php
 session_start();
- include('config.php');
- ?>
- <!DOCTYPE html>
+include('config.php');
+?>
+<!DOCTYPE html>
 <html lang="en">
 
 <head>
@@ -18,7 +18,9 @@ session_start();
     <!-- Google Web Fonts -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Libre+Baskerville:wght@700&family=Open+Sans:wght@400;500;600&display=swap" rel="stylesheet">   
+    <link
+        href="https://fonts.googleapis.com/css2?family=Libre+Baskerville:wght@700&family=Open+Sans:wght@400;500;600&display=swap"
+        rel="stylesheet">
 
     <!-- Icon Font Stylesheet -->
     <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.10.0/css/all.min.css" rel="stylesheet">
@@ -38,7 +40,8 @@ session_start();
 
 <body>
     <!-- Spinner Start -->
-    <div id="spinner" class="show bg-white position-fixed translate-middle w-100 vh-100 top-50 start-50 d-flex align-items-center justify-content-center">
+    <div id="spinner"
+        class="show bg-white position-fixed translate-middle w-100 vh-100 top-50 start-50 d-flex align-items-center justify-content-center">
         <div class="spinner-border text-primary" role="status" style="width: 3rem; height: 3rem;"></div>
     </div>
     <!-- Spinner End -->
@@ -92,27 +95,39 @@ session_start();
                 <a href="contact.php" class="nav-item nav-link">Contact</a>
             </div>
             <div class="border-start ps-4 d-none d-lg-block">
-            <?php
+                <?php
                 if (isset($_SESSION["username"])) {
 
-                ?>                  
-                     <a href="" class="nav-item nav-link " ><?php echo ($_SESSION["username"]); ?></a>
-                 
-                    
-                <?php 
-					} else{
-						?>
-							
-                            <a href="login.php" >
-                    <button type="button" class="btn btn-outline-dark">Sign-in </button> 
-                </a>
-                <a href="signup.php" >
-                    <button type="button"  class="btn btn-outline-dark">Sign-up </button>  
-                </a>
-					<?php
-					 }
+                    ?>
+                    <div class="collapse navbar-collapse" id="navbarNavDarkDropdown">
+                        <ul class="navbar-nav">
+                            <li class="nav-item dropdown">
+                                <button class="btn btn-dark dropdown-toggle" data-bs-toggle="dropdown"
+                                    aria-expanded="false">
+                                    <?php echo ($_SESSION["username"]); ?>
+                                </button>
+                                <ul class="dropdown-menu dropdown-menu-dark">
+                                    <li><a class="dropdown-item" href="profile.PHP">profile</a></li>
+                                    <li><a class="dropdown-item" href="LOGOUT.PHP">LOGOUT</a></li>
+                                </ul>
+                            </li>
+                        </ul>
+                    </div>
+
+                <?php
+                } else {
+                    ?>
+
+                    <a href="login.php">
+                        <button type="button" class="btn btn-outline-dark">Sign-in </button>
+                    </a>
+                    <a href="signup.php">
+                        <button type="button" class="btn btn-outline-dark">Sign-up </button>
+                    </a>
+                    <?php
+                }
                 ?>
-                        </div>
+            </div>
         </div>
     </nav>
     <!-- Navbar End -->
@@ -160,9 +175,12 @@ session_start();
                 <div class="col-lg-6 wow fadeIn" data-wow-delay="0.5s">
                     <p class="section-title bg-white text-start text-primary pe-3">About Us</p>
                     <h1 class="mb-4">Know About Our Hack-a-Farm</h1>
-                    <p class="mb-4"> Conservation efforts must involve local communities and farmers, as they are the primary custodians of these breeds.
-                        Balancing productivity with conservation is essential. Genetic improvement programs should aim to enhance desirable traits without compromising breed integrity.
-                        The cultural and religious importance of cows, especially in India, adds a unique dimension to conservation efforts.</p>
+                    <p class="mb-4"> Conservation efforts must involve local communities and farmers, as they are the
+                        primary custodians of these breeds.
+                        Balancing productivity with conservation is essential. Genetic improvement programs should aim
+                        to enhance desirable traits without compromising breed integrity.
+                        The cultural and religious importance of cows, especially in India, adds a unique dimension to
+                        conservation efforts.</p>
                     <div class="row g-5 pt-2 mb-5">
                         <div class="col-sm-6">
                             <img class="img-fluid mb-4" src="img/service.png" alt="">
@@ -195,7 +213,9 @@ session_start();
                         </div>
                         <div class="col-sm-8">
                             <h2 class="text-white mb-3">Specialized Indigenous Breeds</h2>
-                            <p class="text-white mb-4">Focus on breeds known for A2 milk, or those with specific adaptations.Develop a certified breeding program, guaranteeing the purity and genetic lineage of the animals. This adds value and builds trust.</p>
+                            <p class="text-white mb-4">Focus on breeds known for A2 milk, or those with specific
+                                adaptations.Develop a certified breeding program, guaranteeing the purity and genetic
+                                lineage of the animals. This adds value and builds trust.</p>
                             <!-- <a class="btn btn-secondary rounded-pill py-2 px-4" href="">Read More</a> -->
                         </div>
                     </div>
@@ -207,7 +227,9 @@ session_start();
                         </div>
                         <div class="col-sm-8">
                             <h2 class="text-white mb-3">"Cow Leasing" or Shared Ownership</h2>
-                            <p class="text-white mb-4">For those who want access to high-quality indigenous cows but don't want full ownership, offer leasing or shared ownership models. This can be attractive to small-scale farmers or hobbyists.</p>
+                            <p class="text-white mb-4">For those who want access to high-quality indigenous cows but
+                                don't want full ownership, offer leasing or shared ownership models. This can be
+                                attractive to small-scale farmers or hobbyists.</p>
                             <!-- <a class="btn btn-secondary rounded-pill py-2 px-4" href="">Read More</a> -->
                         </div>
                     </div>
@@ -232,9 +254,12 @@ session_start();
                         <h5>Adam Crew</h5>
                         <p class="text-primary">Founder</p>
                         <div class="d-flex justify-content-center">
-                            <a class="btn btn-square btn-outline-secondary rounded-circle mx-1" href=""><i class="fab fa-facebook-f"></i></a>
-                            <a class="btn btn-square btn-outline-secondary rounded-circle mx-1" href=""><i class="fab fa-twitter"></i></a>
-                            <a class="btn btn-square btn-outline-secondary rounded-circle mx-1" href=""><i class="fab fa-instagram"></i></a>
+                            <a class="btn btn-square btn-outline-secondary rounded-circle mx-1" href=""><i
+                                    class="fab fa-facebook-f"></i></a>
+                            <a class="btn btn-square btn-outline-secondary rounded-circle mx-1" href=""><i
+                                    class="fab fa-twitter"></i></a>
+                            <a class="btn btn-square btn-outline-secondary rounded-circle mx-1" href=""><i
+                                    class="fab fa-instagram"></i></a>
                         </div>
                     </div>
                 </div>
@@ -244,9 +269,12 @@ session_start();
                         <h5>Doris Jordan</h5>
                         <p class="text-primary">Veterinarian</p>
                         <div class="d-flex justify-content-center">
-                            <a class="btn btn-square btn-outline-secondary rounded-circle mx-1" href=""><i class="fab fa-facebook-f"></i></a>
-                            <a class="btn btn-square btn-outline-secondary rounded-circle mx-1" href=""><i class="fab fa-twitter"></i></a>
-                            <a class="btn btn-square btn-outline-secondary rounded-circle mx-1" href=""><i class="fab fa-instagram"></i></a>
+                            <a class="btn btn-square btn-outline-secondary rounded-circle mx-1" href=""><i
+                                    class="fab fa-facebook-f"></i></a>
+                            <a class="btn btn-square btn-outline-secondary rounded-circle mx-1" href=""><i
+                                    class="fab fa-twitter"></i></a>
+                            <a class="btn btn-square btn-outline-secondary rounded-circle mx-1" href=""><i
+                                    class="fab fa-instagram"></i></a>
                         </div>
                     </div>
                 </div>
@@ -256,9 +284,12 @@ session_start();
                         <h5>Jack Dawson</h5>
                         <p class="text-primary">Farmer</p>
                         <div class="d-flex justify-content-center">
-                            <a class="btn btn-square btn-outline-secondary rounded-circle mx-1" href=""><i class="fab fa-facebook-f"></i></a>
-                            <a class="btn btn-square btn-outline-secondary rounded-circle mx-1" href=""><i class="fab fa-twitter"></i></a>
-                            <a class="btn btn-square btn-outline-secondary rounded-circle mx-1" href=""><i class="fab fa-instagram"></i></a>
+                            <a class="btn btn-square btn-outline-secondary rounded-circle mx-1" href=""><i
+                                    class="fab fa-facebook-f"></i></a>
+                            <a class="btn btn-square btn-outline-secondary rounded-circle mx-1" href=""><i
+                                    class="fab fa-twitter"></i></a>
+                            <a class="btn btn-square btn-outline-secondary rounded-circle mx-1" href=""><i
+                                    class="fab fa-instagram"></i></a>
                         </div>
                     </div>
                 </div>
@@ -334,7 +365,8 @@ session_start();
 
 
     <!-- Back to Top -->
-    <a href="#" class="btn btn-lg btn-primary btn-lg-square rounded-circle back-to-top"><i class="bi bi-arrow-up"></i></a>
+    <a href="#" class="btn btn-lg btn-primary btn-lg-square rounded-circle back-to-top"><i
+            class="bi bi-arrow-up"></i></a>
 
 
     <!-- JavaScript Libraries -->

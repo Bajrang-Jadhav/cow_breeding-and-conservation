@@ -1,7 +1,7 @@
 <?php
 session_start();
- include('config.php');
- ?>
+include('config.php');
+?>
 <!DOCTYPE html>
 <html lang="en">
 
@@ -18,7 +18,9 @@ session_start();
     <!-- Google Web Fonts -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Libre+Baskerville:wght@700&family=Open+Sans:wght@400;500;600&display=swap" rel="stylesheet">   
+    <link
+        href="https://fonts.googleapis.com/css2?family=Libre+Baskerville:wght@700&family=Open+Sans:wght@400;500;600&display=swap"
+        rel="stylesheet">
 
     <!-- Icon Font Stylesheet -->
     <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.10.0/css/all.min.css" rel="stylesheet">
@@ -38,7 +40,8 @@ session_start();
 
 <body>
     <!-- Spinner Start -->
-    <div id="spinner" class="show bg-white position-fixed translate-middle w-100 vh-100 top-50 start-50 d-flex align-items-center justify-content-center">
+    <div id="spinner"
+        class="show bg-white position-fixed translate-middle w-100 vh-100 top-50 start-50 d-flex align-items-center justify-content-center">
         <div class="spinner-border text-primary" role="status" style="width: 3rem; height: 3rem;"></div>
     </div>
     <!-- Spinner End -->
@@ -95,22 +98,34 @@ session_start();
                 <?php
                 if (isset($_SESSION["username"])) {
 
-                ?>                  
-                     <a href="" class="nav-item nav-link " ><?php echo ($_SESSION["username"]); ?></a>
-                 
-                    
-                <?php 
-					} else{
-						?>
-							
-                            <a href="login.php" >
-                    <button type="button" class="btn btn-outline-dark">Sign-in </button> 
-                </a>
-                <a href="signup.php" >
-                    <button type="button"  class="btn btn-outline-dark">Sign-up </button>  
-                </a>
-					<?php
-					 }
+                    ?>
+                    <div class="collapse navbar-collapse" id="navbarNavDarkDropdown">
+                        <ul class="navbar-nav">
+                            <li class="nav-item dropdown">
+                                <button class="btn btn-dark dropdown-toggle" data-bs-toggle="dropdown"
+                                    aria-expanded="false">
+                                    <?php echo ($_SESSION["username"]); ?>
+                                </button>
+                                <ul class="dropdown-menu dropdown-menu-dark">
+                                    <li><a class="dropdown-item" href="profile.PHP">profile</a></li>
+                                    <li><a class="dropdown-item" href="LOGOUT.PHP">LOGOUT</a></li>
+                                </ul>
+                            </li>
+                        </ul>
+                    </div>
+
+                <?php
+                } else {
+                    ?>
+
+                    <a href="login.php">
+                        <button type="button" class="btn btn-outline-dark">Sign-in </button>
+                    </a>
+                    <a href="signup.php">
+                        <button type="button" class="btn btn-outline-dark">Sign-up </button>
+                    </a>
+                    <?php
+                }
                 ?>
             </div>
         </div>
@@ -148,13 +163,15 @@ session_start();
                         <div class="position-relative">
                             <img class="img-fluid" src="img/a2-milk.webp" alt="">
                             <div class="product-overlay">
-                                <a class="btn btn-square btn-secondary rounded-circle m-1" href=""><i class="bi bi-link"></i></a>
-                                <a class="btn btn-square btn-secondary rounded-circle m-1" href=""><i class="bi bi-cart"></i></a>
+                                <a class="btn btn-square btn-secondary rounded-circle m-1" href=""><i
+                                        class="bi bi-link"></i></a>
+                                <a class="btn btn-square btn-secondary rounded-circle m-1" href=""><i
+                                        class="bi bi-cart"></i></a>
                             </div>
                         </div>
                         <div class="text-center p-4">
                             <a class="d-block h5" href="">A2 Milk</a>
-                            <span class="text-primary me-1">Pure and healthy A2 milk from our cows.  </span>
+                            <span class="text-primary me-1">Pure and healthy A2 milk from our cows. </span>
                             <br>
                             <br>
                             <button>Buy Now</button>
@@ -166,15 +183,17 @@ session_start();
                         <div class="position-relative">
                             <img class="img-fluid" src="img/dairy1.jpg" alt="">
                             <div class="product-overlay">
-                                <a class="btn btn-square btn-secondary rounded-circle m-1" href=""><i class="bi bi-link"></i></a>
-                                <a class="btn btn-square btn-secondary rounded-circle m-1" href=""><i class="bi bi-cart"></i></a>
+                                <a class="btn btn-square btn-secondary rounded-circle m-1" href=""><i
+                                        class="bi bi-link"></i></a>
+                                <a class="btn btn-square btn-secondary rounded-circle m-1" href=""><i
+                                        class="bi bi-cart"></i></a>
                             </div>
                         </div>
                         <div class="text-center p-4">
                             <a class="d-block h5" href="">Dairy Products</a>
                             <span class="text-primary me-1">Develop cheeses using milk from specific breeds. </span>
                             <br>
-                            <br> 
+                            <br>
                             <button>Buy Now</button>
                         </div>
                     </div>
@@ -184,8 +203,10 @@ session_start();
                         <div class="position-relative">
                             <img class="img-fluid" src="img/organic_fer.jpg" alt="">
                             <div class="product-overlay">
-                                <a class="btn btn-square btn-secondary rounded-circle m-1" href=""><i class="bi bi-link"></i></a>
-                                <a class="btn btn-square btn-secondary rounded-circle m-1" href=""><i class="bi bi-cart"></i></a>
+                                <a class="btn btn-square btn-secondary rounded-circle m-1" href=""><i
+                                        class="bi bi-link"></i></a>
+                                <a class="btn btn-square btn-secondary rounded-circle m-1" href=""><i
+                                        class="bi bi-cart"></i></a>
                             </div>
                         </div>
                         <div class="text-center p-4">
@@ -202,8 +223,10 @@ session_start();
                         <div class="position-relative">
                             <img class="img-fluid" src="img/cow-dung-products.jpg" alt="">
                             <div class="product-overlay">
-                                <a class="btn btn-square btn-secondary rounded-circle m-1" href=""><i class="bi bi-link"></i></a>
-                                <a class="btn btn-square btn-secondary rounded-circle m-1" href=""><i class="bi bi-cart"></i></a>
+                                <a class="btn btn-square btn-secondary rounded-circle m-1" href=""><i
+                                        class="bi bi-link"></i></a>
+                                <a class="btn btn-square btn-secondary rounded-circle m-1" href=""><i
+                                        class="bi bi-cart"></i></a>
                             </div>
                         </div>
                         <div class="text-center p-4">
@@ -228,10 +251,15 @@ session_start();
                 <div class="col-lg-6 wow fadeInUp" data-wow-delay="0.1s">
                     <p class="section-title bg-white text-start text-primary pe-3">Why Us!</p>
                     <h1 class="mb-4">Few Reasons Why People Choosing Us!</h1>
-                    <p class="mb-4"> Cow breeding focuses on improving genetic traits for higher milk yield, disease resistance, and adaptability. It includes selective breeding, artificial insemination, and embryo transfer techniques.</p>
-                    <p><i class="fa fa-check text-primary me-3"></i>We provide practical guidance that farmers, breeders, and conservationists can implement in their daily operations.</p>
-                    <p><i class="fa fa-check text-primary me-3"></i>We offer detailed information on a wide range of cow breeds, including their characteristics, management, and conservation status.</p>
-                    <p><i class="fa fa-check text-primary me-3"></i>Users can stay informed about the latest developments in cow breeding and conservation.</p>
+                    <p class="mb-4"> Cow breeding focuses on improving genetic traits for higher milk yield, disease
+                        resistance, and adaptability. It includes selective breeding, artificial insemination, and
+                        embryo transfer techniques.</p>
+                    <p><i class="fa fa-check text-primary me-3"></i>We provide practical guidance that farmers,
+                        breeders, and conservationists can implement in their daily operations.</p>
+                    <p><i class="fa fa-check text-primary me-3"></i>We offer detailed information on a wide range of cow
+                        breeds, including their characteristics, management, and conservation status.</p>
+                    <p><i class="fa fa-check text-primary me-3"></i>Users can stay informed about the latest
+                        developments in cow breeding and conservation.</p>
                     <!-- <a class="btn btn-secondary rounded-pill py-3 px-5 mt-3" href="">Explore More</a> -->
                 </div>
                 <div class="col-lg-6">
@@ -274,68 +302,69 @@ session_start();
     <!-- Features End -->
 
 
-   <!-- Footer Start -->
-   <div class="container-fluid bg-dark footer mt-5 py-5 wow fadeIn" data-wow-delay="0.1s">
-    <div class="container py-5">
-        <div class="row g-5">
-            <div class="col-lg-3 col-md-6">
-                <h5 class="text-white mb-4">Our Office</h5>
-                <p class="mb-2"><i class="fa fa-map-marker-alt me-3"></i>DYP SALOKHENAGAR</p>
-                <p class="mb-2"><i class="fa fa-phone-alt me-3"></i>1234567890</p>
-                <p class="mb-2"><i class="fa fa-envelope me-3"></i>gorakshak302@example.com</p>
-               
-                <div class="d-flex pt-3">
-                    <!-- <a class="btn btn-square btn-secondary rounded-circle me-2" href=""><i class="fab fa-twitter"></i></a>
+    <!-- Footer Start -->
+    <div class="container-fluid bg-dark footer mt-5 py-5 wow fadeIn" data-wow-delay="0.1s">
+        <div class="container py-5">
+            <div class="row g-5">
+                <div class="col-lg-3 col-md-6">
+                    <h5 class="text-white mb-4">Our Office</h5>
+                    <p class="mb-2"><i class="fa fa-map-marker-alt me-3"></i>DYP SALOKHENAGAR</p>
+                    <p class="mb-2"><i class="fa fa-phone-alt me-3"></i>1234567890</p>
+                    <p class="mb-2"><i class="fa fa-envelope me-3"></i>gorakshak302@example.com</p>
+
+                    <div class="d-flex pt-3">
+                        <!-- <a class="btn btn-square btn-secondary rounded-circle me-2" href=""><i class="fab fa-twitter"></i></a>
                     <a class="btn btn-square btn-secondary rounded-circle me-2" href=""><i class="fab fa-facebook-f"></i></a>
                     <a class="btn btn-square btn-secondary rounded-circle me-2" href=""><i class="fab fa-youtube"></i></a>
                     <a class="btn btn-square btn-secondary rounded-circle me-2" href=""><i class="fab fa-linkedin-in"></i></a> -->
+                    </div>
+                </div>
+                <div class="col-lg-3 col-md-6">
+                    <h5 class="text-white mb-4">Quick Links</h5>
+                    <a class="btn btn-link" href="">About Us</a>
+                    <a class="btn btn-link" href="">Contact Us</a>
+                    <a class="btn btn-link" href="">Our Services</a>
+                    <a class="btn btn-link" href="">Terms & Condition</a>
+                    <a class="btn btn-link" href="">Support</a>
+                </div>
+                <div class="col-lg-3 col-md-6">
+                    <h5 class="text-white mb-4">Business Hours</h5>
+                    <p class="mb-1">Monday - Friday</p>
+                    <h6 class="text-light">09:00 am - 07:00 pm</h6>
+                    <p class="mb-1">Saturday</p>
+                    <h6 class="text-light">09:00 am - 12:00 pm</h6>
+                    <p class="mb-1">Sunday</p>
+                    <h6 class="text-light">Closed</h6>
+                </div>
+                <div class="col-lg-3 col-md-6">
+
                 </div>
             </div>
-            <div class="col-lg-3 col-md-6">
-                <h5 class="text-white mb-4">Quick Links</h5>
-                <a class="btn btn-link" href="">About Us</a>
-                <a class="btn btn-link" href="">Contact Us</a>
-                <a class="btn btn-link" href="">Our Services</a>
-                <a class="btn btn-link" href="">Terms & Condition</a>
-                <a class="btn btn-link" href="">Support</a>
-            </div>
-            <div class="col-lg-3 col-md-6">
-                <h5 class="text-white mb-4">Business Hours</h5>
-                <p class="mb-1">Monday - Friday</p>
-                <h6 class="text-light">09:00 am - 07:00 pm</h6>
-                <p class="mb-1">Saturday</p>
-                <h6 class="text-light">09:00 am - 12:00 pm</h6>
-                <p class="mb-1">Sunday</p>
-                <h6 class="text-light">Closed</h6>
-            </div>
-            <div class="col-lg-3 col-md-6">
-                
+        </div>
+    </div>
+    <!-- Footer End -->
+
+
+    <!-- Copyright Start -->
+    <div class="container-fluid bg-secondary text-body copyright py-4">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-6 text-center text-md-start mb-3 mb-md-0">
+                    &copy; <a class="fw-semi-bold" href="#">GO-RAKSHAK</a>, All Right Reserved.
+                </div>
+                <div class="col-md-6 text-center text-md-end">
+
+                    <!--- Designed By <a class="fw-semi-bold" href="https://htmlcodex.com">HACK-A-FARM</a>-->
+                </div>
             </div>
         </div>
     </div>
-</div>
-<!-- Footer End -->
-
-
-<!-- Copyright Start -->
-<div class="container-fluid bg-secondary text-body copyright py-4">
-    <div class="container">
-        <div class="row">
-            <div class="col-md-6 text-center text-md-start mb-3 mb-md-0">
-                &copy; <a class="fw-semi-bold" href="#">GO-RAKSHAK</a>, All Right Reserved.
-            </div>
-            <div class="col-md-6 text-center text-md-end">
-    
-               <!--- Designed By <a class="fw-semi-bold" href="https://htmlcodex.com">HACK-A-FARM</a>-->
-            </div>
-        </div>
-    </div>
-</div>
-<!-- Copyright End -->
+    <!-- Copyright End -->
 
 
     <!-- Back to Top -->
-    <a href="#" class="btn btn-lg btn-primary btn-lg-square rounded-circle back-to-top"><i class="bi bi-arrow-up"></i></a>
+    <a href="#" class="btn btn-lg btn-primary btn-lg-square rounded-circle back-to-top"><i
+            class="bi bi-arrow-up"></i></a>
 
 
     <!-- JavaScript Libraries -->

@@ -1,8 +1,8 @@
 <?php
 session_start();
- include('config.php');
- ?>
- <!DOCTYPE html>
+include('config.php');
+?>
+<!DOCTYPE html>
 <html lang="en">
 
 <head>
@@ -18,7 +18,9 @@ session_start();
     <!-- Google Web Fonts -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Libre+Baskerville:wght@700&family=Open+Sans:wght@400;500;600&display=swap" rel="stylesheet">   
+    <link
+        href="https://fonts.googleapis.com/css2?family=Libre+Baskerville:wght@700&family=Open+Sans:wght@400;500;600&display=swap"
+        rel="stylesheet">
 
     <!-- Icon Font Stylesheet -->
     <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.10.0/css/all.min.css" rel="stylesheet">
@@ -69,7 +71,7 @@ session_start();
 
     <!-- Navbar Start -->
     <nav class="navbar navbar-expand-lg bg-white navbar-light sticky-top px-4 px-lg-5">
-    <a href="index.php" class="navbar-brand d-flex align-items-center">
+        <a href="index.php" class="navbar-brand d-flex align-items-center">
             <img src="img/GO-RAKSHAK.png" alt="Bootstrap" width="290" height="50">
         </a>
         <button type="button" class="navbar-toggler me-0" data-bs-toggle="collapse" data-bs-target="#navbarCollapse">
@@ -95,22 +97,34 @@ session_start();
                 <?php
                 if (isset($_SESSION["username"])) {
 
-                ?>                  
-                     <a href="" class="nav-item nav-link " ><?php echo ($_SESSION["username"]); ?></a>
-                 
-                    
-                <?php 
-					} else{
-						?>
-							
-                            <a href="login.php" >
-                    <button type="button" class="btn btn-outline-dark">Sign-in </button> 
-                </a>
-                <a href="signup.php" >
-                    <button type="button"  class="btn btn-outline-dark">Sign-up </button>  
-                </a>
-					<?php
-					 }
+                    ?>
+                    <div class="collapse navbar-collapse" id="navbarNavDarkDropdown">
+                        <ul class="navbar-nav">
+                            <li class="nav-item dropdown">
+                                <button class="btn btn-dark dropdown-toggle" data-bs-toggle="dropdown"
+                                    aria-expanded="false">
+                                    <?php echo ($_SESSION["username"]); ?>
+                                </button>
+                                <ul class="dropdown-menu dropdown-menu-dark">
+                                    <li><a class="dropdown-item" href="profile.PHP">profile</a></li>
+                                    <li><a class="dropdown-item" href="LOGOUT.PHP">LOGOUT</a></li>
+                                </ul>
+                            </li>
+                        </ul>
+                    </div>
+
+                <?php
+                } else {
+                    ?>
+
+                    <a href="login.php">
+                        <button type="button" class="btn btn-outline-dark">Sign-in </button>
+                    </a>
+                    <a href="signup.php">
+                        <button type="button" class="btn btn-outline-dark">Sign-up </button>
+                    </a>
+                    <?php
+                }
                 ?>
             </div>
         </div>
@@ -138,9 +152,10 @@ session_start();
     <div class="container-xxl py-5">
         <div class="container">
             <div class="text-center mx-auto wow fadeInUp" data-wow-delay="0.1s" style="max-width: 500px;">
+
                 <body style="background: url('img/farm1.jpg') no-repeat center center fixed; background-size: cover;">
-                <p class="section-title bg-white text-center text-primary px-3">Contact Us</p>
-                <h1 class="mb-5 text-BLACK">If You Have Any Query, Please Contact Us</h1>
+                    <p class="section-title bg-white text-center text-primary px-3">Contact Us</p>
+                    <h1 class="mb-5 text-BLACK">If You Have Any Query, Please Contact Us</h1>
             </div>
             <div class="row g-5">
                 <div class="col-lg-6 wow fadeInUp text-BLACK" data-wow-delay="0.1s">
@@ -166,12 +181,14 @@ session_start();
                             </div>
                             <div class="col-12">
                                 <div class="form-floating">
-                                    <textarea class="form-control" placeholder="Leave a message here" id="message" style="height: 250px"></textarea>
+                                    <textarea class="form-control" placeholder="Leave a message here" id="message"
+                                        style="height: 250px"></textarea>
                                     <label for="message" class="text-dark">Message</label>
                                 </div>
                             </div>
                             <div class="col-12">
-                                <button class="btn btn-secondary rounded-pill py-3 px-5" type="submit">Send Message</button>
+                                <button class="btn btn-secondary rounded-pill py-3 px-5" type="submit">Send
+                                    Message</button>
                             </div>
                         </div>
                     </form>
@@ -211,14 +228,16 @@ session_start();
                     src="https://earth.google.com/web/search/Kolhapur,+Maharashtra/@16.70846853,74.23886783,416.70864437a,17847.46331436d,35y,0h,0t,0r/data=CoQBGlYSUAolMHgzYmMxMDAwY2RlYzA3YTI5OjB4ZWNlOGVhNjQyOTUyZTQyZhlomDUMerQwQCF6ysVzkY9SQCoVS29saGFwdXIsIE1haGFyYXNodHJhGAIgASImCiQJ7e516llZM0ARUPYGalnxMsAZBbh4ACLMSkAhrgaM5vRMR8BCAggBMikKJwolCiExa0t2V1QxM294QU9lbmdtZENLTkZSNmFNZEtXQm1jSU8gAToDCgEwQgIIAEoICOPG7qICEAE"
                     frameborder="0" style="min-height: 300px; border:0;" allowfullscreen="" aria-hidden="false"
                     tabindex="0"></iframe> -->
-                    <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d58921.61716707749!2d74.142507975217!3d16.680816767510464!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3bc05552f4000001%3A0x81166eb04377a838!2z4KSh4KWAIOCkteCkvuCkryDgpKrgpL7gpJ_gpL_gpLIg4KSV4KWJ4KSy4KWH4KScIOCkkeCkq-CkvCDgpIfgpILgpJzgpYDgpKjgpL_gpK_gpLDgpL_gpILgpJcg4KS44KSy4KWL4KSW4KWH4KSo4KSX4KSw!5e0!3m2!1shi!2sin!4v1743072010426!5m2!1shi!2sin" 
-                        width="600" height="350" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+                    <iframe
+                        src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d58921.61716707749!2d74.142507975217!3d16.680816767510464!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3bc05552f4000001%3A0x81166eb04377a838!2z4KSh4KWAIOCkteCkvuCkryDgpKrgpL7gpJ_gpL_gpLIg4KSV4KWJ4KSy4KWH4KScIOCkkeCkq-CkvCDgpIfgpILgpJzgpYDgpKjgpL_gpK_gpLDgpL_gpILgpJcg4KS44KSy4KWL4KSW4KWH4KSo4KSX4KSw!5e0!3m2!1shi!2sin!4v1743072010426!5m2!1shi!2sin"
+                        width="600" height="350" style="border:0;" allowfullscreen="" loading="lazy"
+                        referrerpolicy="no-referrer-when-downgrade"></iframe>
 
 
                 </div>
             </div>
         </div>
-    </div>  
+    </div>
     <!-- Contact End -->
 
 
@@ -287,7 +306,8 @@ session_start();
 
 
     <!-- Back to Top -->
-    <a href="#" class="btn btn-lg btn-primary btn-lg-square rounded-circle back-to-top"><i class="bi bi-arrow-up"></i></a>
+    <a href="#" class="btn btn-lg btn-primary btn-lg-square rounded-circle back-to-top"><i
+            class="bi bi-arrow-up"></i></a>
 
 
     <!-- JavaScript Libraries -->
