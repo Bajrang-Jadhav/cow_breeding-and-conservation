@@ -52,6 +52,15 @@ include('header.php');
          box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
       }
 
+      .card-box,
+      .da-card {
+
+         background-color: #fff;
+         border-radius: 10px;
+         -webkit-box-shadow: 0 0 28px rgba(0, 0, 0, .08);
+         box-shadow: 0 0 28px rgba(0, 0, 0, .08);
+      }
+
       h1 {
          text-align: center;
          color: #333;
@@ -141,7 +150,7 @@ include('header.php');
                   <ul class="navbar-nav">
                      <li class="nav-item dropdown">
                         <button class="btn btn-dark dropdown-toggle" data-bs-toggle="dropdown" aria-expanded="false">
-                        <?php echo ($_SESSION["username"]); ?>
+                           <?php echo ($_SESSION["username"]); ?>
                         </button>
                         <ul class="dropdown-menu dropdown-menu-dark">
                            <li><a class="dropdown-item" href="LOGOUT.PHP">LOGOUT</a></li>
@@ -176,9 +185,7 @@ include('header.php');
          <h1 class="display-3 text-white mb-4 animated slideInDown">PROFILE</h1>
          <nav aria-label="breadcrumb animated slideInDown">
             <ol class="breadcrumb justify-content-center mb-0">
-               <li class="breadcrumb-item"><a href="#">Home</a></li>
-               <li class="breadcrumb-item"><a href="#">Services</a></li>
-               <li class="breadcrumb-item active" aria-current="page">PROFILE</li>
+               <li class="breadcrumb-item"><a href="#">WELCOME <?php echo ($_SESSION["username"]); ?> </a></li>
             </ol>
          </nav>
       </div>
@@ -188,7 +195,50 @@ include('header.php');
 
    <!-- PROFILE Start -->
 
+   <div class="card-box pb-10 ms-5 me-5">
+      <div class="h5 pd-20 mb-0 ">Doctor Appointments</div>
+      <table class="data-table table nowrap">
+         <thead>
+            <tr>
+               <th class="table-plus">Cow Name</th>
+               <th>Cow breed</th>
+               <th>Preffered Appointment Date</th>
+               <th>Preffered Time</th>
+               <th>Disease</th>
+            </tr>
+         </thead>
+         <tbody>
+            <?php
+            $sql = "SELECT * FROM doctor WHERE namee = '{$_SESSION['username']}' ";
 
+
+            $result = mysqli_query($conn, $sql) or die('query failed');
+            if (mysqli_num_rows($result) > 0) {
+               while ($row = mysqli_fetch_assoc($result)) {
+
+                  ?>
+                  <tr>
+                     <td class="table-plus">
+                        <div class="name-avatar d-flex align-items-center">
+
+                           <div class="txt">
+                              <div class="weight-600"><?php echo $row['petname']; ?></div>
+                           </div>
+                        </div>
+                     </td>
+                     <td><?php echo $row['breed']; ?></td>
+                     <td><?php echo $row['datee']; ?></td>
+                     <td><?php echo $row['timee']; ?></td>
+                     <td><?php echo $row['problem']; ?></td>
+                     
+                  </tr>
+                  <?php
+               }
+            }
+            ?>
+         </tbody>
+      </table>
+   </div>
 
    <!-- PROFILE End -->
 

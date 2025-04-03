@@ -1,20 +1,9 @@
 <?php
 session_start();
 include('config.php');
-$status = 0;
-if (isset($_SESSION["username"])) {
-    $sql111 = "SELECT * FROM user WHERE username = '{$_SESSION['username']}'";
-    $result = mysqli_query($conn, $sql111) or die('query failed');
-    if (mysqli_num_rows($result) > 0) {
 
-        while ($row = mysqli_fetch_assoc($result)) {
-            $status = $row['bookedd'];
-        }
-    }
-}
 
 if (isset($_POST['book1'])) {
-    echo "sssssssssssssss";
     if (isset($_SESSION["username"])) {
 
 
@@ -30,7 +19,7 @@ if (isset($_POST['book1'])) {
         $booked = 1;
 
 
-        $sql1 = "INSERT INTO doctor (name, phone, email, petname, breed, datee,timee,problem,booked) 
+        $sql1 = "INSERT INTO doctor (namee, phone, email, petname, breed, datee,timee,problem,booked) 
          VALUES ('{$name}', '{$phone}', '{$email}', '{$petname}', '{$breed}', '{$datee}','{$timee}','{$problem}','{$booked}')";
 
 
@@ -134,7 +123,6 @@ if (isset($_POST['book1'])) {
                 <a href="service.php" class="nav-item nav-link active">Services</a>
                 <a href="about.php" class="nav-item nav-link">About</a>
                 <a href="product.php" class="nav-item nav-link">Products</a>
-                <a class="btn btn-warning mb-3" href="logout.php">LOG OUT</a>
 
                 <div class="nav-item dropdown">
                     <a href="#" class="nav-link dropdown-toggle" data-bs-toggle="dropdown">Pages</a>
@@ -151,8 +139,20 @@ if (isset($_POST['book1'])) {
                 if (isset($_SESSION["username"])) {
 
                     ?>
-                    <a href="" class="nav-item nav-link "><?php echo ($_SESSION["username"]); ?></a>
-
+                    <div class="collapse navbar-collapse" id="navbarNavDarkDropdown">
+                        <ul class="navbar-nav">
+                            <li class="nav-item dropdown">
+                                <button class="btn btn-dark dropdown-toggle" data-bs-toggle="dropdown"
+                                    aria-expanded="false">
+                                    <?php echo ($_SESSION["username"]); ?>
+                                </button>
+                                <ul class="dropdown-menu dropdown-menu-dark">
+                                    <li><a class="dropdown-item" href="profile.PHP">profile</a></li>
+                                    <li><a class="dropdown-item" href="LOGOUT.PHP">LOGOUT</a></li>
+                                </ul>
+                            </li>
+                        </ul>
+                    </div>
 
                     <?php
                 } else {
@@ -395,9 +395,9 @@ if (isset($_POST['book1'])) {
                 </div>
 
                 <div class="mb-3 text-blsck">
-                    <label for="reason" class="form-label">Reason for Visit</label>
-                    <textarea class="form-control" id="reason" rows="3"
-                        placeholder="Describe the problem or service required" required></textarea>
+                    <label for="reason" class="form-label">DISEASE</label>
+                    <input class="form-control" id="reason" rows="3"
+                        placeholder="Disease" required></input>
                 </div>
 
                 <!-- Submit Button -->
