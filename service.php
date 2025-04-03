@@ -2,12 +2,8 @@
 session_start();
 include('config.php');
 
-
 if (isset($_POST['book1'])) {
     if (isset($_SESSION["username"])) {
-
-
-
         $name = mysqli_real_escape_string($conn, $_SESSION["username"]);
         $phone = mysqli_real_escape_string($conn, $_POST['phone']);
         $email = mysqli_real_escape_string($conn, $_POST['email']);
@@ -18,10 +14,8 @@ if (isset($_POST['book1'])) {
         $problem = mysqli_real_escape_string($conn, $_POST['problem']);
         $booked = 1;
 
-
-        $sql1 = "INSERT INTO doctor (namee, phone, email, petname, breed, datee,timee,problem,booked) 
-         VALUES ('{$name}', '{$phone}', '{$email}', '{$petname}', '{$breed}', '{$datee}','{$timee}','{$problem}','{$booked}')";
-
+        $sql1 = "INSERT INTO doctor (namee, phone, email, petname, breed, datee, timee, problem) 
+                 VALUES ('{$name}', '{$phone}', '{$email}', '{$petname}', '{$breed}', '{$datee}', '{$timee}', '{$problem}')";
 
         // Check if the query was successful
         if (mysqli_query($conn, $sql1)) {
@@ -29,10 +23,13 @@ if (isset($_POST['book1'])) {
                     alert("APPOINTMENT BOOKED SUCCESSFULLY");
                     window.location.href = "service.php";
                   </script>';
+        } else {
+            // Debugging: Display error if query fails
+            echo '<script>
+                    alert("Error: ' . mysqli_error($conn) . '");
+                  </script>';
         }
-
     } else {
-        // Delay redirection to show the alert
         echo '<script>
                 alert("PLEASE LOG IN FIRST");
                 window.location.href = "service.php";
@@ -348,33 +345,28 @@ if (isset($_POST['book1'])) {
     <body>
         <div class="container mt-5">
             <h2 class="text-center mb-4 text-black">🐾 COW Doctor Appointment 🐾</h2>
-            <form>
+            <form method="POST" action="service.php">
                 <!-- Owner Details -->
                 <div class="mb-3 text-blsck">
-                    <label for="ownerName" class="form-label">Owner's Name</label>
-                    <input type="text" class="form-control" id="ownerName" placeholder="Enter your name" required>
-                </div>
-
-                <div class="mb-3 text-blsck">
                     <label for="ownerPhone" class="form-label">Phone Number</label>
-                    <input type="tel" class="form-control" id="ownerPhone" placeholder="Enter your phone number"
+                    <input type="tel" class="form-control" name="phone" placeholder="Enter your phone number"
                         required>
                 </div>
 
                 <div class="mb-3 text-blsck">
                     <label for="ownerEmail" class="form-label">Email Address</label>
-                    <input type="email" class="form-control" id="ownerEmail" placeholder="Enter your email">
+                    <input type="email" class="form-control" name="email" placeholder="Enter your email">
                 </div>
 
                 <!-- Pet Details -->
                 <div class="mb-3 text-blsck">
                     <label for="COW NAME" class="form-label">COW Name</label>
-                    <input type="text" class="form-control" id="petName" placeholder="Enter COW name" required>
+                    <input type="text" class="form-control" name="petname" placeholder="Enter COW name" required>
                 </div>
 
                 <div class="mb-3 text-blsck">
                     <label for="COW BREED" class="form-label">COW BREED</label>
-                    <select class="form-select" id="petType" required>
+                    <select class="form-select" name="breed" required>
                         <option value="" selected disabled>Select BREED</option>
                         <option value="Holstein Friesian">Holstein Friesian</option>
                         <option value="Angus">Angus</option>
@@ -386,23 +378,23 @@ if (isset($_POST['book1'])) {
 
                 <div class="mb-3 text-blsck">
                     <label for="appointmentDate" class="form-label">Preferred Appointment Date</label>
-                    <input type="date" class="form-control" id="appointmentDate" required>
+                    <input type="date" class="form-control" name="datee" required>
                 </div>
 
                 <div class="mb-3 text-blsck">
                     <label for="appointmentTime" class="form-label">Preferred Time</label>
-                    <input type="time" class="form-control" id="appointmentTime" required>
+                    <input type="time" class="form-control" name="timee" required>
                 </div>
 
                 <div class="mb-3 text-blsck">
                     <label for="reason" class="form-label">DISEASE</label>
-                    <input class="form-control" id="reason" rows="3"
+                    <input class="form-control" name="problem" rows="3"
                         placeholder="Disease" required></input>
                 </div>
 
                 <!-- Submit Button -->
                 <div class="text-center">
-                    <button type="submit" class="btn btn-primary">Book Appointment</button>
+                    <button type="submit" name="book1" class="btn btn-primary">Book Appointment</button>
                 </div>
             </form>
         </div>
