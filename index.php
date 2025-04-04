@@ -151,12 +151,8 @@ include('config.php');
                                         with Indigenous Cows!</h1>
                                     <a href="service.php"
                                         class="btn btn-secondary rounded-pill py-3 px-5 animated slideInRight">Explore
-                                        More</a>
-                                        <div class="input-group-text">
-                                        <input class="form-check-input mt-0" type="checkbox" value="" aria-label="Checkbox for following text input">
-                                    </div>
-                                        <input type="text" class="form-control" aria-label="Text input with checkbox">
-                                    </div>
+                                        More
+                                    </a>
                                 </div>
                             </div>
                         </div>
@@ -173,12 +169,8 @@ include('config.php');
                                         Strengthen Cow Breeding!</h1>
                                     <a href="service.php"
                                         class="btn btn-secondary rounded-pill py-3 px-5 animated slideInLeft">Explore
-                                        More</a>
-                                        <div class="input-group-text">
-                                        <input class="form-check-input mt-0" type="checkbox" value="" aria-label="Checkbox for following text input">
-                                    </div>
-                                        <input type="text" class="form-control" aria-label="Text input with checkbox">
-                                    </div>
+                                        More
+                                    </a>
                                 </div>
                             </div>
                         </div>
