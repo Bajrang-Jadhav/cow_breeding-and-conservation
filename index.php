@@ -175,6 +175,35 @@ include('config.php');
                     </div>
                 </div>
             </div>
+            
+            <script>
+            document.getElementById('submitButton').addEventListener('click', function() {
+            const imageInput = document.getElementById('imageInput');
+            const promptInput = document.getElementById('promptInput').value;
+            const responseDiv = document.getElementById('responseDiv');
+            const file = imageInput.files[0];
+
+            if (file) {
+                const formData = new FormData();
+                formData.append('image', file);
+                formData.append('prompt', promptInput);
+
+                fetch('/upload', {
+                    method: 'POST',
+                    body: formData
+                })
+                .then(response => response.json())
+                .then(data => {
+                    responseDiv.textContent = data.response || data.error;
+                })
+                .catch(error => {
+                    responseDiv.textContent = 'An error occurred.';
+                });
+            } else {
+                responseDiv.textContent = 'Please select an image.';
+            }
+        });
+    </script>
             <button class="carousel-control-prev" type="button" data-bs-target="#header-carousel" data-bs-slide="prev">
                 <span class="carousel-control-prev-icon" aria-hidden="true"></span>
                 <span class="visually-hidden">Previous</span>
