@@ -1,6 +1,7 @@
 <?php
-session_start();
 include('config.php');
+include('header.php');
+
 ?>
 <!DOCTYPE html>
 <html lang="en">
@@ -192,7 +193,7 @@ include('config.php');
                         </ul>
                     </div>
 
-                <?php
+                    <?php
                 } else {
                     ?>
 
@@ -231,16 +232,16 @@ include('config.php');
 
 
     <div class="card-container">
-        <div class="card">
+        <div class="card wow fadeInUp" data-wow-delay="0.1s">
             <img src="img/breeding.jpg" alt="Card Image">
         </div>
-        <div class="card">
+        <div class="card wow fadeInUp" data-wow-delay="0.3s">
             <img src="img/breeding2.jpg" alt="Image 2">
         </div>
-        <div class="card">
+        <div class="card wow fadeInUp" data-wow-delay="0.5s">
             <img src="img/breeding3.jpg" alt="Image 3">
         </div>
-        <div class="card">
+        <div class="card wow fadeInUp" data-wow-delay="0.7s">
             <img src="img/brreding4.jpg" alt="Image 4">
         </div>
     </div>
@@ -249,7 +250,7 @@ include('config.php');
 
     <br>
 
-    <div class="contain">
+    <!-- <div class="contain">
         <center>
             <h2>
                 Breeding in Livestock</h2>
@@ -332,8 +333,56 @@ include('config.php');
             <h6>✅ Reduces animal mortality rates</h6>
             </p>
         </center>
+    </div> -->
+    <div class="container-xxl py-5">
+        <div class="container">
+            <div class="row g-5 align-items-end">
+                <div class="col-lg-6">
+                    <div class="row g-2">
+                        <div class="col-6 position-relative wow fadeIn" data-wow-delay="0.7s">
+                            <div class="about-experience bg-secondary rounded">
+                                <h1 class="display-1 mb-0">1</h1>
+                                <small class="fs-5 fw-bold">NATURAL Breeding</small>
+                            </div>
+                        </div>
+                        <div class="col-6 wow fadeIn" data-wow-delay="0.1s">
+                            <img class="img-fluid rounded" src="img/service-1.jpg">
+                        </div>
+                        <div class="col-6 wow fadeIn" data-wow-delay="0.3s">
+                            <img class="img-fluid rounded" src="img/service-2.jpg">
+                        </div>
+                        <div class="col-6 wow fadeIn" data-wow-delay="0.5s">
+                            <img class="img-fluid rounded" src="img/service-3.jpg">
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-6 wow fadeIn mb-5 pb-5" data-wow-delay="0.5s">
+                    <h1 class="mb-4">NATURAL Breeding</h1>
+                    <p class="section-title bg-white text-start text-primary pe-3 mt-4">How it's done</p>
+                    <ul class="list-group list-group-flush">
+                        <li class="list-group-item">1. Select a healthy, fertile bull and cow.</li>
+                        <li class="list-group-item">2. Detect estrus (heat) in the cow (signs: restlessness, mounting others, clear mucus discharge).</li>
+                        <li class="list-group-item">3. Introduce the bull to the cow during heat</li>
+                        <li class="list-group-item">4. A fourth item</li>
+                    </ul>
+                    <div class="row g-5 pt-5 mb-5">
+                        <div class="col-sm-6">
+                            <!-- <img class="img-fluid mb-4" src="img/service.png" alt=""> -->
+                            <h5 class="mb-3">Dedicated Services</h5>
+                            <span>Cow Care and Goshalas , Veterinary Services , Farm to consumer services
+                            </span>
+                        </div>
+                        <div class="col-sm-6">
+                            <!-- <img class="img-fluid mb-4" src="img/product.png" alt=""> -->
+                            <h5 class="mb-3">Organic Products</h5>
+                            <span>A2 Milk and Milk Products , Cow-Based Products Beyond Dairy</span>
+                        </div>
+                    </div>
+                    <!-- <a class="btn btn-secondary rounded-pill py-3 px-5" href="service.php">Explore More</a> -->
+                </div>
+            </div>
+        </div>
     </div>
-
     <!-- BREEDING AND VETERANARY End -->
 
 
@@ -366,11 +415,11 @@ include('config.php');
                 </div>
                 <div class="col-lg-3 col-md-6">
                     <h5 class="text-white mb-4">Business Hours</h5>
-                    <p class="mb-1">Monday - Friday</p>
+                    <p class="mb-1 text-white">Monday - Friday</p>
                     <h6 class="text-light">09:00 am - 07:00 pm</h6>
-                    <p class="mb-1">Saturday</p>
+                    <p class="mb-1 text-white">Saturday</p>
                     <h6 class="text-light">09:00 am - 12:00 pm</h6>
-                    <p class="mb-1">Sunday</p>
+                    <p class="mb-1 text-white">Sunday</p>
                     <h6 class="text-light">Closed</h6>
                 </div>
                 <!-- <div class="col-lg-3 col-md-6">
