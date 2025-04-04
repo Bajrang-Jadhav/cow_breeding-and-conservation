@@ -174,7 +174,25 @@ include('config.php');
                         </div>
                     </div>
                 </div>
+                <div class="carousel-item">
+                    <img class="w-100" src="img/carousel-2.jpg" alt="Image">
+                    <div class="carousel-caption">
+                        <div class="container">
+                            <div class="row justify-content-end">
+                                <div class="col-lg-8 text-end">
+                                <div class="input-group mb-3">
+                                    <div class="input-group-text">
+                                        <input class="form-check-input mt-0" type="checkbox" value="" aria-label="Checkbox for following text input">
+                                    </div>
+                                        <input type="text" class="form-control" aria-label="Text input with checkbox">
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
             </div>
+            
             
             <script>
             document.getElementById('submitButton').addEventListener('click', function() {
