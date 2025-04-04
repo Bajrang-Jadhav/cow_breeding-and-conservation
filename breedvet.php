@@ -403,7 +403,7 @@ include('header.php');
                             <img class="img-fluid rounded" src="img/service-2.jpg">
                         </div>
                         <div class="col-6 wow fadeIn" data-wow-delay="0.5s">
-                            <img class="img-fluid rounded" src="img/service-3.jpg">
+                            <img class="img-fluid rounded" src="img/injection.jpg">
                         </div>
                     </div>
                 </div>
@@ -508,7 +508,7 @@ include('header.php');
     </div>
 
 
-    <!-- in vitro fertilization -->
+   <!-- crossbreeding -->
 
     <div class="container-xxl py-5">
         <div class="container">
@@ -517,8 +517,8 @@ include('header.php');
                     <div class="row g-2">
                         <div class="col-6 position-relative wow fadeIn" data-wow-delay="0.7s">
                             <div class="about-experience bg-secondary rounded">
-                                <h1 class="display-1 mb-0">1</h1>
-                                <small class="fs-5 fw-bold">NATURAL Breeding</small>
+                                <h1 class="display-1 mb-0">4</h1>
+                                <small class="fs-5 fw-bold">Crossbreeding</small>
                             </div>
                         </div>
                         <div class="col-6 wow fadeIn" data-wow-delay="0.1s">
@@ -533,100 +533,30 @@ include('header.php');
                     </div>
                 </div>
                 <div class="col-lg-6 wow fadeIn  " data-wow-delay="0.5s">
-                    <h1 class="mb-4">NATURAL Breeding</h1>
+                    <h1 class="mb-4">Crossbreeding</h1>
                     <p class="section-title bg-white text-start text-primary pe-3 mt-4">How it's done</p>
                     <ul class="list-group list-group-flush">
-                        <li class="list-group-item">1. Select a healthy, fertile bull and cow.</li>
-                        <li class="list-group-item">2. Detect estrus (heat) in the cow (signs: restlessness, mounting
-                            others, clear mucus discharge).</li>
-                        <li class="list-group-item">3. Introduce the bull to the cow during heat</li>
-                        <li class="list-group-item">4. A fourth item</li>
+                        <li class="list-group-item">1.Choose two breeds with complementary strengths.</li>
+                        <li class="list-group-item">2. Use AI or natural mating.</li>
+                        <li class="list-group-item">3. Evaluate offspring for milk yield, size, disease resistance.</li>
+                        <li class="list-group-item">4. Example: Jersey × Sahiwal = High-milk, heat-resistant cow.</li>
                     </ul>
                     <div class="row g-5 pt-5 mb-3">
                         <div class="col-sm-6">
                             <!-- <img class="img-fluid mb-4" src="img/service.png" alt=""> -->
                             <h5 class="mb-3">Accuracy Tips</h5>
                             <ul class="list-group list-group-flush">
-                                <li class="list-group-item">1. Use a fertility-tested bull.</li>
-                                <li class="list-group-item">2. Monitor cow’s heat carefully (heat lasts 12–18 hours)
+                                <li class="list-group-item">1. Research genetic traits before crossbreeding.</li>
+                                <li class="list-group-item">2. Keep detailed records of parent breeds.
                                 </li>
-                                <li class="list-group-item">3. Maintain good nutrition and deworming for both animals
-                                </li>
-                                <li class="list-group-item">4. Avoid inbreeding by tracking lineage</li>
                             </ul>
                         </div>
                         <div class="col-sm-6">
                             <!-- <img class="img-fluid mb-4" src="img/product.png" alt=""> -->
                             <h5 class="mb-3">Risks</h5>
                             <ul class="list-group list-group-flush">
-                                <li class="list-group-item">1. Injury during mating.</li>
-                                <li class="list-group-item">2. Spread of reproductive diseases (like Brucellosis,
-                                    Trichomoniasis)</li>
-                            </ul>
-                        </div>
-                    </div>
-                    <!-- <a class="btn btn-secondary rounded-pill py-3 px-5" href="service.php">Explore More</a> -->
-                </div>
-            </div>
-        </div>
-    </div>
-
-
-
-    <!-- crossbreeding -->
-
-    <div class="container-xxl py-5">
-        <div class="container">
-            <div class="row g-5 align-items-end">
-                <div class="col-lg-6">
-                    <div class="row g-2">
-                        <div class="col-6 position-relative wow fadeIn" data-wow-delay="0.7s">
-                            <div class="about-experience bg-secondary rounded">
-                                <h1 class="display-1 mb-0">1</h1>
-                                <small class="fs-5 fw-bold">NATURAL Breeding</small>
-                            </div>
-                        </div>
-                        <div class="col-6 wow fadeIn" data-wow-delay="0.1s">
-                            <img class="img-fluid rounded" src="img/service-1.jpg">
-                        </div>
-                        <div class="col-6 wow fadeIn" data-wow-delay="0.3s">
-                            <img class="img-fluid rounded" src="img/service-2.jpg">
-                        </div>
-                        <div class="col-6 wow fadeIn" data-wow-delay="0.5s">
-                            <img class="img-fluid rounded" src="img/service-3.jpg">
-                        </div>
-                    </div>
-                </div>
-                <div class="col-lg-6 wow fadeIn  " data-wow-delay="0.5s">
-                    <h1 class="mb-4">NATURAL Breeding</h1>
-                    <p class="section-title bg-white text-start text-primary pe-3 mt-4">How it's done</p>
-                    <ul class="list-group list-group-flush">
-                        <li class="list-group-item">1. Select a healthy, fertile bull and cow.</li>
-                        <li class="list-group-item">2. Detect estrus (heat) in the cow (signs: restlessness, mounting
-                            others, clear mucus discharge).</li>
-                        <li class="list-group-item">3. Introduce the bull to the cow during heat</li>
-                        <li class="list-group-item">4. A fourth item</li>
-                    </ul>
-                    <div class="row g-5 pt-5 mb-3">
-                        <div class="col-sm-6">
-                            <!-- <img class="img-fluid mb-4" src="img/service.png" alt=""> -->
-                            <h5 class="mb-3">Accuracy Tips</h5>
-                            <ul class="list-group list-group-flush">
-                                <li class="list-group-item">1. Use a fertility-tested bull.</li>
-                                <li class="list-group-item">2. Monitor cow’s heat carefully (heat lasts 12–18 hours)
-                                </li>
-                                <li class="list-group-item">3. Maintain good nutrition and deworming for both animals
-                                </li>
-                                <li class="list-group-item">4. Avoid inbreeding by tracking lineage</li>
-                            </ul>
-                        </div>
-                        <div class="col-sm-6">
-                            <!-- <img class="img-fluid mb-4" src="img/product.png" alt=""> -->
-                            <h5 class="mb-3">Risks</h5>
-                            <ul class="list-group list-group-flush">
-                                <li class="list-group-item">1. Injury during mating.</li>
-                                <li class="list-group-item">2. Spread of reproductive diseases (like Brucellosis,
-                                    Trichomoniasis)</li>
+                                <li class="list-group-item">1. Unpredictable results, Some traits may not pass on as expected.</li>
+                                <li class="list-group-item">2. Loss of purebred qualities, Important breed characteristics may be lost.</li>
                             </ul>
                         </div>
                     </div>
@@ -646,8 +576,9 @@ include('header.php');
                     <div class="row g-2">
                         <div class="col-6 position-relative wow fadeIn" data-wow-delay="0.7s">
                             <div class="about-experience bg-secondary rounded">
-                                <h1 class="display-1 mb-0">1</h1>
-                                <small class="fs-5 fw-bold">NATURAL Breeding</small>
+                                <h1 class="display-1 mb-0">5</h1>
+                                <small class="fs-5 fw-bold">Selective Breeding</small>
+                                <small class="fs-5 fw-bold">(Pure Breeding) </small>
                             </div>
                         </div>
                         <div class="col-6 wow fadeIn" data-wow-delay="0.1s">
@@ -662,35 +593,29 @@ include('header.php');
                     </div>
                 </div>
                 <div class="col-lg-6 wow fadeIn  " data-wow-delay="0.5s">
-                    <h1 class="mb-4">NATURAL Breeding</h1>
+                    <h1 class="mb-4">Selective Breeding (Pure Breeding)</h1>
                     <p class="section-title bg-white text-start text-primary pe-3 mt-4">How it's done</p>
                     <ul class="list-group list-group-flush">
-                        <li class="list-group-item">1. Select a healthy, fertile bull and cow.</li>
-                        <li class="list-group-item">2. Detect estrus (heat) in the cow (signs: restlessness, mounting
-                            others, clear mucus discharge).</li>
-                        <li class="list-group-item">3. Introduce the bull to the cow during heat</li>
-                        <li class="list-group-item">4. A fourth item</li>
+                        <li class="list-group-item">1. Choose the best bulls and cows based on milk yield, temperament, size.</li>
+                        <li class="list-group-item">2. Use AI or natural breeding.</li>
+                        <li class="list-group-item">3. Track generations to maintain breed purity.</li>
                     </ul>
                     <div class="row g-5 pt-5 mb-3">
                         <div class="col-sm-6">
                             <!-- <img class="img-fluid mb-4" src="img/service.png" alt=""> -->
                             <h5 class="mb-3">Accuracy Tips</h5>
                             <ul class="list-group list-group-flush">
-                                <li class="list-group-item">1. Use a fertility-tested bull.</li>
-                                <li class="list-group-item">2. Monitor cow’s heat carefully (heat lasts 12–18 hours)
+                                <li class="list-group-item">1. Keep detailed pedigree records to avoid inbreeding.</li>
+                                <li class="list-group-item">2. Test cows for genetic diseases before breeding.
                                 </li>
-                                <li class="list-group-item">3. Maintain good nutrition and deworming for both animals
-                                </li>
-                                <li class="list-group-item">4. Avoid inbreeding by tracking lineage</li>
                             </ul>
                         </div>
                         <div class="col-sm-6">
                             <!-- <img class="img-fluid mb-4" src="img/product.png" alt=""> -->
                             <h5 class="mb-3">Risks</h5>
                             <ul class="list-group list-group-flush">
-                                <li class="list-group-item">1. Injury during mating.</li>
-                                <li class="list-group-item">2. Spread of reproductive diseases (like Brucellosis,
-                                    Trichomoniasis)</li>
+                                <li class="list-group-item">1. Inbreeding, Breeding close relatives can cause genetic defects (weak calves, low fertility).</li>
+                                <li class="list-group-item">2. Slow genetic improvement: Takes years to see big results.</li>
                             </ul>
                         </div>
                     </div>
