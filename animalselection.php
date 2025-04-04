@@ -395,6 +395,36 @@ include('header.php');
 
 
 
+                <div class="breed-card">
+                    <img src="img/kankrej.jpg" alt="Angus Cow">
+                    <div class="breed-details">
+                        <h2>Kankrej </h2>
+                        <p><strong>Origin:</strong> Native to Kankrej region in Gujarat and parts of Rajasthan. </p>
+                        <p><strong>Feeding & Care:
+                            </strong>
+Adapted to rough grazing
+Thrive well even on limited feed and water
+Low maintenance compared to exotic breeds
+                        </p>
+                        <p><strong> Adaptability: </strong>             
+Very hardy breed
+Can withstand extreme weather, including high temperatures and drought
+Disease resistant, particularly to tropical diseases</p>
+                        <p><strong>Draught Power:</strong>
+Known for excellent endurance and strength
+Bulls are used for ploughing, cart pulling, and farm work, especially in hot and dry climates
+
+                        </p>
+                        <p><strong>Milk Production:</strong>
+Yield: Around 1400 to 1800 liters per lactation
+Fat content: High, usually 4.8% to 5.2%, making the milk rich and creamy </p>
+                        <div class="video-container">
+
+                        </div>
+                    </div>
+                </div>
+
+
 
                 <div class="breed-card">
                     <img src="img/gir.jpg" alt="Gir Cow">
