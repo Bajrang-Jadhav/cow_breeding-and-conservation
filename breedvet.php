@@ -215,12 +215,12 @@ include('header.php');
     <!-- Page Header Start -->
     <div class="container-fluid page-header py-5 mb-5 wow fadeIn" data-wow-delay="0.1s">
         <div class="container text-center py-5">
-            <h1 class="display-3 text-white mb-4 animated slideInDown">BREEDING AND VETERANARY</h1>
+            <h1 class="display-3 text-white mb-4 animated slideInDown">Breeding & Veteranary</h1>
             <nav aria-label="breadcrumb animated slideInDown">
                 <ol class="breadcrumb justify-content-center mb-0">
                     <li class="breadcrumb-item"><a href="#">Home</a></li>
                     <li class="breadcrumb-item"><a href="#">Services</a></li>
-                    <li class="breadcrumb-item active" aria-current="page">BREEDING AND VETERANARY</li>
+                    <li class="breadcrumb-item active" aria-current="page">Breeding & Veteranary</li>
                 </ol>
             </nav>
         </div>
@@ -229,28 +229,13 @@ include('header.php');
 
 
     <!-- BREEDING AND VETERANARY Start -->
-
-
-    <div class="card-container">
-        <div class="card wow fadeInUp" data-wow-delay="0.1s">
-            <img src="img/breeding.jpg" alt="Card Image">
-        </div>
-        <div class="card wow fadeInUp" data-wow-delay="0.3s">
-            <img src="img/breeding2.jpg" alt="Image 2">
-        </div>
-        <div class="card wow fadeInUp" data-wow-delay="0.5s">
-            <img src="img/breeding3.jpg" alt="Image 3">
-        </div>
-        <div class="card wow fadeInUp" data-wow-delay="0.7s">
-            <img src="img/brreding4.jpg" alt="Image 4">
-        </div>
-    </div>
     <br>
 
 
     <br>
 
     <!-- <div class="contain">
+
         <center>
             <h2>
                 Breeding in Livestock</h2>
@@ -334,6 +319,11 @@ include('header.php');
             </p>
         </center>
     </div> -->
+    <div class="text-center mx-auto wow fadeInUp" data-wow-delay="0.1s" style="max-width: 500px;">
+        <p class="section-title bg-white text-center text-primary px-3">GO-RAKSHAK</p>
+        <h1 class="mb-5">BREEDING TYPES </h1>
+    </div>
+    <!-- natural breeding -->
     <div class="container-xxl py-5">
         <div class="container">
             <div class="row g-5 align-items-end">
@@ -356,26 +346,36 @@ include('header.php');
                         </div>
                     </div>
                 </div>
-                <div class="col-lg-6 wow fadeIn mb-5 pb-5" data-wow-delay="0.5s">
+                <div class="col-lg-6 wow fadeIn  " data-wow-delay="0.5s">
                     <h1 class="mb-4">NATURAL Breeding</h1>
                     <p class="section-title bg-white text-start text-primary pe-3 mt-4">How it's done</p>
                     <ul class="list-group list-group-flush">
                         <li class="list-group-item">1. Select a healthy, fertile bull and cow.</li>
-                        <li class="list-group-item">2. Detect estrus (heat) in the cow (signs: restlessness, mounting others, clear mucus discharge).</li>
+                        <li class="list-group-item">2. Detect estrus (heat) in the cow (signs: restlessness, mounting
+                            others, clear mucus discharge).</li>
                         <li class="list-group-item">3. Introduce the bull to the cow during heat</li>
-                        <li class="list-group-item">4. A fourth item</li>
                     </ul>
-                    <div class="row g-5 pt-5 mb-5">
+                    <div class="row g-5 pt-5 mb-3">
                         <div class="col-sm-6">
                             <!-- <img class="img-fluid mb-4" src="img/service.png" alt=""> -->
-                            <h5 class="mb-3">Dedicated Services</h5>
-                            <span>Cow Care and Goshalas , Veterinary Services , Farm to consumer services
-                            </span>
+                            <h5 class="mb-3">Accuracy Tips</h5>
+                            <ul class="list-group list-group-flush">
+                                <li class="list-group-item">1. Use a fertility-tested bull.</li>
+                                <li class="list-group-item">2. Monitor cow’s heat carefully (heat lasts 12–18 hours)
+                                </li>
+                                <li class="list-group-item">3. Maintain good nutrition and deworming for both animals
+                                </li>
+                                <li class="list-group-item">4. Avoid inbreeding by tracking lineage</li>
+                            </ul>
                         </div>
                         <div class="col-sm-6">
                             <!-- <img class="img-fluid mb-4" src="img/product.png" alt=""> -->
-                            <h5 class="mb-3">Organic Products</h5>
-                            <span>A2 Milk and Milk Products , Cow-Based Products Beyond Dairy</span>
+                            <h5 class="mb-3">Risks</h5>
+                            <ul class="list-group list-group-flush">
+                                <li class="list-group-item">1. Injury during mating.</li>
+                                <li class="list-group-item">2. Spread of reproductive diseases (like Brucellosis,
+                                    Trichomoniasis)</li>
+                            </ul>
                         </div>
                     </div>
                     <!-- <a class="btn btn-secondary rounded-pill py-3 px-5" href="service.php">Explore More</a> -->
@@ -383,7 +383,327 @@ include('header.php');
             </div>
         </div>
     </div>
+
+    <!-- artificial insemination -->
+    <div class="container-xxl py-5">
+        <div class="container">
+            <div class="row g-5 align-items-end">
+                <div class="col-lg-6">
+                    <div class="row g-2">
+                        <div class="col-6 position-relative wow fadeIn" data-wow-delay="0.7s">
+                            <div class="about-experience bg-secondary rounded">
+                                <h1 class="display-1 mb-0">2</h1>
+                                <small class="fs-5 fw-bold">Artificial Insemination </small>
+                            </div>
+                        </div>
+                        <div class="col-6 wow fadeIn" data-wow-delay="0.1s">
+                            <img class="img-fluid rounded" src="img/service-1.jpg">
+                        </div>
+                        <div class="col-6 wow fadeIn" data-wow-delay="0.3s">
+                            <img class="img-fluid rounded" src="img/service-2.jpg">
+                        </div>
+                        <div class="col-6 wow fadeIn" data-wow-delay="0.5s">
+                            <img class="img-fluid rounded" src="img/service-3.jpg">
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-6 wow fadeIn  " data-wow-delay="0.5s">
+                    <h1 class="mb-3">Artificial Insemination </h1>
+                    <p class="section-title bg-white text-start text-primary pe-3 mt-4">How it's done</p>
+                    <ul class="list-group list-group-flush">
+                        <li class="list-group-item">1. Estrus Detection: Cow should be in heat (best time: 12 hours
+                            after first signs)..</li>
+                        <li class="list-group-item">2. Shawing Semen: Thaw frozen semen at 37°C (about 1 minute).</li>
+                        <li class="list-group-item">3. Insertion:
+                            <ul class="list-group list-group-flush">
+                                <li class="list-group-item">Use an AI gun to insert semen into the uterus.</li>
+                                <li class="list-group-item">Insert through the cervix carefully</li>
+                            </ul>
+                        </li>
+                    </ul>
+                    <div class="row g-5 pt-5 mb-3">
+                        <div class="col-sm-6">
+                            <!-- <img class="img-fluid mb-4" src="img/service.png" alt=""> -->
+                            <h5 class="mb-3">Accuracy Tips</h5>
+                            <ul class="list-group list-group-flush">
+                                <li class="list-group-item">1. Only inseminate during standing heat.</li>
+                                <li class="list-group-item">3. Keep semen properly stored in liquid nitrogen.
+                                </li>
+                                <li class="list-group-item">4. Inseminate within 6–12 hours after heat begins.</li>
+                            </ul>
+                        </div>
+                        <div class="col-sm-6">
+                            <!-- <img class="img-fluid mb-4" src="img/product.png" alt=""> -->
+                            <h5 class="mb-3">Risks</h5>
+                            <ul class="list-group list-group-flush">
+                                <li class="list-group-item">1. Wrong timing.</li>
+                                <li class="list-group-item">2. Using unsterilized AI equipment can cause infections</li>
+                            </ul>
+                        </div>
+                    </div>
+                    <!-- <a class="btn btn-secondary rounded-pill py-3 px-5" href="service.php">Explore More</a> -->
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+    <!-- embryo transfer -->
+    <div class="container-xxl py-5">
+        <div class="container">
+            <div class="row g-5 align-items-end">
+                <div class="col-lg-6">
+                    <div class="row g-2">
+                        <div class="col-6 position-relative wow fadeIn" data-wow-delay="0.7s">
+                            <div class="about-experience bg-secondary rounded">
+                                <h1 class="display-1 mb-0">3</h1>
+                                <small class="fs-5 fw-bold">Embryo Transfer</small>
+                            </div>
+                        </div>
+                        <div class="col-6 wow fadeIn" data-wow-delay="0.1s">
+                            <img class="img-fluid rounded" src="img/service-1.jpg">
+                        </div>
+                        <div class="col-6 wow fadeIn" data-wow-delay="0.3s">
+                            <img class="img-fluid rounded" src="img/service-2.jpg">
+                        </div>
+                        <div class="col-6 wow fadeIn" data-wow-delay="0.5s">
+                            <img class="img-fluid rounded" src="img/service-3.jpg">
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-6 wow fadeIn  " data-wow-delay="0.5s">
+                    <h1 class="mb-4">Embryo Transfer</h1>
+                    <p class="section-title bg-white text-start text-primary pe-3 mt-4">How it's done</p>
+                    <ul class="list-group list-group-flush">
+                        <li class="list-group-item">1. Synchronize heat cycles of donor and recipient cows</li>
+                        <li class="list-group-item">2. Give hormones (FSH) to the donor to produce multiple eggs.</li>
+                        <li class="list-group-item">3. Inseminate donor cow using AI.</li>
+                        <li class="list-group-item">4. Collect embryos 7 days later using a special flush method.</li>
+                        <li class="list-group-item">5. Examine embryos under a microscope and select the best ones.</li>
+                        <li class="list-group-item">6. Transfer embryos into the recipient cow’s uterus.</li>
+                    </ul>
+                    <div class="row g-5 pt-5 mb-3">
+                        <div class="col-sm-6">
+                            <!-- <img class="img-fluid mb-4" src="img/service.png" alt=""> -->
+                            <h5 class="mb-3">Accuracy Tips</h5>
+                            <ul class="list-group list-group-flush">
+                                <li class="list-group-item">1. Synchronize donor and recipient estrus cycles perfectly.</li>
+                                <li class="list-group-item">2. Use only Grade 1 embryos (best quality).
+                                </li>
+                            </ul>
+                        </div>
+                        <div class="col-sm-6">
+                            <!-- <img class="img-fluid mb-4" src="img/product.png" alt=""> -->
+                            <h5 class="mb-3">Risks</h5>
+                            <ul class="list-group list-group-flush">
+                                <li class="list-group-item">1. Low success rates.</li>
+                                <li class="list-group-item">2. Health risks,Hormone treatments can stress donor cows</li>
+                            </ul>
+                        </div>
+                    </div>
+                    <!-- <a class="btn btn-secondary rounded-pill py-3 px-5" href="service.php">Explore More</a> -->
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+    <!-- in vitro fertilization -->
+
+    <div class="container-xxl py-5">
+        <div class="container">
+            <div class="row g-5 align-items-end">
+                <div class="col-lg-6">
+                    <div class="row g-2">
+                        <div class="col-6 position-relative wow fadeIn" data-wow-delay="0.7s">
+                            <div class="about-experience bg-secondary rounded">
+                                <h1 class="display-1 mb-0">1</h1>
+                                <small class="fs-5 fw-bold">NATURAL Breeding</small>
+                            </div>
+                        </div>
+                        <div class="col-6 wow fadeIn" data-wow-delay="0.1s">
+                            <img class="img-fluid rounded" src="img/service-1.jpg">
+                        </div>
+                        <div class="col-6 wow fadeIn" data-wow-delay="0.3s">
+                            <img class="img-fluid rounded" src="img/service-2.jpg">
+                        </div>
+                        <div class="col-6 wow fadeIn" data-wow-delay="0.5s">
+                            <img class="img-fluid rounded" src="img/service-3.jpg">
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-6 wow fadeIn  " data-wow-delay="0.5s">
+                    <h1 class="mb-4">NATURAL Breeding</h1>
+                    <p class="section-title bg-white text-start text-primary pe-3 mt-4">How it's done</p>
+                    <ul class="list-group list-group-flush">
+                        <li class="list-group-item">1. Select a healthy, fertile bull and cow.</li>
+                        <li class="list-group-item">2. Detect estrus (heat) in the cow (signs: restlessness, mounting
+                            others, clear mucus discharge).</li>
+                        <li class="list-group-item">3. Introduce the bull to the cow during heat</li>
+                        <li class="list-group-item">4. A fourth item</li>
+                    </ul>
+                    <div class="row g-5 pt-5 mb-3">
+                        <div class="col-sm-6">
+                            <!-- <img class="img-fluid mb-4" src="img/service.png" alt=""> -->
+                            <h5 class="mb-3">Accuracy Tips</h5>
+                            <ul class="list-group list-group-flush">
+                                <li class="list-group-item">1. Use a fertility-tested bull.</li>
+                                <li class="list-group-item">2. Monitor cow’s heat carefully (heat lasts 12–18 hours)
+                                </li>
+                                <li class="list-group-item">3. Maintain good nutrition and deworming for both animals
+                                </li>
+                                <li class="list-group-item">4. Avoid inbreeding by tracking lineage</li>
+                            </ul>
+                        </div>
+                        <div class="col-sm-6">
+                            <!-- <img class="img-fluid mb-4" src="img/product.png" alt=""> -->
+                            <h5 class="mb-3">Risks</h5>
+                            <ul class="list-group list-group-flush">
+                                <li class="list-group-item">1. Injury during mating.</li>
+                                <li class="list-group-item">2. Spread of reproductive diseases (like Brucellosis,
+                                    Trichomoniasis)</li>
+                            </ul>
+                        </div>
+                    </div>
+                    <!-- <a class="btn btn-secondary rounded-pill py-3 px-5" href="service.php">Explore More</a> -->
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+
+    <!-- crossbreeding -->
+
+    <div class="container-xxl py-5">
+        <div class="container">
+            <div class="row g-5 align-items-end">
+                <div class="col-lg-6">
+                    <div class="row g-2">
+                        <div class="col-6 position-relative wow fadeIn" data-wow-delay="0.7s">
+                            <div class="about-experience bg-secondary rounded">
+                                <h1 class="display-1 mb-0">1</h1>
+                                <small class="fs-5 fw-bold">NATURAL Breeding</small>
+                            </div>
+                        </div>
+                        <div class="col-6 wow fadeIn" data-wow-delay="0.1s">
+                            <img class="img-fluid rounded" src="img/service-1.jpg">
+                        </div>
+                        <div class="col-6 wow fadeIn" data-wow-delay="0.3s">
+                            <img class="img-fluid rounded" src="img/service-2.jpg">
+                        </div>
+                        <div class="col-6 wow fadeIn" data-wow-delay="0.5s">
+                            <img class="img-fluid rounded" src="img/service-3.jpg">
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-6 wow fadeIn  " data-wow-delay="0.5s">
+                    <h1 class="mb-4">NATURAL Breeding</h1>
+                    <p class="section-title bg-white text-start text-primary pe-3 mt-4">How it's done</p>
+                    <ul class="list-group list-group-flush">
+                        <li class="list-group-item">1. Select a healthy, fertile bull and cow.</li>
+                        <li class="list-group-item">2. Detect estrus (heat) in the cow (signs: restlessness, mounting
+                            others, clear mucus discharge).</li>
+                        <li class="list-group-item">3. Introduce the bull to the cow during heat</li>
+                        <li class="list-group-item">4. A fourth item</li>
+                    </ul>
+                    <div class="row g-5 pt-5 mb-3">
+                        <div class="col-sm-6">
+                            <!-- <img class="img-fluid mb-4" src="img/service.png" alt=""> -->
+                            <h5 class="mb-3">Accuracy Tips</h5>
+                            <ul class="list-group list-group-flush">
+                                <li class="list-group-item">1. Use a fertility-tested bull.</li>
+                                <li class="list-group-item">2. Monitor cow’s heat carefully (heat lasts 12–18 hours)
+                                </li>
+                                <li class="list-group-item">3. Maintain good nutrition and deworming for both animals
+                                </li>
+                                <li class="list-group-item">4. Avoid inbreeding by tracking lineage</li>
+                            </ul>
+                        </div>
+                        <div class="col-sm-6">
+                            <!-- <img class="img-fluid mb-4" src="img/product.png" alt=""> -->
+                            <h5 class="mb-3">Risks</h5>
+                            <ul class="list-group list-group-flush">
+                                <li class="list-group-item">1. Injury during mating.</li>
+                                <li class="list-group-item">2. Spread of reproductive diseases (like Brucellosis,
+                                    Trichomoniasis)</li>
+                            </ul>
+                        </div>
+                    </div>
+                    <!-- <a class="btn btn-secondary rounded-pill py-3 px-5" href="service.php">Explore More</a> -->
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+    <!-- selective breeding -->
+
+    <div class="container-xxl py-5">
+        <div class="container">
+            <div class="row g-5 align-items-end">
+                <div class="col-lg-6">
+                    <div class="row g-2">
+                        <div class="col-6 position-relative wow fadeIn" data-wow-delay="0.7s">
+                            <div class="about-experience bg-secondary rounded">
+                                <h1 class="display-1 mb-0">1</h1>
+                                <small class="fs-5 fw-bold">NATURAL Breeding</small>
+                            </div>
+                        </div>
+                        <div class="col-6 wow fadeIn" data-wow-delay="0.1s">
+                            <img class="img-fluid rounded" src="img/service-1.jpg">
+                        </div>
+                        <div class="col-6 wow fadeIn" data-wow-delay="0.3s">
+                            <img class="img-fluid rounded" src="img/service-2.jpg">
+                        </div>
+                        <div class="col-6 wow fadeIn" data-wow-delay="0.5s">
+                            <img class="img-fluid rounded" src="img/service-3.jpg">
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-6 wow fadeIn  " data-wow-delay="0.5s">
+                    <h1 class="mb-4">NATURAL Breeding</h1>
+                    <p class="section-title bg-white text-start text-primary pe-3 mt-4">How it's done</p>
+                    <ul class="list-group list-group-flush">
+                        <li class="list-group-item">1. Select a healthy, fertile bull and cow.</li>
+                        <li class="list-group-item">2. Detect estrus (heat) in the cow (signs: restlessness, mounting
+                            others, clear mucus discharge).</li>
+                        <li class="list-group-item">3. Introduce the bull to the cow during heat</li>
+                        <li class="list-group-item">4. A fourth item</li>
+                    </ul>
+                    <div class="row g-5 pt-5 mb-3">
+                        <div class="col-sm-6">
+                            <!-- <img class="img-fluid mb-4" src="img/service.png" alt=""> -->
+                            <h5 class="mb-3">Accuracy Tips</h5>
+                            <ul class="list-group list-group-flush">
+                                <li class="list-group-item">1. Use a fertility-tested bull.</li>
+                                <li class="list-group-item">2. Monitor cow’s heat carefully (heat lasts 12–18 hours)
+                                </li>
+                                <li class="list-group-item">3. Maintain good nutrition and deworming for both animals
+                                </li>
+                                <li class="list-group-item">4. Avoid inbreeding by tracking lineage</li>
+                            </ul>
+                        </div>
+                        <div class="col-sm-6">
+                            <!-- <img class="img-fluid mb-4" src="img/product.png" alt=""> -->
+                            <h5 class="mb-3">Risks</h5>
+                            <ul class="list-group list-group-flush">
+                                <li class="list-group-item">1. Injury during mating.</li>
+                                <li class="list-group-item">2. Spread of reproductive diseases (like Brucellosis,
+                                    Trichomoniasis)</li>
+                            </ul>
+                        </div>
+                    </div>
+                    <!-- <a class="btn btn-secondary rounded-pill py-3 px-5" href="service.php">Explore More</a> -->
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+
     <!-- BREEDING AND VETERANARY End -->
+
 
 
 
