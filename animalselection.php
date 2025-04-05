@@ -427,7 +427,7 @@ Fat content: High, usually 4.8% to 5.2%, making the milk rich and creamy </p>
 
 
                 <div class="breed-card">
-                    <img src="img/kankrej.jpg" alt="Angus Cow">
+                    <img src="img/Tharparkar.jpg" alt="Angus Cow">
                     <div class="breed-details">
                         <h2>Tharparkar </h2>
                         <p><strong>Origin:</strong> Native to the Thar Desert region — Barmer, Jaisalmer (Rajasthan). </p>
@@ -453,6 +453,39 @@ Used for ploughing and cart pulling in desert areas
                         <p><strong>Milk Production:</strong>
                         Yield: Around 1800 to 2600 liters per lactation (higher under good management)
 Fat Content: Around 4.5% to 5%, making it ideal for dairy products like ghee</p>
+                        <div class="video-container">
+
+                        </div>
+                    </div>
+                </div>
+
+
+
+                <div class="breed-card">
+                    <img src="img/Ongole.jpg" alt="Angus Cow">
+                    <div class="breed-details">
+                        <h2>Ongole</h2>
+                        <p><strong>Origin:</strong>Native to the Prakasam District of Andhra Pradesh, particularly around the town of Ongole.. </p>
+                        <p><strong>Feeding & Care:
+                            </strong>
+                            Needs open grazing and regular movement
+Low-input breed in terms of feed and care
+Bulls may require careful handling due to their dominant nature
+                        </p>
+                        <p><strong> Adaptability: </strong>             
+                        Thrives in hot, dry, and humid climates
+Highly disease-resistant, especially to tropical diseases and parasites
+Can survive on minimal grazing and harsh conditions
+
+</p>
+                        <p><strong>Draught Power:</strong>
+                        Bulls are extremely powerful, used for ploughing, transport, and fieldwork
+Known for stamina, even under heavy workloads and hot conditions
+
+                        </p>
+                        <p><strong>Milk Production:</strong>
+                        Yield: Moderate — around 1000 to 1500 liters per lactation
+Fat Content: About 4.5%, decent quality for household use</p>
                         <div class="video-container">
 
                         </div>
