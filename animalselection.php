@@ -427,6 +427,41 @@ Fat content: High, usually 4.8% to 5.2%, making the milk rich and creamy </p>
 
 
                 <div class="breed-card">
+                    <img src="img/kankrej.jpg" alt="Angus Cow">
+                    <div class="breed-details">
+                        <h2>Tharparkar </h2>
+                        <p><strong>Origin:</strong> Native to the Thar Desert region — Barmer, Jaisalmer (Rajasthan). </p>
+                        <p><strong>Feeding & Care:
+                            </strong>
+Adapted to rough grazing
+Thrive well even on limited feed and water
+Low maintenance compared to exotic breeds
+                        </p>
+                        <p><strong> Adaptability: </strong>             
+                        Can survive on sparse desert vegetation
+
+Requires less feed compared to high-yield exotic breeds
+
+Ideal for low-input farming systems
+
+</p>
+                        <p><strong>Draught Power:</strong>
+                        Bulls are strong and active, excellent for agricultural work
+Used for ploughing and cart pulling in desert areas
+
+                        </p>
+                        <p><strong>Milk Production:</strong>
+                        Yield: Around 1800 to 2600 liters per lactation (higher under good management)
+Fat Content: Around 4.5% to 5%, making it ideal for dairy products like ghee</p>
+                        <div class="video-container">
+
+                        </div>
+                    </div>
+                </div>
+
+
+
+                <div class="breed-card">
                     <img src="img/gir.jpg" alt="Gir Cow">
                     <div class="breed-details">
                         <h2>Gir</h2>
