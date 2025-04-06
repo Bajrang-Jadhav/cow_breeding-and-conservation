@@ -1,4 +1,7 @@
-
+<?php
+session_start();
+include('config.php');
+?>
 <!DOCTYPE html>
 <html lang="en">
 
@@ -112,7 +115,38 @@
                 <a href="contact.php" class="nav-item nav-link">Contact</a>
             </div>
             <div class="border-start ps-4 d-none d-lg-block">
-                
+                <?php
+                if (isset($_SESSION["username"])) {
+
+                    ?>
+                    <div class="collapse navbar-collapse" id="navbarNavDarkDropdown">
+                        <ul class="navbar-nav">
+                            <li class="nav-item dropdown">
+                                <button class="btn btn-dark dropdown-toggle" data-bs-toggle="dropdown"
+                                    aria-expanded="false">
+                                    <?php echo ($_SESSION["username"]); ?>
+                                </button>
+                                <ul class="dropdown-menu dropdown-menu-dark">
+                                    <li><a class="dropdown-item" href="profile.PHP">profile</a></li>
+                                    <li><a class="dropdown-item" href="LOGOUT.PHP">LOGOUT</a></li>
+                                </ul>
+                            </li>
+                        </ul>
+                    </div>
+
+                    <?php
+                } else {
+                    ?>
+
+                    <a href="login.php">
+                        <button type="button" class="btn btn-outline-dark">Sign-in </button>
+                    </a>
+                    <a href="signup.php">
+                        <button type="button" class="btn btn-outline-dark">Sign-up </button>
+                    </a>
+                    <?php
+                }
+                ?>
             </div>
         </div>
     </nav>
