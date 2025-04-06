@@ -111,6 +111,9 @@ try {
                     </td>
                 </tr>
                 <tr>
+                    <p><strong>problem</strong> $problem</p>
+                </tr>
+                <tr>
                     <th colspan='2'>Consultation Details</th>
                 </tr>
             </table>
