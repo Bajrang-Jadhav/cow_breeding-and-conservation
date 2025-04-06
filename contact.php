@@ -56,7 +56,7 @@ try {
     $mail->send();
     echo "<script>
                     alert("message send successfully");
-                    window.location.href = "contactcon.php";
+                    window.location.href = "contact.php";
                   </script> "
 } catch (Exception $e) {
     echo "<div class='alert'>Message could not be sent. Mailer Error: {$mail->ErrorInfo} </div>";
