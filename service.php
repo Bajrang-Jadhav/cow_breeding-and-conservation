@@ -179,28 +179,6 @@ try {
     <!-- Spinner End -->
 
 
-    <!-- Topbar Start -->
-    <!-- <div class="container-fluid bg-dark px-0">
-        <div class="row g-0 d-none d-lg-flex">
-            <div class="col-lg-6 ps-5 text-start">
-                <div class="h-100 d-inline-flex align-items-center text-light">
-                    <span>Follow Us:</span>
-                    <a class="btn btn-link text-light" href=""><i class="fab fa-facebook-f"></i></a>
-                    <a class="btn btn-link text-light" href=""><i class="fab fa-twitter"></i></a>
-                    <a class="btn btn-link text-light" href=""><i class="fab fa-linkedin-in"></i></a>
-                    <a class="btn btn-link text-light" href=""><i class="fab fa-instagram"></i></a>
-                </div>  
-            </div>
-            <div class="col-lg-6 text-end">
-                <div class="h-100 bg-secondary d-inline-flex align-items-center text-dark py-2 px-4">
-                    <span class="me-2 fw-semi-bold"><i class="fa fa-phone-alt me-2"></i>Call Us:</span>
-                    <span>1234567890</span>
-                </div>
-            </div>
-        </div>
-    </div> -->
-    <!-- Topbar End -->
-
 
     <!-- Navbar Start -->
     <nav class="navbar navbar-expand-lg bg-white navbar-light sticky-top px-4 px-lg-5">
@@ -327,16 +305,12 @@ try {
                             <div class="service-icon">
                                 <img class="img-fluid rounded-circle" src="img/service-2.jpg" alt="">
                             </div>
-                            <h5 class="mb-3">Breeding & Veterinary</h5>
-                            <p class="mb-4">Breeding is a key factor in dairy farming as it determines milk yield,
-                                fertility, and overall cattle health.
-                                Veterinary Care:
-                                1. Regular Health Checkups
-                                2.Routine examinations help detect diseases early and prevent outbreaks.
-                                3. Vaccination & Disease Prevention
-                                4. Common Cattle Diseases & Treatment
+                            <h5 class="mb-3"> AI Cow Breed Recognization</h5>
+                            <p class="mb-4">It refers to the recognition of cow's breed by the help of image.
+                                 Our AI recognizes the colour and the marks on the body of cow and 
+                                 responses it.
                             </p>
-                            <a class="btn btn-square rounded-circle" href="breedvet.php"><i
+                            <a class="btn btn-square rounded-circle" href="artificial.php"><i
                                     class="bi bi-chevron-double-right"></i></a>
                         </div>
                     </div>
@@ -352,40 +326,13 @@ try {
                             <div class="service-icon">
                                 <img class="img-fluid rounded-circle" src="img/service-3.jpg" alt="">
                             </div>
-                            <h5 class="mb-3">Types of Cow Breeding</h5>
-                            <p class="mb-4">Natural Breeding: Cows mate naturally with a bull to conceive.
-                                Artificial Insemination (AI): A controlled method where high-quality bull semen is
-                                artificially introduced into the cow's reproductive system to improve genetic traits.
-                            </p>
+                            <h5 class="mb-3">Environmental Benefits</h5>
+                            <p class="mb-4">"Environmental Benefits" refers to the positive effects that cows have on nature and the environment, especially when raised in traditional, eco-friendly ways.</p>
                             <a class="btn btn-square rounded-circle" href="types.php"><i
                                     class="bi bi-chevron-double-right"></i></a>
                         </div>
                     </div>
                 </div>
-
-
-                <!-- <div class="col pt-5 wow fadeInUp" data-wow-delay="0.3s">
-                    <div class="service-item d-flex h-100">
-                        <div class="service-img">
-                            <img class="img-fluid" src="img/cows1.jpg" alt="">
-                        </div>
-                        <div class="service-text p-5 pt-0">
-                            <div class="service-icon">
-                                <img class="img-fluid rounded-circle" src="img/cows1.jpg" alt="">
-                            </div>
-                            <h5 class="mb-3">Best Cow Breeds for Breeding
-                            </h5>
-                            <p class="mb-4">Dairy Breeds (High milk production)
-
-                                Holstein Friesian (Highest milk yield)
-                                Jersey (High-fat content in milk)
-                                Sahiwal (Heat-resistant and good milk producer)
-                                Gir (Hardy and disease-resistant)</p>
-                            <a class="btn btn-square rounded-circle" href=""><i
-                                    class="bi bi-chevron-double-right"></i></a>
-                        </div>
-                    </div>
-                </div> -->
 
 
                 <div class="col pt-5 wow fadeInUp" data-wow-delay="0.3s">
@@ -395,40 +342,18 @@ try {
                         </div>
                         <div class="service-text p-5 pt-0">
                             <div class="service-icon">
-                                <img class="img-fluid rounded-circle" src="img/cows2.jpg" alt="">
+                                <img class="img-fluid rounded-circle" src="img/service-1.jpg" alt="">
                             </div>
-                            <h5 class="mb-3">Artificial Insemination (AI)</h5>
-                            <p class="mb-4">Semen from a high-quality bull is collected and injected into a cow’s
-                                reproductive tract.
-                                Reduces disease transmission and allows selective breeding.
-                                Helps in improving milk yield and genetic traits.</p>
-                            <a class="btn btn-square rounded-circle" href="artificial.php"><i
+                            <h5 class="mb-3">Breeding</h5>
+                            <p class="mb-4">The breeding of cows refers to the process of reproducing and raising cattle to improve or maintain certain desirable traits, such as High milk production, Good meat quality, Disease resistance</p>
+                            <a class="btn btn-square rounded-circle" href="breedvet.php"><i
                                     class="bi bi-chevron-double-right"></i></a>
                         </div>
                     </div>
                 </div>
 
 
-                <!-- <div class="col pt-5 wow fadeInUp" data-wow-delay="0.3s">
-                    <div class="service-item d-flex h-100">
-                        <div class="service-img">
-                            <img class="img-fluid" src="img/cows3.jpg" alt="">
-                        </div>
-                        <div class="service-text p-5 pt-0">
-                            <div class="service-icon">
-                                <img class="img-fluid rounded-circle" src="img/cows3.jpg" alt="">
-                            </div>
-                            <h5 class="mb-3">Factors for Successful Breeding</h5>
-                            <p class="mb-4">Heat Detection,
-                                Proper Nutrition,
-                                Disease Control,
-                                Genetic Selection
-                            </p>
-                            <a class="btn btn-square rounded-circle" href=""><i class="bi bi-chevron-double-right"></i></a>
-                        </div>
-                    </div>
-                </div> -->
-
+               
             </div>
         </div>
     </div>
@@ -508,10 +433,7 @@ try {
                         <p class="mb-2"><i class="fa fa-envelope me-3"></i>gorakshak302@example.com</p>
 
                         <div class="d-flex pt-3">
-                            <!-- <a class="btn btn-square btn-secondary rounded-circle me-2" href=""><i class="fab fa-twitter"></i></a>
-                        <a class="btn btn-square btn-secondary rounded-circle me-2" href=""><i class="fab fa-facebook-f"></i></a>
-                        <a class="btn btn-square btn-secondary rounded-circle me-2" href=""><i class="fab fa-youtube"></i></a>
-                        <a class="btn btn-square btn-secondary rounded-circle me-2" href=""><i class="fab fa-linkedin-in"></i></a> -->
+                          
                         </div>
                     </div>
                     <div class="col-lg-3 col-md-6">
@@ -549,12 +471,11 @@ try {
                     </div>
                     <div class="col-md-6 text-center text-md-end">
 
-                        <!--- Designed By <a class="fw-semi-bold" href="https://htmlcodex.com">HACK-A-FARM</a>
                 </div>
             </div>
         </div>
     </div>
-    <-- Copyright End -->
+    <!-- <-- Copyright End --> 
 
                 <!-- Back to Top -->
                 <a href="#" class="btn btn-lg btn-primary btn-lg-square rounded-circle back-to-top"><i class="bi bi-arrow-up"></i></a>                 

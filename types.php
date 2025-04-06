@@ -48,29 +48,7 @@ include('header.php');
     <!-- Spinner End -->
 
 
-    <!-- Topbar Start -->
-    <!-- <div class="container-fluid bg-dark px-0">
-        <div class="row g-0 d-none d-lg-flex">
-            <div class="col-lg-6 ps-5 text-start">
-                <div class="h-100 d-inline-flex align-items-center text-light">
-                    <span>Follow Us:</span>
-                    <a class="btn btn-link text-light" href=""><i class="fab fa-facebook-f"></i></a>
-                    <a class="btn btn-link text-light" href=""><i class="fab fa-twitter"></i></a>
-                    <a class="btn btn-link text-light" href=""><i class="fab fa-linkedin-in"></i></a>
-                    <a class="btn btn-link text-light" href=""><i class="fab fa-instagram"></i></a>
-                </div>
-            </div>
-            <div class="col-lg-6 text-end">
-                <div class="h-100 bg-secondary d-inline-flex align-items-center text-dark py-2 px-4">
-                    <span class="me-2 fw-semi-bold"><i class="fa fa-phone-alt me-2"></i>Call Us:</span>
-                    <span>+012 345 6789</span>
-                </div>
-            </div>
-        </div>
-    </div> -->
-    <!-- Topbar End -->
-
-
+   
     <!-- Navbar Start -->
     <nav class="navbar navbar-expand-lg bg-white navbar-light sticky-top px-4 px-lg-5">
         <a href="index.php" class="navbar-brand d-flex align-items-center">
@@ -82,7 +60,7 @@ include('header.php');
         <div class="collapse navbar-collapse" id="navbarCollapse">
             <div class="navbar-nav ms-auto p-4 p-lg-0">
                 <a href="index.php" class="nav-item nav-link">Home</a>
-                <a href="service.php" class="nav-item nav-link ">Services</a>
+                <a href="service.php" class="nav-item nav-link active">Services</a>
                 <a href="about.php" class="nav-item nav-link">About</a>
                 <a href="product.php" class="nav-item nav-link">Products</a>
                 <div class="nav-item dropdown">
@@ -115,7 +93,7 @@ include('header.php');
                         </ul>
                     </div>
 
-                <?php
+                    <?php
                 } else {
                     ?>
 
@@ -137,12 +115,12 @@ include('header.php');
     <!-- Page Header Start -->
     <div class="container-fluid page-header py-5 mb-5 wow fadeIn" data-wow-delay="0.1s">
         <div class="container text-center py-5">
-            <h1 class="display-3 text-white mb-4 animated slideInDown">types of cow breeding</h1>
+            <h1 class="display-3 text-white mb-4 animated slideInDown">Environmental Benefits</h1>
             <nav aria-label="breadcrumb animated slideInDown">
                 <ol class="breadcrumb justify-content-center mb-0">
                     <li class="breadcrumb-item"><a href="#">Home</a></li>
                     <li class="breadcrumb-item"><a href="#">Services</a></li>
-                    <li class="breadcrumb-item active" aria-current="page">types of cow breeding</li>
+                    <li class="breadcrumb-item active" aria-current="page">Environmental Benefits</li>
                 </ol>
             </nav>
         </div>
@@ -152,57 +130,188 @@ include('header.php');
 
     <!-- types of cow breeding Start -->
 
-    <div class="card" style="width: 18rem;">
-        <img class="card-img-top" src="img/breed3.jpg" alt="Card image cap">
-        <div class="card-body">
-
+    <div class="container-xxl py-5">
+        <div class="container">
+            <div class="text-center mx-auto pb-4 wow fadeInUp" data-wow-delay="0.1s" style="max-width: 500px;">
+                <p class="section-title bg-white text-center text-primary px-3  ">GO-RAKSHAK</p>
+                <h1 class="mb-5  text-black">Benefits that make Environment better</h1>
+            </div>
+            <div class="row gy-5 gx-4">
+                <div class="col-lg-4 col-md-6 pt-5 wow fadeInUp" data-wow-delay="0.1s">
+                    <div class="service-item d-flex h-100">
+                        <div class="service-img">
+                            <img class="img-fluid" src="img/service-1.jpg" alt="">
+                        </div>
+                        <div class="service-text p-5 pt-0">
+                            <div class="service-icon">
+                                <img class="img-fluid rounded-circle" src="img/env1.jpg" alt="">
+                            </div>
+                            <h5 class="mb-3">Sustainable Organic Farming</h4>
+                                <p class="mb-4">Dung as Natural Fertilizer, Indian cow dung is rich in nutrients and
+                                    microorganisms. It enhances soil fertility and structure, promoting organic farming
+                                    without synthetic fertilizers.
+                                    <br>
+                                    Urine as Bio-Pesticide, Cow urine (known as gomutra) contains antimicrobial and
+                                    antifungal properties, making it effective in preparing natural pesticides and
+                                    growth promoters (like Jeevamrut).
+                                </p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-4 col-md-6 pt-5 wow fadeInUp" data-wow-delay="0.3s">
+                    <div class="service-item d-flex h-100">
+                        <div class="service-img">
+                            <img class="img-fluid" src="img/service-2.jpg" alt="">
+                        </div>
+                        <div class="service-text p-5 pt-0">
+                            <div class="service-icon">
+                                <img class="img-fluid rounded-circle" src="img/service-2.jpg" alt="">
+                            </div>
+                            <h5 class="mb-3"> Soil Health and Microbial Activity</h5>
+                            <p class="mb-4">Cow dung improves the microbial biomass in soil, aiding in better nutrient
+                                cycling and water retention.
+                                <br>
+                                Traditional farming with cow dung enriches earthworm activity, which aerates the soil
+                                and increases fertility.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-4 col-md-6 pt-5 wow fadeInUp" data-wow-delay="0.5s">
+                    <div class="service-item d-flex h-100">
+                        <div class="service-img">
+                            <img class="img-fluid" src="img/cows2.jpg" alt="">
+                        </div>
+                        <div class="service-text p-5 pt-0">
+                            <div class="service-icon">
+                                <img class="img-fluid rounded-circle" src="img/env2.jpg" alt="">
+                            </div>
+                            <h5 class="mb-3"> Low Carbon Footprint</h5>
+                            <p class="mb-4">Indigenous Indian cows require less feed, water, and shelter compared to
+                                exotic breeds like Jersey or Holstein.
+                                They emit less methane per unit of body weight, making them a more climate-friendly
+                                choice.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
         </div>
     </div>
+    <div class="container-xxl py-5">
 
-    <h8>Natural Breeding
-        Description: Natural breeding involves the direct mating of cows and bulls without human intervention. This
-        traditional method relies on the bull's presence to detect and service cows in estrus (heat).​
+        <div class="row gy-5 gx-4">
+            <div class="col-lg-4 col-md-6 pt-5 wow fadeInUp" data-wow-delay="0.1s">
+                <div class="service-item d-flex h-100">
+                    <div class="service-img">
+                        <img class="img-fluid" src="img/service-1.jpg" alt="">
+                    </div>
+                    <div class="service-text p-5 pt-0">
+                        <div class="service-icon">
+                            <img class="img-fluid rounded-circle" src="img/env3.jpg" alt="">
+                        </div>
+                        <h5 class="mb-3"> Preservation of Biodiversity</h4>
+                            <p class="mb-4">Native breeds are naturally disease-resistant and adapted to local climates,
+                                reducing the need for antibiotics or chemical interventions.
+                                <br>
+                                They support genetic diversity, which is vital for ecological balance and resilience in
+                                farming systems.
+                            </p>
+                    </div>
+                </div>
+            </div>
+            <div class="col-lg-4 col-md-6 pt-5 wow fadeInUp" data-wow-delay="0.3s">
+                <div class="service-item d-flex h-100">
+                    <div class="service-img">
+                        <img class="img-fluid" src="img/service-2.jpg" alt="">
+                    </div>
+                    <div class="service-text p-5 pt-0">
+                        <div class="service-icon">
+                            <img class="img-fluid rounded-circle" src="img/service-2.jpg" alt="">
+                        </div>
+                        <h5 class="mb-3">Carbon Sequestration</h5>
+                        <p class="mb-4">Practices like Agnihotra farming (using cow dung in fire rituals and ash as
+                            manure) are believed to contribute to atmospheric cleansing and improved soil carbon
+                            sequestration.
+                            <br>
+                            Grasslands and pastures maintained for cows also serve as carbon sinks, helping absorb CO₂.
+                        </p>
+                    </div>
+                </div>
+            </div>
+            <div class="col-lg-4 col-md-6 pt-5 wow fadeInUp" data-wow-delay="0.5s">
+                <div class="service-item d-flex h-100">
+                    <div class="service-img">
+                        <img class="img-fluid" src="img/cows2.jpg" alt="">
+                    </div>
+                    <div class="service-text p-5 pt-0">
+                        <div class="service-icon">
+                            <img class="img-fluid rounded-circle" src="img/cows2.jpg" alt="">
+                        </div>
+                        <h5 class="mb-3">Reduction of Water Pollution</h5>
+                        <p class="mb-4">Cow dung and urine-based fertilizers reduce the dependency on chemical inputs
+                            that typically leach into groundwater and pollute water bodies.
+                            Helps maintain the ecological balance in nearby aquatic ecosystems..</p>
+                    </div>
+                </div>
+            </div>
+        </div>
 
-        Advantages:
+    </div>
+    <div class="container-xxl py-5">
 
-        Minimal technological input required.​
+        <div class="row gy-5 gx-4">
+            <div class="col-lg-4 col-md-6 pt-5 wow fadeInUp" data-wow-delay="0.1s">
+                <div class="service-item d-flex h-100">
+                    <div class="service-img">
+                        <img class="img-fluid" src="img/service-1.jpg" alt="">
+                    </div>
+                    <div class="service-text p-5 pt-0">
+                        <div class="service-icon">
+                            <img class="img-fluid rounded-circle" src="img/service-1.jpg" alt="">
+                        </div>
+                        <h5 class="mb-3"> Water Conservation</h4>
+                            <p class="mb-4">Indian breeds are well adapted to dry and arid climates, requiring less water for drinking and maintenance compared to exotic cows.
+                                <br>
+                                They thrive even in low-input environments, making them ideal for regions facing water scarcity.
+                            </p>
+                    </div>
+                </div>
+            </div>
+            <div class="col-lg-4 col-md-6 pt-5 wow fadeInUp" data-wow-delay="0.3s">
+                <div class="service-item d-flex h-100">
+                    <div class="service-img">
+                        <img class="img-fluid" src="img/service-2.jpg" alt="">
+                    </div>
+                    <div class="service-text p-5 pt-0">
+                        <div class="service-icon">
+                            <img class="img-fluid rounded-circle" src="img/service-2.jpg" alt="">
+                        </div>
+                        <h5 class="mb-3">Support for Agroforestry and Permaculture</h5>
+                        <p class="mb-4">Cow-based inputs (like manure and Panchagavya) improve soil health, enabling diverse crop and tree plantations to thrive together.
+                            <br>
+                            This promotes agroforestry, which increases biodiversity, restores ecosystems, and provides shade and shelter to cattle.
+                        </p>
+                    </div>
+                </div>
+            </div>
+            <div class="col-lg-4 col-md-6 pt-5 wow fadeInUp" data-wow-delay="0.5s">
+                <div class="service-item d-flex h-100">
+                    <div class="service-img">
+                        <img class="img-fluid" src="img/cows2.jpg" alt="">
+                    </div>
+                    <div class="service-text p-5 pt-0">
+                        <div class="service-icon">
+                            <img class="img-fluid rounded-circle" src="img/cows2.jpg" alt="">
+                        </div>
+                        <h5 class="mb-3">Sacred Grazing Ecosystems</h5>
+                        <p class="mb-4">In many Indian villages, cows are grazed in community pastures, which promotes natural fertilization of land through dung and urine during grazing.
+                        Grazing also helps in maintaining grassland ecosystems, which support birds, small mammals, and insects.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
 
-        Bulls can detect subtle signs of estrus, potentially increasing conception rates.​
-
-        Disadvantages:
-
-        Risk of disease transmission between animals.​
-
-        Challenges in controlling genetic outcomes.​
-        Engormix
-        +5
-        SESRIC
-        +5
-        NSW Department of Primary Industries
-        +5
-
-        Higher maintenance costs associated with keeping bulls.</h8>
-
-
-    <h8>Embryo Transfer (ET)
-        Description: ET involves harvesting embryos from a genetically superior donor cow and implanting them into
-        recipient cows. This advanced method accelerates genetic improvement by allowing multiple offspring from
-        top-performing females.​
-
-        Advantages:
-
-        Rapid dissemination of desirable traits across the herd.​
-
-        Maximizes the reproductive potential of elite cows.​
-
-        Disadvantages:
-
-        High costs and technical expertise required.​
-
-        Demanding management and care for both donors and recipients.
-
-    </h8>
-
+    </div>
     <!-- types of cow breeding End -->
 
 

@@ -49,29 +49,6 @@ include('config.php');
     <!-- Spinner End -->
 
 
-    <!-- Topbar Start -->
-    <!-- <div class="container-fluid bg-dark px-0">
-        <div class="row g-0 d-none d-lg-flex">
-            <div class="col-lg-6 ps-5 text-start">
-                <div class="h-100 d-inline-flex align-items-center text-light">
-                    <span>Follow Us:</span>
-                    <a class="btn btn-link text-light" href=""><i class="fab fa-facebook-f"></i></a>
-                    <a class="btn btn-link text-light" href=""><i class="fab fa-twitter"></i></a>
-                    <a class="btn btn-link text-light" href=""><i class="fab fa-linkedin-in"></i></a>
-                    <a class="btn btn-link text-light" href=""><i class="fab fa-instagram"></i></a>
-                </div>
-            </div>
-            <div class="col-lg-6 text-end">
-                <div class="h-100 bg-secondary d-inline-flex align-items-center text-dark py-2 px-4">
-                    <span class="me-2 fw-semi-bold"><i class="fa fa-phone-alt me-2"></i>Call Us:</span>
-                    <span>+012 345 6789</span>
-                </div>
-            </div>
-        </div>
-    </div> -->
-    <!-- Topbar End -->
-
-
 
     <!-- Navbar Start -->
     <nav class="navbar navbar-expand-lg bg-white navbar-light sticky-top px-4 px-lg-5">
@@ -117,7 +94,7 @@ include('config.php');
                         </ul>
                     </div>
 
-                <?php
+                    <?php
                 } else {
                     ?>
 
@@ -165,9 +142,10 @@ include('config.php');
                             <div class="row justify-content-end">
                                 <div class="col-lg-8 text-end">
                                     <p class="fs-4 text-white">Welcome to cow conservation</p>
-                                    <h1 class="display-1 text-white mb-5 animated slideInRight">Strengthen Agriculture,
-                                        Strengthen Cow Breeding!</h1>
-                                    <a href="service.php"
+                                    <h1 class="display-1 text-white mb-5 animated slideInRight">Recognize Cow </h1>
+                                    <h1 class="display-1 text-white mb-5 animated slideInRight">Breed with the</h1>
+                                    <h1 class="display-1 text-white mb-5 animated slideInRight">Help of AI!</h1>
+                                    <a href="artificial.php"
                                         class="btn btn-secondary rounded-pill py-3 px-5 animated slideInLeft">Explore
                                         More
                                     </a>
@@ -176,37 +154,55 @@ include('config.php');
                         </div>
                     </div>
                 </div>
+                <div class="carousel-item">
+                    <img class="w-100" src="img/carousel-2.jpg" alt="Image">
+                    <div class="carousel-caption">
+                        <div class="container">
+                            <div class="row justify-content-end">
+                                <div class="col-lg-8 text-end">
+                                    <p class="fs-4 text-white">Welcome to cow conservation</p>
+                                    <h1 class="display-1 text-white mb-5 animated slideInRight">Various Types of Cow Breeding!</h1>
+                                    <a href="breedvet.php"
+                                        class="btn btn-secondary rounded-pill py-3 px-5 animated slideInLeft">Explore
+                                        More
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
             </div>
-            
-            
+
+
             <script>
-            document.getElementById('submitButton').addEventListener('click', function() {
-            const imageInput = document.getElementById('imageInput');
-            const promptInput = document.getElementById('promptInput').value;
-            const responseDiv = document.getElementById('responseDiv');
-            const file = imageInput.files[0];
+                document.getElementById('submitButton').addEventListener('click', function () {
+                    const imageInput = document.getElementById('imageInput');
+                    const promptInput = document.getElementById('promptInput').value;
+                    const responseDiv = document.getElementById('responseDiv');
+                    const file = imageInput.files[0];
 
-            if (file) {
-                const formData = new FormData();
-                formData.append('image', file);
-                formData.append('prompt', promptInput);
+                    if (file) {
+                        const formData = new FormData();
+                        formData.append('image', file);
+                        formData.append('prompt', promptInput);
 
-                fetch('/upload', {
-                    method: 'POST',
-                    body: formData
-                })
-                .then(response => response.json())
-                .then(data => {
-                    responseDiv.textContent = data.response || data.error;
-                })
-                .catch(error => {
-                    responseDiv.textContent = 'An error occurred.';
+                        fetch('/upload', {
+                            method: 'POST',
+                            body: formData
+                        })
+                            .then(response => response.json())
+                            .then(data => {
+                                responseDiv.textContent = data.response || data.error;
+                            })
+                            .catch(error => {
+                                responseDiv.textContent = 'An error occurred.';
+                            });
+                    } else {
+                        responseDiv.textContent = 'Please select an image.';
+                    }
                 });
-            } else {
-                responseDiv.textContent = 'Please select an image.';
-            }
-        });
-    </script>
+            </script>
             <button class="carousel-control-prev" type="button" data-bs-target="#header-carousel" data-bs-slide="prev">
                 <span class="carousel-control-prev-icon" aria-hidden="true"></span>
                 <span class="visually-hidden">Previous</span>
@@ -245,8 +241,8 @@ include('config.php');
                     </div>
                 </div>
                 <div class="col-lg-6 wow fadeIn" data-wow-delay="0.5s">
-                    <p class="section-title bg-black text-start text-primary pe-3">About Us</p>
-                    <h1 class="mb-4 text-black">Know About Our Hack-a-Farm</h1>
+                <p class="section-title bg-white text-start text-primary pe-3">About Us</p>
+                <h1 class="mb-4 text-black">Know About Our Hack-a-Farm</h1>
                     <p class="mb-4 text-black"> Conservation efforts must involve local communities and farmers, as they
                         are the primary custodians of these breeds.
                         Balancing productivity with conservation is essential. Genetic improvement programs should aim
@@ -532,10 +528,7 @@ include('config.php');
                             <div class="position-relative">
                                 <img class="img-fluid" src="img/a2-milk.webp" alt="">
                                 <div class="product-overlay">
-                                    <a class="btn btn-square btn-secondary rounded-circle m-1" href=""><i
-                                            class="bi bi-link"></i></a>
-                                    <a class="btn btn-square btn-secondary rounded-circle m-1" href=""><i
-                                            class="bi bi-cart"></i></a>
+
                                 </div>
                             </div>
                             <div class="text-center p-4">
@@ -543,7 +536,7 @@ include('config.php');
                                 <span class="text-primary me-1">Pure and healthy A2 milk from our cows. </span>
                                 <br>
                                 <br>
-                                <button>Buy Now</button>
+                                
                             </div>
                         </div>
                     </div>
@@ -552,10 +545,7 @@ include('config.php');
                             <div class="position-relative">
                                 <img class="img-fluid" src="img/dairy1.jpg" alt="">
                                 <div class="product-overlay">
-                                    <a class="btn btn-square btn-secondary rounded-circle m-1" href=""><i
-                                            class="bi bi-link"></i></a>
-                                    <a class="btn btn-square btn-secondary rounded-circle m-1" href=""><i
-                                            class="bi bi-cart"></i></a>
+
                                 </div>
                             </div>
                             <div class="text-center p-4">
@@ -563,7 +553,7 @@ include('config.php');
                                 <span class="text-primary me-1">Develop cheeses using milk from specific breeds. </span>
                                 <br>
                                 <br>
-                                <button>Buy Now</button>
+                                
                             </div>
                         </div>
                     </div>
@@ -572,10 +562,7 @@ include('config.php');
                             <div class="position-relative">
                                 <img class="img-fluid" src="img/organic_fer.jpg" alt="">
                                 <div class="product-overlay">
-                                    <a class="btn btn-square btn-secondary rounded-circle m-1" href=""><i
-                                            class="bi bi-link"></i></a>
-                                    <a class="btn btn-square btn-secondary rounded-circle m-1" href=""><i
-                                            class="bi bi-cart"></i></a>
+
                                 </div>
                             </div>
                             <div class="text-center p-4">
@@ -583,7 +570,7 @@ include('config.php');
                                 <span class="text-primary me-1">Natural fertilizer made from cow dung.</span>
                                 <br>
                                 <br>
-                                <button>Buy Now</button>
+                                
                             </div>
                         </div>
                     </div>
@@ -592,10 +579,7 @@ include('config.php');
                             <div class="position-relative">
                                 <img class="img-fluid" src="img/cow-dung-products.jpg" alt="">
                                 <div class="product-overlay">
-                                    <a class="btn btn-square btn-secondary rounded-circle m-1" href=""><i
-                                            class="bi bi-link"></i></a>
-                                    <a class="btn btn-square btn-secondary rounded-circle m-1" href=""><i
-                                            class="bi bi-cart"></i></a>
+
                                 </div>
                             </div>
                             <div class="text-center p-4">
@@ -603,7 +587,7 @@ include('config.php');
                                 <span class="text-primary me-1">Various products made from cow dung.</span>
                                 <br>
                                 <br>
-                                <button>Buy Now</button>
+                                
                             </div>
                         </div>
                     </div>

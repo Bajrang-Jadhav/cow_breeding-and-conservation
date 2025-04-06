@@ -22,7 +22,7 @@ document.getElementById('recognizeBtn').addEventListener('click', async () => {
           parts: [
             {
               text: `You are an expert in livestock identification. Look at the following cow image and determine its breed.
-Please return only the most likely breed name in plain text (e.g., "Jersey", "Holstein Friesian", "Gir", etc.).
+Please return the most likely breed name in plain text (e.g., "Jersey", "Holstein Friesian", "Gir", etc.) for more information chat with us!.
 If unclear, respond with "Breed not confidently identifiable."`
             },
             {
@@ -36,7 +36,7 @@ If unclear, respond with "Breed not confidently identifiable."`
       ]
     };
 
-    resultDiv.textContent = 'Identifying breed using Gemini 1.5...';
+    resultDiv.textContent = 'Identifying breed...';
 
     try {
       const response = await fetch(
