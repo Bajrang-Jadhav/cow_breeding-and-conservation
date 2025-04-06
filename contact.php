@@ -54,31 +54,9 @@ try {
     // $mail->AltBody = 'This is the body in plain text for non-HTML mail clients';
 
     $mail->send();
-    echo "<style>
-            body { width: 400px;
-    text-align: center;
-    position: absolute;
-    top: 30px;
-    left: 50%;
-    transform: translateX(-50%);
-    color: whitesmoke;
-    padding: 8px 0; }
-    .success{background-color: rgb(31, 239, 49);}
-    <div class='success'>
-    Message has been sent! </div> ";
+    echo "<div class='success'>Message has been sent! </div> ";
 } catch (Exception $e) {
-    echo "<style>
-            body { width: 400px;
-    text-align: center;
-    position: absolute;
-    top: 30px;
-    left: 50%;
-    transform: translateX(-50%);
-    color: whitesmoke;
-    padding: 8px 0; }
-     .alert{background-color: rgb(255, 32, 32);}
-    <div class='alert'>
-    Message could not be sent. Mailer Error: {$mail->ErrorInfo} </div>";
+    echo "<div class='alert'>Message could not be sent. Mailer Error: {$mail->ErrorInfo} </div>";
 }
 }
 
