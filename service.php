@@ -77,8 +77,49 @@ try {
     //Content
     $mail->isHTML(true);                                  //Set email format to HTML
     $mail->Subject = 'From Go-Rakshak';
-    $mail->Body    = " <br> sender name - $name <br> sender email - $email <br> sender phone - $phone <br> senders petname - $petname 
-    <br> senders breed - $breed <br> appoinment time - $datee / $timee <br> senders problem - $problem";
+    // $mail->Body    = " <br> sender name - $name <br> sender email - $email <br> sender phone - $phone <br> senders petname - $petname 
+    // <br> senders breed - $breed <br> appoinment time - $datee / $timee <br> senders problem - $problem";
+
+    $mail->Body    = " <html>
+    <head>
+        <title>New Mail Enquiry</title>
+        <style>
+            body { font-family: Arial, sans-serif; line-height: 1.6; }
+            .container { max-width: 600px; margin: 20px auto; padding: 20px; border: 1px solid #ccc; border-radius: 5px; }
+            h2 { color: #333; }
+            table { width: 100%; border-collapse: collapse; margin-top: 20px; }
+            th, td { border: 1px solid #ccc; padding: 10px; text-align: left; }
+            th { background-color: #f2f2f2; }
+            .footer { margin-top: 20px; font-size: 0.9em; color: #777; }
+        </style>
+    </head>
+    <body>
+        <div class='container'>
+            <h2>New Appointment from $email</h2>
+            <table>
+                <tr>
+                    <th>Appointment Details</th>
+                </tr>
+                <tr>
+                    <td>
+                        <p><strong>Name:</strong> $name</p>
+                        <p><strong>Phone:</strong> $phone</p>
+                    </td>
+                    <td>
+                        <p><strong>Date:</strong> $datee</p>
+                        <p><strong>Time:</strong> $timee</p>
+                    </td>
+                </tr>
+                <tr>
+                    <th colspan='2'>Consultation Details</th>
+                </tr>
+            </table>
+            <div class='footer'>
+                <p>This email was sent from your website Appointment form.</p>
+            </div>
+        </div>
+    </body>
+    </html>";
     // $mail->AltBody = 'This is the body in plain text for non-HTML mail clients';
 
     $mail->send();
