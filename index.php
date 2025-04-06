@@ -38,6 +38,46 @@ include('config.php');
     <link href="css/style.css" rel="stylesheet">
 
     <!-- bootstrap -->
+
+
+    <style>
+   
+.team{
+      
+      margin:50;
+      padding: 20px;
+      display: flex;
+      justify-content: center;
+      
+      font-family: sans-serif;
+}
+    .card-container {
+      display: flex;
+      gap: 20px;
+    }
+
+    .card {
+      width: 200px;
+      height: 300px;
+      overflow: hidden;
+      border-radius: 12px;
+      box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+
+    }
+
+    .card img {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+      display: block;
+      
+    }
+  </style>
+
+
+
+
+
 </head>
 
 <body>
@@ -373,7 +413,7 @@ include('config.php');
         <div class="container">
             <div class="text-center mx-auto pb-4 wow fadeInUp" data-wow-delay="0.1s" style="max-width: 500px;">
                 <p class="section-title bg-white text-center text-primary px-3  ">Our Services</p>
-                <h1 class="mb-5  text-white">Services That We Offer For Entrepreneurs</h1>
+                <h1 class="mb-5">Services That We Offer For Entrepreneurs</h1>
             </div>
             <div class="row gy-5 gx-4">
                 <div class="col-lg-4 col-md-6 pt-5 wow fadeInUp" data-wow-delay="0.1s">
@@ -604,53 +644,16 @@ include('config.php');
                     <p class="section-title bg-white text-center text-primary px-3">Our Team</p>
                     <h1 class="mb-5">Experienced Team Members</h1>
                 </div>
-                <div class="row g-4">
-                    <div class="col-lg-4 col-md-6 wow fadeInUp" data-wow-delay="0.1s">
-                        <div class="team-item rounded p-4">
-                            <img class="img-fluid rounded mb-4" src="img/team-1.jpg" alt="">
-                            <h5>Adam Crew</h5>
-                            <p class="text-primary">Founder</p>
-                            <div class="d-flex justify-content-center">
-                                <a class="btn btn-square btn-outline-secondary rounded-circle mx-1" href=""><i
-                                        class="fab fa-facebook-f"></i></a>
-                                <a class="btn btn-square btn-outline-secondary rounded-circle mx-1" href=""><i
-                                        class="fab fa-twitter"></i></a>
-                                <a class="btn btn-square btn-outline-secondary rounded-circle mx-1" href=""><i
-                                        class="fab fa-instagram"></i></a>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col-lg-4 col-md-6 wow fadeInUp" data-wow-delay="0.3s">
-                        <div class="team-item rounded p-4">
-                            <img class="img-fluid rounded mb-4" src="img/team-2.jpg" alt="">
-                            <h5>Doris Jordan</h5>
-                            <p class="text-primary">Veterinarian</p>
-                            <div class="d-flex justify-content-center">
-                                <a class="btn btn-square btn-outline-secondary rounded-circle mx-1" href=""><i
-                                        class="fab fa-facebook-f"></i></a>
-                                <a class="btn btn-square btn-outline-secondary rounded-circle mx-1" href=""><i
-                                        class="fab fa-twitter"></i></a>
-                                <a class="btn btn-square btn-outline-secondary rounded-circle mx-1" href=""><i
-                                        class="fab fa-instagram"></i></a>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col-lg-4 col-md-6 wow fadeInUp" data-wow-delay="0.5s">
-                        <div class="team-item rounded p-4">
-                            <img class="img-fluid rounded mb-4" src="img/team-3.jpg" alt="">
-                            <h5>Jack Dawson</h5>
-                            <p class="text-primary">Farmer</p>
-                            <div class="d-flex justify-content-center">
-                                <a class="btn btn-square btn-outline-secondary rounded-circle mx-1" href=""><i
-                                        class="fab fa-facebook-f"></i></a>
-                                <a class="btn btn-square btn-outline-secondary rounded-circle mx-1" href=""><i
-                                        class="fab fa-twitter"></i></a>
-                                <a class="btn btn-square btn-outline-secondary rounded-circle mx-1" href=""><i
-                                        class="fab fa-instagram"></i></a>
-                            </div>
-                        </div>
-                    </div>
+                
+            <div class="team">   
+               <div class="card-container">
+                    <div class="card"><img src="img/bajrang 1.jpg" alt="Card 1"></div>
+                    <div class="card"><img src="img/nandini 1.jpg" alt="Card 2"></div>
+                    <div class="card"><img src="img/shruti.jpg" alt="Card 3"></div>
+                    <div class="card"><img src="img/sumedh 1.jpg" alt="Card 4"></div>
                 </div>
+            </div>
+  </div>                </div>
             </div>
         </div>
         <!-- Team End -->
@@ -666,16 +669,16 @@ include('config.php');
                 <div class="row g-5 align-items-center">
                     <div class="col-lg-5 wow fadeInUp" data-wow-delay="0.1s">
                         <div class="testimonial-img">
-                            <img class="img-fluid animated pulse infinite" src="img/testimonial-1.jpg" alt="">
-                            <img class="img-fluid animated pulse infinite" src="img/testimonial-2.jpg" alt="">
-                            <img class="img-fluid animated pulse infinite" src="img/testimonial-3.jpg" alt="">
-                            <img class="img-fluid animated pulse infinite" src="img/testimonial-4.jpg" alt="">
+                            <img class="img-fluid animated pulse infinite" src="img/people4.jpg" alt="">
+                            <img class="img-fluid animated pulse infinite" src="img/people5.jpg" alt="">
+                            <img class="img-fluid animated pulse infinite" src="img/people6.jpg" alt="">
+                            <img class="img-fluid animated pulse infinite" src="img/people7.jpg" alt="">
                         </div>
                     </div>
                     <div class="col-lg-7 wow fadeInUp" data-wow-delay="0.5s">
                         <div class="owl-carousel testimonial-carousel">
                             <div class="testimonial-item">
-                                <img class="img-fluid mb-3" src="img/testimonial-1.jpg" alt="">
+                                <img class="img-fluid mb-3" src="img/people4.jpg" alt="">
                                 <p class="fs-5">Farmers are increasingly receptive to technologies that improve
                                     efficiency and animal welfare.
                                     Tools like AI-powered monitoring systems (for calving, health, etc.) are seen as
@@ -684,24 +687,24 @@ include('config.php');
                                 <span class="text-primary">Engineer</span>
                             </div>
                             <div class="testimonial-item">
-                                <img class="img-fluid mb-3" src="img/testimonial-2.jpg" alt="">
+                                <img class="img-fluid mb-3" src="img/people5.jpg" alt="">
                                 <p class="fs-5"> Emphasis on Animal Welfare:
                                     Consumers and farmers alike are placing greater importance on ethical treatment of
                                     animals.
                                     Technologies that reduce stress and improve animal health are highly regarded..</p>
-                                <h5>Neha Shrma</h5>
+                                <h5>Vinod Mehta</h5>
                                 <span class="text-primary">Douctor</span>
                             </div>
                             <div class="testimonial-item">
-                                <img class="img-fluid mb-3" src="img/testimonial-3.jpg" alt="">
+                                <img class="img-fluid mb-3" src="img/people6.jpg" alt="">
                                 <p class="fs-5">There's a growing awareness of the environmental impact of agriculture.
                                     Practices that promote sustainable cow breeding and reduce waste are gaining
                                     popularity..</p>
-                                <h5>Vinod Meheta</h5>
+                                <h5>Neha varma</h5>
                                 <span class="text-primary">Scientist</span>
                             </div>
                             <div class="testimonial-item">
-                                <img class="img-fluid mb-3" src="img/testimonial-4.jpg" alt="">
+                                <img class="img-fluid mb-3" src="img/people7.jpg" alt="">
                                 <p class="fs-5"> There are also concerns about maintaining the genetic diversity of
                                     indigenous breeds in the face of widespread crossbreeding.People are happy with the
                                     ability to get alerts on their smart phones.</p>
