@@ -47,29 +47,7 @@ include('config.php');
     <!-- Spinner End -->
 
 
-    <!-- Topbar Start -->
-    <!-- <div class="container-fluid bg-dark px-0">
-        <div class="row g-0 d-none d-lg-flex">
-            <div class="col-lg-6 ps-5 text-start">
-                <div class="h-100 d-inline-flex align-items-center text-light">
-                    <span>Follow Us:</span>
-                    <a class="btn btn-link text-light" href=""><i class="fab fa-facebook-f"></i></a>
-                    <a class="btn btn-link text-light" href=""><i class="fab fa-twitter"></i></a>
-                    <a class="btn btn-link text-light" href=""><i class="fab fa-linkedin-in"></i></a>
-                    <a class="btn btn-link text-light" href=""><i class="fab fa-instagram"></i></a>
-                </div>
-            </div>
-            <div class="col-lg-6 text-end">
-                <div class="h-100 bg-secondary d-inline-flex align-items-center text-dark py-2 px-4">
-                    <span class="me-2 fw-semi-bold"><i class="fa fa-phone-alt me-2"></i>Call Us:</span>
-                    <span>+012 345 6789</span>
-                </div>
-            </div>
-        </div>
-    </div> -->
-    <!-- Topbar End -->
-
-
+    
     <!-- Navbar Start -->
     <nav class="navbar navbar-expand-lg bg-white navbar-light sticky-top px-4 px-lg-5">
         <a href="index.php" class="navbar-brand d-flex align-items-center">
@@ -163,10 +141,7 @@ include('config.php');
                         <div class="position-relative">
                             <img class="img-fluid" src="img/a2-milk.webp" alt="">
                             <div class="product-overlay">
-                                <a class="btn btn-square btn-secondary rounded-circle m-1" href=""><i
-                                        class="bi bi-link"></i></a>
-                                <a class="btn btn-square btn-secondary rounded-circle m-1" href=""><i
-                                        class="bi bi-cart"></i></a>
+                                
                             </div>
                         </div>
                         <div class="text-center p-4">
@@ -183,10 +158,7 @@ include('config.php');
                         <div class="position-relative">
                             <img class="img-fluid" src="img/dairy1.jpg" alt="">
                             <div class="product-overlay">
-                                <a class="btn btn-square btn-secondary rounded-circle m-1" href=""><i
-                                        class="bi bi-link"></i></a>
-                                <a class="btn btn-square btn-secondary rounded-circle m-1" href=""><i
-                                        class="bi bi-cart"></i></a>
+                                
                             </div>
                         </div>
                         <div class="text-center p-4">
@@ -203,10 +175,7 @@ include('config.php');
                         <div class="position-relative">
                             <img class="img-fluid" src="img/organic_fer.jpg" alt="">
                             <div class="product-overlay">
-                                <a class="btn btn-square btn-secondary rounded-circle m-1" href=""><i
-                                        class="bi bi-link"></i></a>
-                                <a class="btn btn-square btn-secondary rounded-circle m-1" href=""><i
-                                        class="bi bi-cart"></i></a>
+                                
                             </div>
                         </div>
                         <div class="text-center p-4">
@@ -223,10 +192,7 @@ include('config.php');
                         <div class="position-relative">
                             <img class="img-fluid" src="img/cow-dung-products.jpg" alt="">
                             <div class="product-overlay">
-                                <a class="btn btn-square btn-secondary rounded-circle m-1" href=""><i
-                                        class="bi bi-link"></i></a>
-                                <a class="btn btn-square btn-secondary rounded-circle m-1" href=""><i
-                                        class="bi bi-cart"></i></a>
+                                
                             </div>
                         </div>
                         <div class="text-center p-4">

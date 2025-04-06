@@ -41,38 +41,38 @@ include('config.php');
 
 
     <style>
-   
-.team{
-      
-      margin:50;
-      padding: 20px;
-      display: flex;
-      justify-content: center;
-      
-      font-family: sans-serif;
-}
-    .card-container {
-      display: flex;
-      gap: 20px;
-    }
+        .team {
 
-    .card {
-      width: 200px;
-      height: 300px;
-      overflow: hidden;
-      border-radius: 12px;
-      box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+            margin: 50;
+            padding: 20px;
+            display: flex;
+            justify-content: center;
 
-    }
+            font-family: sans-serif;
+        }
 
-    .card img {
-      width: 100%;
-      height: 100%;
-      object-fit: cover;
-      display: block;
-      
-    }
-  </style>
+        .card-container {
+            display: flex;
+            gap: 20px;
+        }
+
+        .card {
+            width: 200px;
+            height: 300px;
+            overflow: hidden;
+            border-radius: 12px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+
+        }
+
+        .card img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+            display: block;
+
+        }
+    </style>
 
 
 
@@ -201,7 +201,8 @@ include('config.php');
                             <div class="row justify-content-end">
                                 <div class="col-lg-8 text-end">
                                     <p class="fs-4 text-white">Welcome to cow conservation</p>
-                                    <h1 class="display-1 text-white mb-5 animated slideInRight">Various Types of Cow Breeding!</h1>
+                                    <h1 class="display-1 text-white mb-5 animated slideInRight">Various Types of Cow
+                                        Breeding!</h1>
                                     <a href="breedvet.php"
                                         class="btn btn-secondary rounded-pill py-3 px-5 animated slideInLeft">Explore
                                         More
@@ -281,8 +282,8 @@ include('config.php');
                     </div>
                 </div>
                 <div class="col-lg-6 wow fadeIn" data-wow-delay="0.5s">
-                <p class="section-title bg-white text-start text-primary pe-3">About Us</p>
-                <h1 class="mb-4 text-black">Know About Our Hack-a-Farm</h1>
+                    <p class="section-title bg-white text-start text-primary pe-3">About Us</p>
+                    <h1 class="mb-4 text-black">Know About Our Hack-a-Farm</h1>
                     <p class="mb-4 text-black"> Conservation efforts must involve local communities and farmers, as they
                         are the primary custodians of these breeds.
                         Balancing productivity with conservation is essential. Genetic improvement programs should aim
@@ -576,7 +577,7 @@ include('config.php');
                                 <span class="text-primary me-1">Pure and healthy A2 milk from our cows. </span>
                                 <br>
                                 <br>
-                                
+
                             </div>
                         </div>
                     </div>
@@ -593,7 +594,7 @@ include('config.php');
                                 <span class="text-primary me-1">Develop cheeses using milk from specific breeds. </span>
                                 <br>
                                 <br>
-                                
+
                             </div>
                         </div>
                     </div>
@@ -610,7 +611,7 @@ include('config.php');
                                 <span class="text-primary me-1">Natural fertilizer made from cow dung.</span>
                                 <br>
                                 <br>
-                                
+
                             </div>
                         </div>
                     </div>
@@ -627,7 +628,7 @@ include('config.php');
                                 <span class="text-primary me-1">Various products made from cow dung.</span>
                                 <br>
                                 <br>
-                                
+
                             </div>
                         </div>
                     </div>
@@ -644,115 +645,116 @@ include('config.php');
                     <p class="section-title bg-white text-center text-primary px-3">Our Team</p>
                     <h1 class="mb-5">Experienced Team Members</h1>
                 </div>
-                
-            <div class="team">   
-               <div class="card-container">
-                    <div class="card"><img src="img/bajrang 1.jpg" alt="Card 1"></div>
-                    <div class="card"><img src="img/nandini 1.jpg" alt="Card 2"></div>
-                    <div class="card"><img src="img/shruti.jpg" alt="Card 3"></div>
-                    <div class="card"><img src="img/sumedh 1.jpg" alt="Card 4"></div>
-                </div>
-            </div>
-  </div>                </div>
-            </div>
-        </div>
-        <!-- Team End -->
 
-
-        <!-- Testimonial Start -->
-        <div class="container-xxl py-5">
-            <div class="container">
-                <div class="text-center mx-auto wow fadeInUp" data-wow-delay="0.1s" style="max-width: 500px;">
-                    <p class="section-title bg-white text-center text-primary px-3">Testimonial</p>
-                    <h1 class="mb-5">What People Say About Our Hack-a-Fram</h1>
-                </div>
-                <div class="row g-5 align-items-center">
-                    <div class="col-lg-5 wow fadeInUp" data-wow-delay="0.1s">
-                        <div class="testimonial-img">
-                            <img class="img-fluid animated pulse infinite" src="img/people4.jpg" alt="">
-                            <img class="img-fluid animated pulse infinite" src="img/people5.jpg" alt="">
-                            <img class="img-fluid animated pulse infinite" src="img/people6.jpg" alt="">
-                            <img class="img-fluid animated pulse infinite" src="img/people7.jpg" alt="">
-                        </div>
-                    </div>
-                    <div class="col-lg-7 wow fadeInUp" data-wow-delay="0.5s">
-                        <div class="owl-carousel testimonial-carousel">
-                            <div class="testimonial-item">
-                                <img class="img-fluid mb-3" src="img/people4.jpg" alt="">
-                                <p class="fs-5">Farmers are increasingly receptive to technologies that improve
-                                    efficiency and animal welfare.
-                                    Tools like AI-powered monitoring systems (for calving, health, etc.) are seen as
-                                    valuable time-savers..</p>
-                                <h5>Arvind Shaha</h5>
-                                <span class="text-primary">Engineer</span>
-                            </div>
-                            <div class="testimonial-item">
-                                <img class="img-fluid mb-3" src="img/people5.jpg" alt="">
-                                <p class="fs-5"> Emphasis on Animal Welfare:
-                                    Consumers and farmers alike are placing greater importance on ethical treatment of
-                                    animals.
-                                    Technologies that reduce stress and improve animal health are highly regarded..</p>
-                                <h5>Vinod Mehta</h5>
-                                <span class="text-primary">Douctor</span>
-                            </div>
-                            <div class="testimonial-item">
-                                <img class="img-fluid mb-3" src="img/people6.jpg" alt="">
-                                <p class="fs-5">There's a growing awareness of the environmental impact of agriculture.
-                                    Practices that promote sustainable cow breeding and reduce waste are gaining
-                                    popularity..</p>
-                                <h5>Neha varma</h5>
-                                <span class="text-primary">Scientist</span>
-                            </div>
-                            <div class="testimonial-item">
-                                <img class="img-fluid mb-3" src="img/people7.jpg" alt="">
-                                <p class="fs-5"> There are also concerns about maintaining the genetic diversity of
-                                    indigenous breeds in the face of widespread crossbreeding.People are happy with the
-                                    ability to get alerts on their smart phones.</p>
-                                <h5>Rani Varma</h5>
-                                <span class="text-primary">Professor</span>
-                            </div>
-                        </div>
+                <div class="team">
+                    <div class="card-container">
+                        <div class="card"><img src="img/bajrang 1.jpg" alt="Card 1"></div>
+                        <div class="card"><img src="img/nandini 1.jpg" alt="Card 2"></div>
+                        <div class="card"><img src="img/shruti.jpg" alt="Card 3"></div>
+                        <div class="card"><img src="img/sumedh 1.jpg" alt="Card 4"></div>
                     </div>
                 </div>
             </div>
+        </div>  
+    </div>
+
+    <!-- Team End -->
+
+
+    <!-- Testimonial Start -->
+    <div class="container-xxl py-5">
+        <div class="container">
+            <div class="text-center mx-auto wow fadeInUp" data-wow-delay="0.1s" style="max-width: 500px;">
+                <p class="section-title bg-white text-center text-primary px-3">Testimonial</p>
+                <h1 class="mb-5">What People Say About Our Hack-a-Fram</h1>
+            </div>
+            <div class="row g-5 align-items-center">
+                <div class="col-lg-5 wow fadeInUp" data-wow-delay="0.1s">
+                    <div class="testimonial-img">
+                        <img class="img-fluid animated pulse infinite" src="img/people4.jpg" alt="">
+                        <img class="img-fluid animated pulse infinite" src="img/people5.jpg" alt="">
+                        <img class="img-fluid animated pulse infinite" src="img/people6.jpg" alt="">
+                        <img class="img-fluid animated pulse infinite" src="img/people7.jpg" alt="">
+                    </div>
+                </div>
+                <div class="col-lg-7 wow fadeInUp" data-wow-delay="0.5s">
+                    <div class="owl-carousel testimonial-carousel">
+                        <div class="testimonial-item">
+                            <img class="img-fluid mb-3" src="img/people4.jpg" alt="">
+                            <p class="fs-5">Farmers are increasingly receptive to technologies that improve
+                                efficiency and animal welfare.
+                                Tools like AI-powered monitoring systems (for calving, health, etc.) are seen as
+                                valuable time-savers..</p>
+                            <h5>Arvind Shaha</h5>
+                            <span class="text-primary">Engineer</span>
+                        </div>
+                        <div class="testimonial-item">
+                            <img class="img-fluid mb-3" src="img/people5.jpg" alt="">
+                            <p class="fs-5"> Emphasis on Animal Welfare:
+                                Consumers and farmers alike are placing greater importance on ethical treatment of
+                                animals.
+                                Technologies that reduce stress and improve animal health are highly regarded..</p>
+                            <h5>Vinod Mehta</h5>
+                            <span class="text-primary">Douctor</span>
+                        </div>
+                        <div class="testimonial-item">
+                            <img class="img-fluid mb-3" src="img/people6.jpg" alt="">
+                            <p class="fs-5">There's a growing awareness of the environmental impact of agriculture.
+                                Practices that promote sustainable cow breeding and reduce waste are gaining
+                                popularity..</p>
+                            <h5>Neha varma</h5>
+                            <span class="text-primary">Scientist</span>
+                        </div>
+                        <div class="testimonial-item">
+                            <img class="img-fluid mb-3" src="img/people7.jpg" alt="">
+                            <p class="fs-5"> There are also concerns about maintaining the genetic diversity of
+                                indigenous breeds in the face of widespread crossbreeding.People are happy with the
+                                ability to get alerts on their smart phones.</p>
+                            <h5>Rani Varma</h5>
+                            <span class="text-primary">Professor</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
         </div>
-        <!-- Testimonial End -->
+    </div>
+    <!-- Testimonial End -->
 
 
-        <!-- Footer Start -->
-        <div class="container-fluid bg-dark footer mt-5 py-5 wow fadeIn" data-wow-delay="0.1s">
-            <div class="container py-5">
-                <div class="row g-5">
-                    <div class="col-lg-3 col-md-6">
-                        <h5 class="text-white mb-4">Our Office</h5>
-                        <p class="mb-2"><i class="fa fa-map-marker-alt me-3"></i>DYP SALOKHENAGAR</p>
-                        <p class="mb-2"><i class="fa fa-phone-alt me-3"></i>1234567890</p>
-                        <p class="mb-2"><i class="fa fa-envelope me-3"></i>gorakshak302@example.com</p>
-                        <!-- <div class="d-flex pt-3">
+    <!-- Footer Start -->
+    <div class="container-fluid bg-dark footer mt-5 py-5 wow fadeIn" data-wow-delay="0.1s">
+        <div class="container py-5">
+            <div class="row g-5">
+                <div class="col-lg-3 col-md-6">
+                    <h5 class="text-white mb-4">Our Office</h5>
+                    <p class="mb-2"><i class="fa fa-map-marker-alt me-3"></i>DYP SALOKHENAGAR</p>
+                    <p class="mb-2"><i class="fa fa-phone-alt me-3"></i>1234567890</p>
+                    <p class="mb-2"><i class="fa fa-envelope me-3"></i>gorakshak302@example.com</p>
+                    <!-- <div class="d-flex pt-3">
                         <a class="btn btn-square btn-secondary rounded-circle me-2" href=""><i class="fab fa-twitter"></i></a>
                         <a class="btn btn-square btn-secondary rounded-circle me-2" href=""><i class="fab fa-facebook-f"></i></a>
                         <a class="btn btn-square btn-secondary rounded-circle me-2" href=""><i class="fab fa-youtube"></i></a>
                         <a class="btn btn-square btn-secondary rounded-circle me-2" href=""><i class="fab fa-linkedin-in"></i></a>
                     </div> -->
-                    </div>
-                    <div class="col-lg-3 col-md-6">
-                        <h5 class="text-white mb-4">Quick Links</h5>
-                        <a class="btn btn-link" href="">About Us</a>
-                        <a class="btn btn-link" href="">Contact Us</a>
-                        <a class="btn btn-link" href="">Our Services</a>
-                        <a class="btn btn-link" href="">Terms & Condition</a>
-                        <a class="btn btn-link" href="">Support</a>
-                    </div>
-                    <div class="col-lg-3 col-md-6">
-                        <h5 class="text-white mb-4">Business Hours</h5>
-                        <p class="mb-1">Monday - Friday</p>
-                        <h6 class="text-light">09:00 am - 07:00 pm</h6>
-                        <p class="mb-1">Saturday</p>
-                        <h6 class="text-light">09:00 am - 12:00 pm</h6>
-                        <p class="mb-1">Sunday</p>
-                        <h6 class="text-light">Closed</h6>
-                    </div>
-                    <!-- <div class="col-lg-3 col-md-6">
+                </div>
+                <div class="col-lg-3 col-md-6">
+                    <h5 class="text-white mb-4">Quick Links</h5>
+                    <a class="btn btn-link" href="">About Us</a>
+                    <a class="btn btn-link" href="">Contact Us</a>
+                    <a class="btn btn-link" href="">Our Services</a>
+                    <a class="btn btn-link" href="">Terms & Condition</a>
+                    <a class="btn btn-link" href="">Support</a>
+                </div>
+                <div class="col-lg-3 col-md-6">
+                    <h5 class="text-white mb-4">Business Hours</h5>
+                    <p class="mb-1">Monday - Friday</p>
+                    <h6 class="text-light">09:00 am - 07:00 pm</h6>
+                    <p class="mb-1">Saturday</p>
+                    <h6 class="text-light">09:00 am - 12:00 pm</h6>
+                    <p class="mb-1">Sunday</p>
+                    <h6 class="text-light">Closed</h6>
+                </div>
+                <!-- <div class="col-lg-3 col-md-6">
                     <h5 class="text-white mb-4">Newsletter</h5>
                     <p>Dolor amet sit justo amet elitr clita ipsum elitr est.</p>
                     <div class="position-relative w-100">
@@ -760,52 +762,52 @@ include('config.php');
                         <button type="button" class="btn btn-secondary py-2 position-absolute top-0 end-0 mt-2 me-2">SignUp</button>
                     </div>
                 </div> -->
+            </div>
+        </div>
+    </div>
+    <!-- Footer End -->
+
+
+    <!-- Copyright Start -->
+    <div class="container-fluid bg-secondary text-body copyright py-4">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-6 text-center text-md-start mb-3 mb-md-0">
+                    &copy; <a class="fw-semi-bold" href="#">GO-RAKSHAK</a>, All Right Reserved.
+                </div>
+                <div class="col-md-6 text-center text-md-end">
+                    <!--/*** This template is free as long as you keep the footer author’s credit link/attribution link/backlink. If you'd like to use the template without the footer author’s credit link/attribution link/backlink, you can purchase the Credit Removal License from "https://htmlcodex.com/credit-removal". Thank you for your support. ***/-->
+                    Designed By <a class="fw-semi-bold" href="https://htmlcodex.com">HACK-A-FARM</a>
                 </div>
             </div>
         </div>
-        <!-- Footer End -->
+    </div>
+    <!-- Copyright End -->
 
 
-        <!-- Copyright Start -->
-        <div class="container-fluid bg-secondary text-body copyright py-4">
-            <div class="container">
-                <div class="row">
-                    <div class="col-md-6 text-center text-md-start mb-3 mb-md-0">
-                        &copy; <a class="fw-semi-bold" href="#">GO-RAKSHAK</a>, All Right Reserved.
-                    </div>
-                    <div class="col-md-6 text-center text-md-end">
-                        <!--/*** This template is free as long as you keep the footer author’s credit link/attribution link/backlink. If you'd like to use the template without the footer author’s credit link/attribution link/backlink, you can purchase the Credit Removal License from "https://htmlcodex.com/credit-removal". Thank you for your support. ***/-->
-                        Designed By <a class="fw-semi-bold" href="https://htmlcodex.com">HACK-A-FARM</a>
-                    </div>
-                </div>
-            </div>
-        </div>
-        <!-- Copyright End -->
+    <!-- Back to Top -->
+    <a href="#" class="btn btn-lg btn-primary btn-lg-square rounded-circle back-to-top"><i
+            class="bi bi-arrow-up"></i></a>
 
 
-        <!-- Back to Top -->
-        <a href="#" class="btn btn-lg btn-primary btn-lg-square rounded-circle back-to-top"><i
-                class="bi bi-arrow-up"></i></a>
-
-
-        <!-- JavaScript Libraries -->
-        <script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
-        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0/dist/js/bootstrap.bundle.min.js"></script>
-        <script src="lib/wow/wow.min.js"></script>
-        <script src="lib/easing/easing.min.js"></script>
-        <script src="lib/waypoints/waypoints.min.js"></script>
-        <script src="lib/owlcarousel/owl.carousel.min.js"></script>
-        <script src="lib/counterup/counterup.min.js"></script>
-        <script src="lib/parallax/parallax.min.js"></script>
-        <script src="lib/lightbox/js/lightbox.min.js"></script>
+    <!-- JavaScript Libraries -->
+    <script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="lib/wow/wow.min.js"></script>
+    <script src="lib/easing/easing.min.js"></script>
+    <script src="lib/waypoints/waypoints.min.js"></script>
+    <script src="lib/owlcarousel/owl.carousel.min.js"></script>
+    <script src="lib/counterup/counterup.min.js"></script>
+    <script src="lib/parallax/parallax.min.js"></script>
+    <script src="lib/lightbox/js/lightbox.min.js"></script>
 
 
 
-        <!-- Template Javascript -->
-        <script src="js/main.js"></script>
+    <!-- Template Javascript -->
+    <script src="js/main.js"></script>
 
-        <script src="js/main.js"></script>
-        <script src="js/main.js"></script>
+    <script src="js/main.js"></script>
+    <script src="js/main.js"></script>
 </body>
 
 </html>
