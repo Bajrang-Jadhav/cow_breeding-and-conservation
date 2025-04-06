@@ -1,0 +1,180 @@
+:root {
+    --primary-gradient: linear-gradient(to right, #22c55e, #3b82f6);
+    --hover-gradient: linear-gradient(to right, #15803d, #2563eb);
+    --background-gradient: linear-gradient(to bottom right, #f0fdf4, #eff6ff);
+}
+
+
+
+.container1 {
+    max-width: 64rem;
+    margin: 0 auto;
+    
+}
+
+.header {
+    text-align: center;
+    margin-bottom: 3rem;
+}
+
+.logo {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 1rem;
+}
+
+.cow-icon {
+    width: 3rem;
+    height: 3rem;
+    color: #16a34a;
+    animation: bounce 3s infinite;
+}
+
+.header h1 {
+    font-size: 2.5rem;
+    color: #1f2937;
+    margin-bottom: 1rem;
+}
+
+.header p {
+    color: #4b5563;
+}
+
+.card {
+    background: white;
+    border-radius: 1rem;
+    padding: 2rem;
+    box-shadow: 0 4px 6px -1px rgb(0 0 0 / 0.1);
+    transition: box-shadow 0.3s ease;
+}
+
+.card:hover {
+    box-shadow: 0 20px 25px -5px rgb(0 0 0 / 0.1);
+}
+
+.upload-area {
+    border: 4px dashed #e5e7eb;
+    border-radius: 0.5rem;
+    padding: 2rem;
+    text-align: center;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    margin-bottom: 2rem;
+}
+
+.upload-area:hover {
+    border-color: #22c55e;
+    background: #f0fdf4;
+}
+
+.upload-icon {
+    width: 3rem;
+    height: 3rem;
+    color: #9ca3af;
+    margin-bottom: 1rem;
+}
+
+.upload-placeholder p {
+    color: #4b5563;
+}
+
+.upload-hint {
+    font-size: 0.875rem;
+    color: #9ca3af;
+    margin-top: 0.5rem;
+}
+
+.preview-image {
+    max-height: 24rem;
+    margin: 0 auto;
+    border-radius: 0.5rem;
+    box-shadow: 0 4px 6px -1px rgb(0 0 0 / 0.1);
+}
+
+.button-container {
+    display: flex;
+    justify-content: center;
+}
+
+.analyze-button {
+    padding: 0.75rem 2rem;
+    border-radius: 9999px;
+    font-weight: 600;
+    color: white;
+    background: var(--primary-gradient);
+    border: none;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    transform: scale(1);
+}
+
+.analyze-button:hover:not(:disabled) {
+    background: var(--hover-gradient);
+    transform: scale(1.05);
+}
+
+.analyze-button:disabled {
+    background: #d1d5db;
+    cursor: not-allowed;
+}
+
+.loader {
+    width: 1.25rem;
+    height: 1.25rem;
+    border: 2px solid white;
+    border-top-color: transparent;
+    border-radius: 50%;
+    margin-right: 0.5rem;
+    animation: spin 1s linear infinite;
+}
+
+.result {
+    margin-top: 2rem;
+    text-align: center;
+    animation: fadeIn 0.5s ease-out forwards;
+}
+
+.result h2 {
+    font-size: 1.5rem;
+    color: #1f2937;
+    margin-bottom: 0.5rem;
+}
+
+.success p {
+    color: #16a34a;
+    font-size: 1.25rem;
+}
+
+.error {
+    color: #dc2626;
+}
+
+.hidden {
+    display: none;
+}
+
+@keyframes spin {
+    to {
+        transform: rotate(360deg);
+    }
+}
+
+@keyframes bounce {
+    0%, 100% {
+        transform: translateY(0);
+    }
+    50% {
+        transform: translateY(-20px);
+    }
+}
+
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+        transform: translateY(10px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
