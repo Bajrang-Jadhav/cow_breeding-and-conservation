@@ -2,6 +2,12 @@
 session_start();
 include('config.php');
 
+//Import PHPMailer classes into the global namespace
+//These must be at the top of your script, not inside a function
+use PHPMailer\PHPMailer\PHPMailer;
+use PHPMailer\PHPMailer\SMTP;
+use PHPMailer\PHPMailer\Exception;
+
 
 if (isset($_POST['book1'])) {
     if (isset($_SESSION["username"])) {
@@ -36,6 +42,95 @@ if (isset($_POST['book1'])) {
                 window.location.href = "service.php";
               </script>';
     }
+
+    //Load Composer's autoloader (created by composer, not included with PHPMailer)
+require 'PHPmailer/Exception.php';
+require 'PHPmailer/PHPMailer.php';
+require 'PHPmailer/SMTP.php';
+
+//Create an instance; passing `true` enables exceptions
+$mail = new PHPMailer(true);
+
+try {
+    //Server settings
+    // $mail->SMTPDebug = SMTP::DEBUG_SERVER;                      //Enable verbose debug output
+    $mail->isSMTP();                                            //Send using SMTP
+    $mail->Host       = 'smtp.gmail.com';                     //Set the SMTP server to send through
+    $mail->SMTPAuth   = true;                                   //Enable SMTP authentication
+    $mail->Username   = 'bajujadhav17@gmail.com';                     //SMTP username
+    $mail->Password   = 'nihu kmtc plme dghn';                               //SMTP password
+    $mail->SMTPSecure = PHPMailer::ENCRYPTION_SMTPS;            //Enable implicit TLS encryption
+    $mail->Port       = 465;                                    //TCP port to connect to; use 587 if you have set `SMTPSecure = PHPMailer::ENCRYPTION_STARTTLS`
+
+    //Recipients
+    $mail->setFrom('bajujadhav17@gmail.com', 'Go-Rakshak');
+    $mail->addAddress($email, 'website');     //Add a recipient
+    // $mail->addAddress('ellen@example.com');               //Name is optional
+    // $mail->addReplyTo('info@example.com', 'Information');
+    // $mail->addCC('cc@example.com');
+    // $mail->addBCC('bcc@example.com');
+
+    //Attachments
+    // $mail->addAttachment('/var/tmp/file.tar.gz');         //Add attachments
+    // $mail->addAttachment('/tmp/image.jpg', 'new.jpg');    //Optional name
+
+    //Content
+    $mail->isHTML(true);                                  //Set email format to HTML
+    $mail->Subject = 'From Go-Rakshak';
+    // $mail->Body    = " <br> sender name - $name <br> sender email - $email <br> sender phone - $phone <br> senders petname - $petname 
+    // <br> senders breed - $breed <br> appoinment time - $datee / $timee <br> senders problem - $problem";
+
+    $mail->Body    = " <html>
+    <head>
+        <title>New Mail Enquiry</title>
+        <style>
+            body { font-family: Arial, sans-serif; line-height: 1.6; }
+            .container { max-width: 600px; margin: 20px auto; padding: 20px; border: 1px solid #ccc; border-radius: 5px; }
+            h2 { color: #333; }
+            table { width: 100%; border-collapse: collapse; margin-top: 20px; }
+            th, td { border: 1px solid #ccc; padding: 10px; text-align: left; }
+            th { background-color: #f2f2f2; }
+            .footer { margin-top: 20px; font-size: 0.9em; color: #777; }
+        </style>
+    </head>
+    <body>
+        <div class='container'>
+            <h2>New Appointment from $email</h2>
+            <table>
+                <tr>
+                    <th>Appointment Details</th>
+                </tr>
+                <tr>
+                    <td>
+                        <p><strong>Name:</strong> $name</p>
+                        <p><strong>Phone:</strong> $phone</p>
+                    </td>
+                    <td>
+                        <p><strong>Date:</strong> $datee</p>
+                        <p><strong>Time:</strong> $timee</p>
+                    </td>
+                </tr>
+                <tr>
+                    <th colspan='2'><p><strong>problem</strong> $problem</p></th>
+                    
+                </tr>
+                <tr>
+                    <th colspan='2'>Consultation Details</th>
+                </tr>
+            </table>
+            <div class='footer'>
+                <p>This email was sent from your website Appointment form.</p>
+            </div>
+        </div>
+    </body>
+    </html>";
+    // $mail->AltBody = 'This is the body in plain text for non-HTML mail clients';
+
+    $mail->send();
+    echo "<div class='success'>Message has been sent! </div> ";
+} catch (Exception $e) {
+    echo "<div class='alert'>Message could not be sent. Mailer Error: {$mail->ErrorInfo} </div>";
+}
 }
 ?>
 
@@ -461,15 +556,8 @@ if (isset($_POST['book1'])) {
     </div>
     <-- Copyright End -->
 
-                        <!-- chatbot -->
-                        <script>
-                            (function () { if (!window.chatbase || window.chatbase("getState") !== "initialized") { window.chatbase = (...arguments) => { if (!window.chatbase.q) { window.chatbase.q = [] } window.chatbase.q.push(arguments) }; window.chatbase = new Proxy(window.chatbase, { get(target, prop) { if (prop === "q") { return target.q } return (...args) => target(prop, ...args) } }) } const onLoad = function () { const script = document.createElement("script"); script.src = "https://www.chatbase.co/embed.min.js"; script.id = "4mYUDOgL_tZbd6vw55IzH"; script.domain = "www.chatbase.co"; document.body.appendChild(script) }; if (document.readyState === "complete") { onLoad() } else { window.addEventListener("load", onLoad) } })();
-                        </script>
-
-
-                        <!-- Back to Top -->
-                        <!-- <a href="#" class="btn btn-lg btn-primary btn-lg-square rounded-circle back-to-top"><i class="bi bi-arrow-up"></i></a> -->
-
+                <!-- Back to Top -->
+                <a href="#" class="btn btn-lg btn-primary btn-lg-square rounded-circle back-to-top"><i class="bi bi-arrow-up"></i></a>                 
 
                         <!-- JavaScript Libraries -->
                         <script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
