@@ -64,7 +64,7 @@ try {
 
     //Recipients
     $mail->setFrom('bajujadhav17@gmail.com', 'Go-Rakshak');
-    $mail->addAddress('bajujadhav18@gmail.compu', 'website');     //Add a recipient
+    $mail->addAddress('bajujadhav18@gmail.com', 'website');     //Add a recipient
     // $mail->addAddress('ellen@example.com');               //Name is optional
     // $mail->addReplyTo('info@example.com', 'Information');
     // $mail->addCC('cc@example.com');
@@ -77,7 +77,7 @@ try {
     //Content
     $mail->isHTML(true);                                  //Set email format to HTML
     $mail->Subject = 'From Go-Rakshak';
-    $mail->Body    = " <br> sender name - $yourname <br> sender email - $email <br> sender phone - $phone ";
+    $mail->Body    = " <br> sender name - $name <br> sender email - $email <br> sender phone - $phone ";
     // $mail->AltBody = 'This is the body in plain text for non-HTML mail clients';
 
     $mail->send();
