@@ -645,15 +645,16 @@ include('config.php');
                     <p class="section-title bg-white text-center text-primary px-3">Our Team</p>
                     <h1 class="mb-5">Experienced Team Members</h1>
                 </div>
-
-                <div class="team">
-                    <div class="card-container">
-                        <div class="card"><img src="img/bajrang 1.jpg" alt="Card 1"></div>
-                        <div class="card"><img src="img/nandini 1.jpg" alt="Card 2"></div>
-                        <div class="card"><img src="img/shruti.jpg" alt="Card 3"></div>
-                        <div class="card"><img src="img/sumedh 1.jpg" alt="Card 4"></div>
-                    </div>
+                
+            <div class="team">   
+               <div class="card-container">
+                    <div class="card"><img src="img/bajrang 1.jpg" alt="Card 1"></div>
+                    <div class="card"><img src="img/nandini 1.jpg" alt="Card 2"></div>
+                    <div class="card"><img src="img/shruti.jpg" alt="Card 3"></div>
+                    <div class="card"><img src="img/sumedh 1.jpg" alt="Card 4"></div>
                 </div>
+            </div>
+  </div>                </div>
             </div>
         </div>  
     </div>

@@ -151,59 +151,61 @@ include('config.php');
 
     <!-- Testimonial Start -->
     <div class="container-xxl py-5">
-        <div class="container">
-            <div class="text-center mx-auto wow fadeInUp" data-wow-delay="0.1s" style="max-width: 500px;">
-                <p class="section-title bg-white text-center text-primary px-3">Testimonial</p>
-                <h1 class="mb-5">What People Say About Our Dairy Farm</h1>
-            </div>
-            <div class="row g-5 align-items-center">
-                <div class="col-lg-5 wow fadeInUp" data-wow-delay="0.1s">
-                    <div class="testimonial-img">
-                        <img class="img-fluid animated pulse infinite" src="img/testimonial-1.jpg" alt="">
-                        <img class="img-fluid animated pulse infinite" src="img/testimonial-2.jpg" alt="">
-                        <img class="img-fluid animated pulse infinite" src="img/testimonial-3.jpg" alt="">
-                        <img class="img-fluid animated pulse infinite" src="img/testimonial-4.jpg" alt="">
-                    </div>
+            <div class="container">
+                <div class="text-center mx-auto wow fadeInUp" data-wow-delay="0.1s" style="max-width: 500px;">
+                    <p class="section-title bg-white text-center text-primary px-3">Testimonial</p>
+                    <h1 class="mb-5">What People Say About Our Hack-a-Fram</h1>
                 </div>
-                <div class="col-lg-7 wow fadeInUp" data-wow-delay="0.5s">
-                    <div class="owl-carousel testimonial-carousel">
-                        <div class="testimonial-item">
-                            <img class="img-fluid mb-3" src="img/testimonial-1.jpg" alt="">
-                            <p class="fs-5">Dolores sed duo clita tempor justo dolor et stet lorem kasd labore dolore
-                                lorem ipsum. At lorem lorem magna ut et, nonumy et labore et tempor diam tempor erat.
-                            </p>
-                            <h5>Client Name</h5>
-                            <span class="text-primary">Profession</span>
+                <div class="row g-5 align-items-center">
+                    <div class="col-lg-5 wow fadeInUp" data-wow-delay="0.1s">
+                        <div class="testimonial-img">
+                            <img class="img-fluid animated pulse infinite" src="img/people4.jpg" alt="">
+                            <img class="img-fluid animated pulse infinite" src="img/people5.jpg" alt="">
+                            <img class="img-fluid animated pulse infinite" src="img/people6.jpg" alt="">
+                            <img class="img-fluid animated pulse infinite" src="img/people7.jpg" alt="">
                         </div>
-                        <div class="testimonial-item">
-                            <img class="img-fluid mb-3" src="img/testimonial-2.jpg" alt="">
-                            <p class="fs-5">Dolores sed duo clita tempor justo dolor et stet lorem kasd labore dolore
-                                lorem ipsum. At lorem lorem magna ut et, nonumy et labore et tempor diam tempor erat.
-                            </p>
-                            <h5>Client Name</h5>
-                            <span class="text-primary">Profession</span>
-                        </div>
-                        <div class="testimonial-item">
-                            <img class="img-fluid mb-3" src="img/testimonial-3.jpg" alt="">
-                            <p class="fs-5">Dolores sed duo clita tempor justo dolor et stet lorem kasd labore dolore
-                                lorem ipsum. At lorem lorem magna ut et, nonumy et labore et tempor diam tempor erat.
-                            </p>
-                            <h5>Client Name</h5>
-                            <span class="text-primary">Profession</span>
-                        </div>
-                        <div class="testimonial-item">
-                            <img class="img-fluid mb-3" src="img/testimonial-4.jpg" alt="">
-                            <p class="fs-5">Dolores sed duo clita tempor justo dolor et stet lorem kasd labore dolore
-                                lorem ipsum. At lorem lorem magna ut et, nonumy et labore et tempor diam tempor erat.
-                            </p>
-                            <h5>Client Name</h5>
-                            <span class="text-primary">Profession</span>
+                    </div>
+                    <div class="col-lg-7 wow fadeInUp" data-wow-delay="0.5s">
+                        <div class="owl-carousel testimonial-carousel">
+                            <div class="testimonial-item">
+                                <img class="img-fluid mb-3" src="img/people4.jpg" alt="">
+                                <p class="fs-5">Farmers are increasingly receptive to technologies that improve
+                                    efficiency and animal welfare.
+                                    Tools like AI-powered monitoring systems (for calving, health, etc.) are seen as
+                                    valuable time-savers..</p>
+                                <h5>Arvind Shaha</h5>
+                                <span class="text-primary">Engineer</span>
+                            </div>
+                            <div class="testimonial-item">
+                                <img class="img-fluid mb-3" src="img/people5.jpg" alt="">
+                                <p class="fs-5"> Emphasis on Animal Welfare:
+                                    Consumers and farmers alike are placing greater importance on ethical treatment of
+                                    animals.
+                                    Technologies that reduce stress and improve animal health are highly regarded..</p>
+                                <h5>Vinod Mehta</h5>
+                                <span class="text-primary">Douctor</span>
+                            </div>
+                            <div class="testimonial-item">
+                                <img class="img-fluid mb-3" src="img/people6.jpg" alt="">
+                                <p class="fs-5">There's a growing awareness of the environmental impact of agriculture.
+                                    Practices that promote sustainable cow breeding and reduce waste are gaining
+                                    popularity..</p>
+                                <h5>Neha varma</h5>
+                                <span class="text-primary">Scientist</span>
+                            </div>
+                            <div class="testimonial-item">
+                                <img class="img-fluid mb-3" src="img/people7.jpg" alt="">
+                                <p class="fs-5"> There are also concerns about maintaining the genetic diversity of
+                                    indigenous breeds in the face of widespread crossbreeding.People are happy with the
+                                    ability to get alerts on their smart phones.</p>
+                                <h5>Rani Varma</h5>
+                                <span class="text-primary">Professor</span>
+                            </div>
                         </div>
                     </div>
                 </div>
             </div>
         </div>
-    </div>
     <!-- Testimonial End -->
 
 
