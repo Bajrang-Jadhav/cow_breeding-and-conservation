@@ -111,7 +111,8 @@ try {
                     </td>
                 </tr>
                 <tr>
-                    <p><strong>problem</strong> $problem</p>
+                    <th colspan='2'><p><strong>problem</strong> $problem</p></th>
+                    
                 </tr>
                 <tr>
                     <th colspan='2'>Consultation Details</th>
