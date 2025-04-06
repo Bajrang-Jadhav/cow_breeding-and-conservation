@@ -55,11 +55,16 @@ try {
 
     $mail->send();
     echo '<script>
-                    alert("APPOINTMENT BOOKED SUCCESSFULLY");
-                    window.location.href = "service.php";
+                    alert("message sent!");
+                    window.location.href = ".php";
                   </script> ';
 } catch (Exception $e) {
-    echo "<div class='alert'>Message could not be sent. Mailer Error: {$mail->ErrorInfo} </div>";
+    echo '<script>
+                    alert("message can not be sent!. Mailer Error: {$mail->ErrorInfo}");
+                    window.location.href = ".php";
+                  </script> ';
+
+    // echo "<div class='alert'>Message could not be sent. Mailer Error: {$mail->ErrorInfo} </div>";
 }
 }
 
