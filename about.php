@@ -36,6 +36,40 @@ include('config.php');
 
     <!-- Template Stylesheet -->
     <link href="css/style.css" rel="stylesheet">
+
+    <style>
+   
+.team{
+      
+      margin:50;
+      padding: 20px;
+      display: flex;
+      justify-content: center;
+      
+      font-family: sans-serif;
+}
+    .card-container {
+      display: flex;
+      gap: 20px;
+    }
+
+    .card {
+      width: 200px;
+      height: 300px;
+      overflow: hidden;
+      border-radius: 12px;
+      box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+
+    }
+
+    .card img {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+      display: block;
+      
+    }
+  </style>
 </head>
 
 <body>
@@ -242,60 +276,39 @@ include('config.php');
 
     <!-- Team Start -->
     <div class="container-xxl py-5">
-        <div class="container">
-            <div class="text-center mx-auto wow fadeInUp" data-wow-delay="0.1s" style="max-width: 500px;">
-                <p class="section-title bg-white text-center text-primary px-3">Our Team</p>
-                <h1 class="mb-5">Experienced Team Members</h1>
+            <div class="container">
+                <div class="text-center mx-auto wow fadeInUp" data-wow-delay="0.1s" style="max-width: 500px;">
+                    <p class="section-title bg-white text-center text-primary px-3">Our Team</p>
+                    <h1 class="mb-5">Experienced Team Members</h1>
+                </div>
+                
+            <div class="team">   
+               <div class="card-container">
+                    <div class="card"><img src="img/bajrang 1.jpg" alt="Card 1">
+                      <!--  <center><h6><div class="card-name">Bajrang Jadhav</div></h6><center>
+                        <center><div class="card-name">AI Engineer</div><center>-->
+                        </div>
+
+                    <div class="card"><img src="img/nandini 1.jpg" alt="Card 2">
+                   <!-- <center><h6><div class="card-name">Nandini Sarwad</div></h6><center>
+                    <center><div class="card-name">Front-End Developer</div><center>-->
+                     </div>
+
+                     <div class="card"><img src="img/shruti.jpg" alt="Card 2">
+                    <!--<center><h6><div class="card-name">Shruti Mahabole</div></h6><center>
+                    <center><div class="card-name">UI/UX Designer</div><center>-->
+                     </div>
+
+                     <div class="card"><img src="img/sumedh 1.jpg" alt="Card 2">
+                    <!--<center><h6><div class="card-name">Sumedh Rakshe</div></h6><center>
+                    <center><div class="card-name">Back-end Developer</div><center>-->
+                     </div>
+                </div>
             </div>
-            <div class="row g-4">
-                <div class="col-lg-4 col-md-6 wow fadeInUp" data-wow-delay="0.1s">
-                    <div class="team-item rounded p-4">
-                        <img class="img-fluid rounded mb-4" src="img/team-1.jpg" alt="">
-                        <h5>Adam Crew</h5>
-                        <p class="text-primary">Founder</p>
-                        <div class="d-flex justify-content-center">
-                            <a class="btn btn-square btn-outline-secondary rounded-circle mx-1" href=""><i
-                                    class="fab fa-facebook-f"></i></a>
-                            <a class="btn btn-square btn-outline-secondary rounded-circle mx-1" href=""><i
-                                    class="fab fa-twitter"></i></a>
-                            <a class="btn btn-square btn-outline-secondary rounded-circle mx-1" href=""><i
-                                    class="fab fa-instagram"></i></a>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-lg-4 col-md-6 wow fadeInUp" data-wow-delay="0.3s">
-                    <div class="team-item rounded p-4">
-                        <img class="img-fluid rounded mb-4" src="img/team-2.jpg" alt="">
-                        <h5>Doris Jordan</h5>
-                        <p class="text-primary">Veterinarian</p>
-                        <div class="d-flex justify-content-center">
-                            <a class="btn btn-square btn-outline-secondary rounded-circle mx-1" href=""><i
-                                    class="fab fa-facebook-f"></i></a>
-                            <a class="btn btn-square btn-outline-secondary rounded-circle mx-1" href=""><i
-                                    class="fab fa-twitter"></i></a>
-                            <a class="btn btn-square btn-outline-secondary rounded-circle mx-1" href=""><i
-                                    class="fab fa-instagram"></i></a>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-lg-4 col-md-6 wow fadeInUp" data-wow-delay="0.5s">
-                    <div class="team-item rounded p-4">
-                        <img class="img-fluid rounded mb-4" src="img/team-3.jpg" alt="">
-                        <h5>Jack Dawson</h5>
-                        <p class="text-primary">Farmer</p>
-                        <div class="d-flex justify-content-center">
-                            <a class="btn btn-square btn-outline-secondary rounded-circle mx-1" href=""><i
-                                    class="fab fa-facebook-f"></i></a>
-                            <a class="btn btn-square btn-outline-secondary rounded-circle mx-1" href=""><i
-                                    class="fab fa-twitter"></i></a>
-                            <a class="btn btn-square btn-outline-secondary rounded-circle mx-1" href=""><i
-                                    class="fab fa-instagram"></i></a>
-                        </div>
-                    </div>
-                </div>
+  </div>                
+</div>
             </div>
         </div>
-    </div>
     <!-- Team End -->
 
 

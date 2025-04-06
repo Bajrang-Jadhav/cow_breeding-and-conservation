@@ -647,13 +647,29 @@ include('config.php');
                 
             <div class="team">   
                <div class="card-container">
-                    <div class="card"><img src="img/bajrang 1.jpg" alt="Card 1"></div>
-                    <div class="card"><img src="img/nandini 1.jpg" alt="Card 2"></div>
-                    <div class="card"><img src="img/shruti.jpg" alt="Card 3"></div>
-                    <div class="card"><img src="img/sumedh 1.jpg" alt="Card 4"></div>
+                    <div class="card"><img src="img/bajrang 1.jpg" alt="Card 1">
+                      <!--  <center><h6><div class="card-name">Bajrang Jadhav</div></h6><center>
+                        <center><div class="card-name">AI Engineer</div><center>-->
+                        </div>
+
+                    <div class="card"><img src="img/nandini 1.jpg" alt="Card 2">
+                   <!-- <center><h6><div class="card-name">Nandini Sarwad</div></h6><center>
+                    <center><div class="card-name">Front-End Developer</div><center>-->
+                     </div>
+
+                     <div class="card"><img src="img/shruti.jpg" alt="Card 2">
+                    <!--<center><h6><div class="card-name">Shruti Mahabole</div></h6><center>
+                    <center><div class="card-name">UI/UX Designer</div><center>-->
+                     </div>
+
+                     <div class="card"><img src="img/sumedh 1.jpg" alt="Card 2">
+                    <!--<center><h6><div class="card-name">Sumedh Rakshe</div></h6><center>
+                    <center><div class="card-name">Back-end Developer</div><center>-->
+                     </div>
                 </div>
             </div>
-  </div>                </div>
+  </div>                
+</div>
             </div>
         </div>
         <!-- Team End -->
