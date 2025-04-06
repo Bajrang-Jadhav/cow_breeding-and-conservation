@@ -182,7 +182,7 @@ include('header.php');
                         </ul>
                     </div>
 
-                <?php
+                    <?php
                 } else {
                     ?>
 
@@ -402,22 +402,23 @@ include('header.php');
                         <p><strong>Origin:</strong> Native to Kankrej region in Gujarat and parts of Rajasthan. </p>
                         <p><strong>Feeding & Care:
                             </strong>
-Adapted to rough grazing
-Thrive well even on limited feed and water
-Low maintenance compared to exotic breeds
+                            Adapted to rough grazing
+                            Thrive well even on limited feed and water
+                            Low maintenance compared to exotic breeds
                         </p>
-                        <p><strong> Adaptability: </strong>             
-Very hardy breed
-Can withstand extreme weather, including high temperatures and drought
-Disease resistant, particularly to tropical diseases</p>
+                        <p><strong> Adaptability: </strong>
+                            Very hardy breed
+                            Can withstand extreme weather, including high temperatures and drought
+                            Disease resistant, particularly to tropical diseases</p>
                         <p><strong>Draught Power:</strong>
-Known for excellent endurance and strength
-Bulls are used for ploughing, cart pulling, and farm work, especially in hot and dry climates
+                            Known for excellent endurance and strength
+                            Bulls are used for ploughing, cart pulling, and farm work, especially in hot and dry
+                            climates
 
                         </p>
                         <p><strong>Milk Production:</strong>
-Yield: Around 1400 to 1800 liters per lactation
-Fat content: High, usually 4.8% to 5.2%, making the milk rich and creamy </p>
+                            Yield: Around 1400 to 1800 liters per lactation
+                            Fat content: High, usually 4.8% to 5.2%, making the milk rich and creamy </p>
                         <div class="video-container">
 
                         </div>
@@ -430,29 +431,30 @@ Fat content: High, usually 4.8% to 5.2%, making the milk rich and creamy </p>
                     <img src="img/Tharparkar.jpg" alt="Angus Cow">
                     <div class="breed-details">
                         <h2>Tharparkar </h2>
-                        <p><strong>Origin:</strong> Native to the Thar Desert region — Barmer, Jaisalmer (Rajasthan). </p>
+                        <p><strong>Origin:</strong> Native to the Thar Desert region — Barmer, Jaisalmer (Rajasthan).
+                        </p>
                         <p><strong>Feeding & Care:
                             </strong>
-Adapted to rough grazing
-Thrive well even on limited feed and water
-Low maintenance compared to exotic breeds
+                            Adapted to rough grazing
+                            Thrive well even on limited feed and water
+                            Low maintenance compared to exotic breeds
                         </p>
-                        <p><strong> Adaptability: </strong>             
-                        Can survive on sparse desert vegetation
+                        <p><strong> Adaptability: </strong>
+                            Can survive on sparse desert vegetation
 
-Requires less feed compared to high-yield exotic breeds
+                            Requires less feed compared to high-yield exotic breeds
 
-Ideal for low-input farming systems
+                            Ideal for low-input farming systems
 
-</p>
+                        </p>
                         <p><strong>Draught Power:</strong>
-                        Bulls are strong and active, excellent for agricultural work
-Used for ploughing and cart pulling in desert areas
+                            Bulls are strong and active, excellent for agricultural work
+                            Used for ploughing and cart pulling in desert areas
 
                         </p>
                         <p><strong>Milk Production:</strong>
-                        Yield: Around 1800 to 2600 liters per lactation (higher under good management)
-Fat Content: Around 4.5% to 5%, making it ideal for dairy products like ghee</p>
+                            Yield: Around 1800 to 2600 liters per lactation (higher under good management)
+                            Fat Content: Around 4.5% to 5%, making it ideal for dairy products like ghee</p>
                         <div class="video-container">
 
                         </div>
@@ -465,27 +467,28 @@ Fat Content: Around 4.5% to 5%, making it ideal for dairy products like ghee</p>
                     <img src="img/Ongole.jpg" alt="Angus Cow">
                     <div class="breed-details">
                         <h2>Ongole</h2>
-                        <p><strong>Origin:</strong>Native to the Prakasam District of Andhra Pradesh, particularly around the town of Ongole.. </p>
+                        <p><strong>Origin:</strong>Native to the Prakasam District of Andhra Pradesh, particularly
+                            around the town of Ongole.. </p>
                         <p><strong>Feeding & Care:
                             </strong>
                             Needs open grazing and regular movement
-Low-input breed in terms of feed and care
-Bulls may require careful handling due to their dominant nature
+                            Low-input breed in terms of feed and care
+                            Bulls may require careful handling due to their dominant nature
                         </p>
-                        <p><strong> Adaptability: </strong>             
-                        Thrives in hot, dry, and humid climates
-Highly disease-resistant, especially to tropical diseases and parasites
-Can survive on minimal grazing and harsh conditions
+                        <p><strong> Adaptability: </strong>
+                            Thrives in hot, dry, and humid climates
+                            Highly disease-resistant, especially to tropical diseases and parasites
+                            Can survive on minimal grazing and harsh conditions
 
-</p>
+                        </p>
                         <p><strong>Draught Power:</strong>
-                        Bulls are extremely powerful, used for ploughing, transport, and fieldwork
-Known for stamina, even under heavy workloads and hot conditions
+                            Bulls are extremely powerful, used for ploughing, transport, and fieldwork
+                            Known for stamina, even under heavy workloads and hot conditions
 
                         </p>
                         <p><strong>Milk Production:</strong>
-                        Yield: Moderate — around 1000 to 1500 liters per lactation
-Fat Content: About 4.5%, decent quality for household use</p>
+                            Yield: Moderate — around 1000 to 1500 liters per lactation
+                            Fat Content: About 4.5%, decent quality for household use</p>
                         <div class="video-container">
 
                         </div>
