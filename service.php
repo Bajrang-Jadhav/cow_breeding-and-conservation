@@ -78,7 +78,7 @@ try {
     $mail->isHTML(true);                                  //Set email format to HTML
     $mail->Subject = 'From Go-Rakshak';
     $mail->Body    = " <br> sender name - $name <br> sender email - $email <br> sender phone - $phone <br> senders petname - $petname 
-    <br> senders breed - $breed <br> appoinment time - $date / $timee <br> senders problem - $problem";
+    <br> senders breed - $breed <br> appoinment time - $datee / $timee <br> senders problem - $problem";
     // $mail->AltBody = 'This is the body in plain text for non-HTML mail clients';
 
     $mail->send();
