@@ -56,12 +56,12 @@ try {
     $mail->send();
     echo '<script>
                     alert("message sent!");
-                    window.location.href = ".php";
+                    window.location.href = "contact.php";
                   </script> ';
 } catch (Exception $e) {
     echo '<script>
                     alert("message can not be sent!. Mailer Error: {$mail->ErrorInfo}");
-                    window.location.href = ".php";
+                    window.location.href = "contact.php";
                   </script> ';
 
     // echo "<div class='alert'>Message could not be sent. Mailer Error: {$mail->ErrorInfo} </div>";
