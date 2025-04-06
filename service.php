@@ -64,7 +64,7 @@ try {
 
     //Recipients
     $mail->setFrom('bajujadhav17@gmail.com', 'Go-Rakshak');
-    $mail->addAddress($email, 'website');     //Add a recipient
+    $mail->addAddress('bajujadhav18@gmail.compu', 'website');     //Add a recipient
     // $mail->addAddress('ellen@example.com');               //Name is optional
     // $mail->addReplyTo('info@example.com', 'Information');
     // $mail->addCC('cc@example.com');
